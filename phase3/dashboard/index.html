@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISRO SIH Intelligent Dead Reckoning – Live Navigation Dashboard</title>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0f172a;
+      --panel-bg: #1e293b;
+      --panel-border: #334155;
+      --accent-blue: #38bdf8;
+      --accent-green: #22c55e;
+      --accent-amber: #f59e0b;
+      --accent-red: #ef4444;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Top Replay Banner */
+    .banner {
+      background: linear-gradient(90deg, #1e1b4b, #312e81, #1e1b4b);
+      border-bottom: 1px solid #4338ca;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+
+    .banner-tag {
+      background-color: #4f46e5;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.5px;
+    }
+
+    .header-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .isro-logo {
+      height: 24px;
+      background: var(--accent-amber);
+      color: #000;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-weight: 900;
+      font-size: 0.75rem;
+    }
+
+    /* Mode Badge */
+    .mode-badge {
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      font-family: 'JetBrains Mono', monospace;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .mode-gnss {
+      background-color: rgba(34, 197, 94, 0.15);
+      color: var(--accent-green);
+      border: 1px solid var(--accent-green);
+    }
+
+    .mode-dr {
+      background-color: rgba(239, 68, 68, 0.2);
+      color: var(--accent-red);
+      border: 1px solid var(--accent-red);
+      animation: pulse-red 1.5s infinite;
+    }
+
+    @keyframes pulse-red {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+      50% { box-shadow: 0 0 12px 4px rgba(239, 68, 68, 0.4); }
+    }
+
+    /* Main Container */
+    .main-container {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    /* Map Area */
+    #map {
+      width: 100%;
+      height: 100%;
+      background-color: #090d16;
+    }
+
+    /* Side Control Panel */
+    .sidebar {
+      background-color: var(--panel-bg);
+      border-left: 1px solid var(--panel-border);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 16px;
+      overflow-y: auto;
+    }
+
+    .card {
+      background-color: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--panel-border);
+      border-radius: 8px;
+      padding: 14px;
+    }
+
+    .card-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .metric-box {
+      background-color: var(--panel-bg);
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid var(--panel-border);
+    }
+
+    .metric-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .metric-value {
+      font-size: 1.2rem;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--text-main);
+    }
+
+    .metric-unit {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+
+    .value-highlight {
+      color: var(--accent-amber);
+    }
+
+    .value-danger {
+      color: var(--accent-red);
+    }
+
+    .value-green {
+      color: var(--accent-green);
+    }
+
+    /* Control Bar */
+    .controls-card {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 8px;
+    }
+
+    button {
+      background-color: #3b82f6;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: background 0.2s ease;
+      flex: 1;
+    }
+
+    button:hover {
+      background-color: #2563eb;
+    }
+
+    button.btn-outage {
+      background-color: #dc2626;
+    }
+
+    button.btn-outage:hover {
+      background-color: #b91c1c;
+    }
+
+    select, input[type="range"] {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      border: 1px solid var(--panel-border);
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      width: 100%;
+    }
+
+    /* Summary Panel */
+    .summary-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem;
+    }
+
+    .summary-table td {
+      padding: 6px 0;
+      border-bottom: 1px solid var(--panel-border);
+    }
+
+    .summary-table td:last-child {
+      text-align: right;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+    }
+
+    /* Map Legend */
+    .map-legend {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid var(--panel-border);
+      padding: 10px 14px;
+      border-radius: 8px;
+      z-index: 1000;
+      font-size: 0.8rem;
+      backdrop-filter: blur(4px);
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .legend-line {
+      width: 20px;
+      height: 3px;
+      border-radius: 2px;
+    }
+
+    .line-gt { background-color: #38bdf8; }
+    .line-dr { background-color: #ef4444; border-top: 1px dashed #ef4444; }
+    .line-gnss { background-color: #22c55e; }
+  </style>
+</head>
+<body>
+
+  <!-- Top Banner -->
+  <div class="banner">
+    <div class="header-title">
+      <span class="isro-logo">ISRO</span>
+      <span>AI-ML Intelligent Dead Reckoning Navigation System</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <span class="banner-tag" id="bannerFile">REPLAY MODE: IO-VNBD Vfa01 (Highway, 70 km/h)</span>
+      <div id="modeBadge" class="mode-badge mode-gnss">
+        <span id="modeDot">●</span>
+        <span id="modeText">GNSS-AIDED-INS</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="main-container">
+
+    <!-- Leaflet Map Container -->
+    <div style="position: relative; width: 100%; height: 100%;">
+      <div id="map"></div>
+      
+      <!-- Map Legend -->
+      <div class="map-legend">
+        <div class="legend-item">
+          <div class="legend-line line-gt"></div>
+          <span>CAN-Bus GNSS Ground Truth (IO-VNBD)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-line line-dr"></div>
+          <span>AI-DR Trajectory (Outage Segment)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-line line-gnss"></div>
+          <span>GNSS-Aided Integration</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar Control Panel -->
+    <div class="sidebar">
+
+      <!-- Playback & Outage Controls -->
+      <div class="card controls-card">
+        <div class="card-title">
+          <span>Playback Controls</span>
+          <span id="timeCounter" style="color: var(--accent-blue); font-family: 'JetBrains Mono';">00:00.0</span>
+        </div>
+        
+        <div class="btn-group">
+          <button id="btnPlay">Pause</button>
+          <button id="btnReset">Reset</button>
+        </div>
+
+        <div>
+          <label class="metric-label">Dataset Selection:</label>
+          <select id="selectDataset">
+            <option value="Vfa01">IO-VNBD Vfa01 (Highway, 70 km/h)</option>
+            <option value="Vta02">IO-VNBD Vta02 (Urban Driving)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="metric-label">Timeline Scrubber (Sample Index):</label>
+          <input type="range" id="sliderTimeline" min="0" max="1000" value="0">
+        </div>
+
+        <div>
+          <label class="metric-label">Playback Speed:</label>
+          <select id="selectSpeed">
+            <option value="1">1x Real-Time (10 Hz)</option>
+            <option value="2">2x Speed</option>
+            <option value="5" selected>5x Fast Replay</option>
+            <option value="10">10x Speed</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Live Motion Metrics -->
+      <div class="card">
+        <div class="card-title">Live Navigation State</div>
+        <div class="metric-grid">
+          <div class="metric-box">
+            <div class="metric-label">AI Estimated Speed</div>
+            <div class="metric-value"><span id="valSpeed">0.0</span> <span class="metric-unit">m/s</span></div>
+            <div style="font-size: 0.7rem; color: var(--text-muted);" id="valSpeedKmh">0.0 km/h</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-label">Vehicle Heading</div>
+            <div class="metric-value"><span id="valHeading">0.0</span><span class="metric-unit">°</span></div>
+            <div style="font-size: 0.7rem; color: var(--text-muted);" id="valHeadingCardinal">N</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outage & Drift Panel -->
+      <div class="card">
+        <div class="card-title">
+          <span>GNSS Outage & Drift</span>
+          <span id="outageStatus" style="font-size: 0.75rem; color: var(--accent-green);">INACTIVE</span>
+        </div>
+        <div class="metric-grid">
+          <div class="metric-box">
+            <div class="metric-label">Endpoint Position Error</div>
+            <div class="metric-value value-danger"><span id="valDriftM">0.00</span> <span class="metric-unit">m</span></div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-label">Drift Percentage</div>
+            <div class="metric-value value-highlight"><span id="valDriftPct">0.00</span> <span class="metric-unit">%</span></div>
+          </div>
+        </div>
+        <div style="margin-top: 10px; font-size: 0.75rem; color: var(--text-muted);">
+          Outage Dist Traveled: <span id="valOutageDist" style="color: #fff; font-family: 'JetBrains Mono';">0.0</span> m
+        </div>
+      </div>
+
+      <!-- Calibration Panel -->
+      <div class="card">
+        <div class="card-title">In-Vehicle Phone Calibration</div>
+        <div class="metric-grid" style="grid-template-columns: 1fr 1fr 1fr;">
+          <div class="metric-box">
+            <div class="metric-label">Pitch</div>
+            <div class="metric-value" style="font-size: 1rem;"><span id="valPitch">-0.01</span>°</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-label">Roll</div>
+            <div class="metric-value" style="font-size: 1rem;"><span id="valRoll">-0.00</span>°</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-label">Confidence</div>
+            <div class="metric-value value-green" style="font-size: 1rem;"><span id="valConf">95</span>%</div>
+          </div>
+        </div>
+        <div style="margin-top: 8px; font-size: 0.75rem; color: var(--accent-green);" id="valCalibStatus">
+          CALIBRATED (Gravity Vector Aligned)
+        </div>
+      </div>
+
+      <!-- Session Verification Summary -->
+      <div class="card">
+        <div class="card-title">Verified Session Summary</div>
+        <table class="summary-table">
+          <tr>
+            <td>Total Drive Duration</td>
+            <td id="sumDuration">1148.6 s</td>
+          </tr>
+          <tr>
+            <td>Outage Segment Length</td>
+            <td id="sumOutageDist">666.05 m</td>
+          </tr>
+          <tr>
+            <td>Real Endpoint Error</td>
+            <td id="sumEndpointErr" class="value-danger">325.12 m</td>
+          </tr>
+          <tr>
+            <td>Real Drift Percentage</td>
+            <td id="sumDriftPct" class="value-highlight">48.81 %</td>
+          </tr>
+          <tr>
+            <td>Velocity Model RMSE</td>
+            <td id="sumVelRmse">11.02 m/s</td>
+          </tr>
+        </table>
+        <div style="margin-top: 8px; font-size: 0.7rem; color: var(--text-muted); text-align: center;">
+          ✓ Fully reproducible via SIH_COMPLIANCE_MATRIX.md
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    let map, gtPolyline, drPolyline, vehicleMarker;
+    let trajectoryData = null;
+    let currentStep = 0;
+    let isPlaying = true;
+    let playInterval = null;
+    let playbackSpeed = 5;
+
+    // Initialize Leaflet Map
+    function initMap() {
+      map = L.map('map', {
+        zoomControl: true,
+        attributionControl: false
+      }).setView([52.5595, -1.7725], 16);
+
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        maxZoom: 19
+      }).addTo(map);
+
+      gtPolyline = L.polyline([], { color: '#38bdf8', weight: 4, opacity: 0.8 }).addTo(map);
+      drPolyline = L.polyline([], { color: '#ef4444', weight: 4, dashArray: '6, 8', opacity: 0.9 }).addTo(map);
+
+      // Custom Vehicle Arrow Icon
+      const vehicleIcon = L.divIcon({
+        className: 'vehicle-marker',
+        html: `<div id="vehicleArrow" style="width: 20px; height: 20px; background-color: #ef4444; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 0 10px #ef4444;"></div>`,
+        iconSize: [20, 20],
+        iconAnchor: [10, 10]
+      });
+
+      vehicleMarker = L.marker([52.5595, -1.7725], { icon: vehicleIcon }).addTo(map);
+    }
+
+    // Load Trajectory Data from Backend API
+    async function loadTrajectory() {
+      try {
+        const res = await fetch('/api/trajectory');
+        trajectoryData = await res.json();
+        
+        document.getElementById('sliderTimeline').max = trajectoryData.gt_coords.length - 1;
+        gtPolyline.setLatLngs(trajectoryData.gt_coords);
+        drPolyline.setLatLngs(trajectoryData.outage_coords);
+
+        if (trajectoryData.gt_coords.length > 0) {
+          map.fitBounds(gtPolyline.getBounds(), { padding: [40, 40] });
+        }
+
+        // Update Summary Card
+        const s = trajectoryData.summary;
+        document.getElementById('bannerFile').innerText = `REPLAY MODE: ${s.dataset_name}`;
+        document.getElementById('sumDuration').innerText = `${s.duration_s} s`;
+        document.getElementById('sumOutageDist').innerText = `${s.outage_distance_m} m`;
+        document.getElementById('sumEndpointErr').innerText = `${s.endpoint_error_m} m`;
+        document.getElementById('sumDriftPct').innerText = `${s.drift_percent} %`;
+        document.getElementById('sumVelRmse').innerText = `${s.velocity_rmse_ms} m/s`;
+
+        currentStep = 0;
+        updateStep();
+      } catch (err) {
+        console.error('Failed to load trajectory data:', err);
+      }
+    }
+
+    // Update Dashboard UI per tick
+    async function updateStep() {
+      try {
+        const res = await fetch(`/api/stream?step=${currentStep}`);
+        const tick = await res.json();
+
+        // Update Map Marker
+        const latLng = [tick.lat, tick.lon];
+        vehicleMarker.setLatLng(latLng);
+        
+        const arrow = document.getElementById('vehicleArrow');
+        if (arrow) {
+          arrow.style.transform = `rotate(${tick.heading_deg}deg)`;
+        }
+
+        // Update Timeline Slider
+        document.getElementById('sliderTimeline').value = currentStep;
+
+        // Update Time Counter
+        const mins = Math.floor(tick.timestamp_sec / 60);
+        const secs = (tick.timestamp_sec % 60).toFixed(1);
+        document.getElementById('timeCounter').innerText = 
+          `${mins.toString().padStart(2, '0')}:${secs.padStart(4, '0')}`;
+
+        // Mode Badge
+        const modeBadge = document.getElementById('modeBadge');
+        const modeText = document.getElementById('modeText');
+        if (tick.mode === 'DEAD-RECKONING') {
+          modeBadge.className = 'mode-badge mode-dr';
+          modeText.innerText = 'DEAD-RECKONING (GNSS OUTAGE)';
+          document.getElementById('outageStatus').innerText = 'ACTIVE OUTAGE';
+          document.getElementById('outageStatus').style.color = 'var(--accent-red)';
+          if (arrow) arrow.style.backgroundColor = '#ef4444';
+        } else {
+          modeBadge.className = 'mode-badge mode-gnss';
+          modeText.innerText = 'GNSS-AIDED-INS';
+          document.getElementById('outageStatus').innerText = 'INACTIVE';
+          document.getElementById('outageStatus').style.color = 'var(--accent-green)';
+          if (arrow) arrow.style.backgroundColor = '#22c55e';
+        }
+
+        // Live Values
+        document.getElementById('valSpeed').innerText = tick.speed_ms.toFixed(1);
+        document.getElementById('valSpeedKmh').innerText = `${tick.speed_kmh.toFixed(1)} km/h`;
+        document.getElementById('valHeading').innerText = tick.heading_deg.toFixed(1);
+        document.getElementById('valDriftM').innerText = tick.drift_m.toFixed(2);
+        document.getElementById('valDriftPct').innerText = tick.drift_pct.toFixed(2);
+        document.getElementById('valOutageDist').innerText = tick.outage_dist_m.toFixed(1);
+
+        document.getElementById('valPitch').innerText = tick.pitch_deg.toFixed(2);
+        document.getElementById('valRoll').innerText = tick.roll_deg.toFixed(2);
+        document.getElementById('valConf').innerText = Math.round(tick.confidence_score * 100);
+        document.getElementById('valCalibStatus').innerText = tick.calibration_status;
+
+      } catch (err) {
+        console.error('Error updating tick:', err);
+      }
+    }
+
+    // Playback Loop
+    function startPlayback() {
+      if (playInterval) clearInterval(playInterval);
+      playInterval = setInterval(() => {
+        if (isPlaying && trajectoryData) {
+          currentStep = (currentStep + 1) % trajectoryData.gt_coords.length;
+          updateStep();
+        }
+      }, 100 / playbackSpeed);
+    }
+
+    // Event Handlers
+    document.getElementById('btnPlay').addEventListener('click', () => {
+      isPlaying = !isPlaying;
+      document.getElementById('btnPlay').innerText = isPlaying ? 'Pause' : 'Play';
+    });
+
+    document.getElementById('btnReset').addEventListener('click', () => {
+      currentStep = 0;
+      updateStep();
+    });
+
+    document.getElementById('sliderTimeline').addEventListener('input', (e) => {
+      currentStep = parseInt(e.target.value);
+      updateStep();
+    });
+
+    document.getElementById('selectSpeed').addEventListener('change', (e) => {
+      playbackSpeed = parseInt(e.target.value);
+      startPlayback();
+    });
+
+    document.getElementById('selectDataset').addEventListener('change', async (e) => {
+      const key = e.target.value;
+      await fetch('/api/dataset', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ dataset: key })
+      });
+      await loadTrajectory();
+    });
+
+    // Window Init
+    window.onload = () => {
+      initMap();
+      loadTrajectory();
+      startPlayback();
+    };
+  </script>
+</body>
+</html>

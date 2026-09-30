@@ -1,0 +1,53 @@
+{
+  "train_accuracy": 0.905,
+  "test_accuracy": 0.8811,
+  "balanced_accuracy": 0.3296,
+  "n_train": 48498,
+  "n_test": 55893,
+  "class_report": {
+    "normal": {
+      "precision": 0.9050924608819345,
+      "recall": 0.9695252026574023,
+      "f1-score": 0.9362015184509446,
+      "support": 49221.0
+    },
+    "hard_brake": {
+      "precision": 0.02127659574468085,
+      "recall": 0.02857142857142857,
+      "f1-score": 0.024390243902439025,
+      "support": 105.0
+    },
+    "turn": {
+      "precision": 0.04668304668304668,
+      "recall": 0.05475504322766571,
+      "f1-score": 0.050397877984084884,
+      "support": 1041.0
+    },
+    "idle": {
+      "precision": 0.8122923588039868,
+      "recall": 0.26547231270358307,
+      "f1-score": 0.4001636661211129,
+      "support": 5526.0
+    },
+    "pothole_bump": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "accuracy": 0.8811121249530353,
+    "macro avg": {
+      "precision": 0.35706889242272977,
+      "recall": 0.263664797432016,
+      "f1-score": 0.2822306612917163,
+      "support": 55893.0
+    },
+    "weighted avg": {
+      "precision": 0.878269455673712,
+      "recall": 0.8811121249530353,
+      "f1-score": 0.8649939084545542,
+      "support": 55893.0
+    }
+  },
+  "LABEL_QUALITY_WARNING": "Labels are WEAK / APPROXIMATE: assigned heuristically from CAN-bus thresholds (decel, yaw rate, lateral accel) and scenario metadata. NOT manually annotated frame-level ground truth. Reported accuracy reflects proxy-label agreement only."
+}

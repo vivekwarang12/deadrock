@@ -1,0 +1,1845 @@
+2026-09-25 23:00:22,069  INFO      ================================================================================
+2026-09-25 23:00:22,069  INFO      PHASE 4: QA AUDIT, STRESS TESTING, PERFORMANCE & SIH PACKAGING
+2026-09-25 23:00:22,070  INFO      ISRO SIH Intelligent Dead Reckoning System
+2026-09-25 23:00:22,070  INFO      ================================================================================
+2026-09-25 23:00:22,070  INFO      
+── Step 1: Loading & Auditing Pipeline Data ──
+2026-09-25 23:00:22,138  INFO      Found 588 V-/S- CSV paths to process
+2026-09-25 23:00:22,325  INFO        OK  S-M.csv                   rows=105,974 dur=10597.4s dist=101.86km  driver=B split=train
+2026-09-25 23:00:22,510  INFO        OK  V-M.csv                   rows=105,974 dur=10597.4s dist=105.22km  driver=B split=train
+2026-09-25 23:00:22,602  INFO        OK  S-S1.csv                  rows= 51,746 dur= 5174.6s dist= 37.16km  driver=A split=train
+2026-09-25 23:00:22,685  INFO        OK  V-S1.csv                  rows= 51,746 dur= 5174.6s dist= 38.04km  driver=A split=train
+2026-09-25 23:00:22,845  INFO        OK  S-S2.csv                  rows= 93,876 dur= 9387.6s dist= 73.67km  driver=A split=train
+2026-09-25 23:00:23,008  INFO        OK  V-S2.csv                  rows= 93,876 dur= 9387.6s dist= 75.48km  driver=A split=train
+2026-09-25 23:00:23,054  INFO        OK  S-S3a.csv                 rows= 24,621 dur= 2462.1s dist= 25.34km  driver=A split=train
+2026-09-25 23:00:23,095  INFO        OK  V-S3a.csv                 rows= 24,621 dur= 2462.1s dist= 25.92km  driver=A split=train
+2026-09-25 23:00:23,109  INFO        OK  S-S3b.csv                 rows=  6,813 dur=  681.3s dist=  3.63km  driver=A split=train
+2026-09-25 23:00:23,124  INFO        OK  V-S3b.csv                 rows=  6,813 dur=  681.3s dist=  3.77km  driver=A split=train
+2026-09-25 23:00:23,189  INFO        OK  S-S3c.csv                 rows= 37,183 dur= 3718.3s dist= 43.23km  driver=A split=train
+2026-09-25 23:00:23,247  INFO        OK  V-S3c.csv                 rows= 37,183 dur= 3718.3s dist= 44.14km  driver=A split=train
+2026-09-25 23:00:23,405  INFO        OK  S-S4.csv                  rows= 94,600 dur= 9460.0s dist= 91.35km  driver=A split=train
+2026-09-25 23:00:23,563  INFO        OK  V-S4.csv                  rows= 94,600 dur= 9460.0s dist= 88.42km  driver=A split=train
+2026-09-25 23:00:23,586  INFO        OK  S-Vfa01.csv               rows= 11,486 dur= 1148.6s dist= 18.56km  driver=E split=test
+2026-09-25 23:00:23,605  INFO        OK  V-Vfa01.csv               rows= 11,535 dur= 1153.5s dist= 18.78km  driver=E split=test
+2026-09-25 23:00:23,721  INFO        OK  S-Vfa02.csv               rows= 67,523 dur= 6752.3s dist=162.60km  driver=E split=test
+2026-09-25 23:00:23,822  INFO        OK  V-Vfa02.csv               rows= 67,755 dur= 6775.5s dist=163.11km  driver=E split=test
+2026-09-25 23:00:23,869  INFO        OK  S-Vta1a.csv               rows= 25,676 dur= 2567.6s dist= 40.42km  driver=E split=calibration
+2026-09-25 23:00:23,907  INFO        OK  V-Vta1a.csv               rows= 25,676 dur= 2567.6s dist= 40.67km  driver=E split=calibration
+2026-09-25 23:00:23,912  INFO        OK  S-Vta1b.csv               rows=    954 dur=   95.4s dist=  1.25km  driver=E split=test
+2026-09-25 23:00:23,918  INFO        OK  V-Vta1b.csv               rows=    953 dur=   95.3s dist=  1.26km  driver=E split=test
+2026-09-25 23:00:23,939  INFO        OK  S-Vta2.csv                rows= 10,991 dur= 1099.1s dist= 11.05km  driver=E split=test
+2026-09-25 23:00:23,958  INFO        OK  V-vta2.csv                rows= 10,991 dur= 1099.1s dist= 11.05km  driver=E split=test
+2026-09-25 23:00:23,963  INFO        OK  S-Vta3.csv                rows=    645 dur=   64.5s dist=  0.15km  driver=E split=test
+2026-09-25 23:00:23,968  INFO        OK  V-vta3.csv                rows=    645 dur=   64.5s dist=  0.37km  driver=E split=test
+2026-09-25 23:00:23,975  INFO        OK  S-Vta4.csv                rows=  1,789 dur=  178.9s dist=  1.98km  driver=E split=test
+2026-09-25 23:00:23,981  INFO        OK  V-vta4.csv                rows=  1,789 dur=  178.9s dist=  1.99km  driver=E split=test
+2026-09-25 23:00:23,985  INFO        OK  S-Vta5.csv                rows=    307 dur=   30.7s dist=  0.31km  driver=E split=test
+2026-09-25 23:00:23,989  INFO        OK  V-vta5.csv                rows=    307 dur=   30.7s dist=  0.36km  driver=E split=test
+2026-09-25 23:00:23,995  INFO        OK  S-Vta6.csv                rows=  1,376 dur=  137.6s dist=  2.53km  driver=E split=test
+2026-09-25 23:00:24,000  INFO        OK  V-vta6.csv                rows=  1,376 dur=  137.6s dist=  2.59km  driver=E split=test
+2026-09-25 23:00:24,005  INFO        OK  S-Vta7.csv                rows=    840 dur=   84.0s dist=  1.45km  driver=E split=test
+2026-09-25 23:00:24,030  INFO        OK  V-vta7.csv                rows=    840 dur=   84.0s dist=  1.51km  driver=E split=test
+2026-09-25 23:00:24,053  INFO        OK  S-Vta8.csv                rows=  3,676 dur=  367.6s dist=  3.29km  driver=E split=test
+2026-09-25 23:00:24,062  INFO        OK  V-vta8.csv                rows=  3,676 dur=  367.6s dist=  3.40km  driver=E split=test
+2026-09-25 23:00:24,066  INFO        OK  S-Vta9.csv                rows=    156 dur=   15.6s dist=  0.16km  driver=E split=test
+2026-09-25 23:00:24,070  INFO        OK  V-vta9.csv                rows=    156 dur=   15.6s dist=  0.31km  driver=E split=test
+2026-09-25 23:00:24,076  INFO        OK  S-Vta10.csv               rows=  1,502 dur=  150.2s dist=  3.58km  driver=E split=test
+2026-09-25 23:00:24,082  INFO        OK  V-vta10.csv               rows=  1,502 dur=  150.2s dist=  3.74km  driver=E split=test
+2026-09-25 23:00:24,086  INFO        OK  S-Vta11.csv               rows=    510 dur=   51.0s dist=  0.57km  driver=E split=test
+2026-09-25 23:00:24,091  INFO        OK  V-vta11.csv               rows=    510 dur=   51.0s dist=  0.71km  driver=E split=test
+2026-09-25 23:00:24,095  INFO        OK  S-Vta12.csv               rows=    610 dur=   61.0s dist=  0.97km  driver=E split=test
+2026-09-25 23:00:24,100  INFO        OK  V-vta12.csv               rows=    610 dur=   61.0s dist=  1.12km  driver=E split=test
+2026-09-25 23:00:24,104  INFO        OK  S-Vta13.csv               rows=    404 dur=   40.4s dist=  1.07km  driver=E split=test
+2026-09-25 23:00:24,108  INFO        OK  V-vta13.csv               rows=    404 dur=   40.4s dist=  0.98km  driver=E split=test
+2026-09-25 23:00:24,116  INFO        OK  S-Vta14.csv               rows=  2,885 dur=  288.5s dist=  5.41km  driver=E split=test
+2026-09-25 23:00:24,124  INFO        OK  V-vta14.csv               rows=  2,885 dur=  288.5s dist=  5.43km  driver=E split=test
+2026-09-25 23:00:24,130  INFO        OK  S-Vta15.csv               rows=    833 dur=   83.3s dist=  1.61km  driver=E split=test
+2026-09-25 23:00:24,135  INFO        OK  V-vta15.csv               rows=    833 dur=   83.3s dist=  1.65km  driver=E split=test
+2026-09-25 23:00:24,157  INFO        OK  S-Vta16.csv               rows= 11,335 dur= 1133.5s dist= 13.47km  driver=E split=test
+2026-09-25 23:00:24,178  INFO        OK  V-vta16.csv               rows= 11,335 dur= 1133.5s dist= 13.66km  driver=E split=test
+2026-09-25 23:00:24,188  INFO        OK  S-Vta17.csv               rows=  4,519 dur=  451.9s dist=  4.00km  driver=E split=test
+2026-09-25 23:00:24,198  INFO        OK  V-vta17.csv               rows=  4,519 dur=  451.9s dist=  4.10km  driver=E split=test
+2026-09-25 23:00:24,202  INFO        OK  S-Vta19.csv               rows=    292 dur=   29.2s dist=  0.23km  driver=E split=test
+2026-09-25 23:00:24,206  INFO        OK  V-vta19.csv               rows=    292 dur=   29.2s dist=  0.23km  driver=E split=test
+2026-09-25 23:00:24,215  INFO        OK  S-Vta20.csv               rows=  3,223 dur=  322.3s dist=  0.65km  driver=E split=test
+2026-09-25 23:00:24,222  INFO        OK  V-vta20.csv               rows=  3,223 dur=  322.3s dist=  0.39km  driver=E split=test
+2026-09-25 23:00:24,229  INFO        OK  S-Vta21.csv               rows=  2,079 dur=  207.9s dist=  3.08km  driver=E split=test
+2026-09-25 23:00:24,236  INFO        OK  V-vta21.csv               rows=  2,079 dur=  207.9s dist=  2.75km  driver=E split=test
+2026-09-25 23:00:24,242  INFO        OK  S-Vta22.csv               rows=  1,564 dur=  156.4s dist=  1.61km  driver=E split=test
+2026-09-25 23:00:24,249  INFO        OK  V-vta22.csv               rows=  1,564 dur=  156.4s dist=  1.66km  driver=E split=test
+2026-09-25 23:00:24,254  INFO        OK  S-Vta23.csv               rows=  1,110 dur=  111.0s dist=  1.05km  driver=E split=test
+2026-09-25 23:00:24,260  INFO        OK  V-vta23.csv               rows=  1,110 dur=  111.0s dist=  1.09km  driver=E split=test
+2026-09-25 23:00:24,265  INFO        OK  S-Vta24.csv               rows=  1,171 dur=  117.1s dist=  0.68km  driver=E split=test
+2026-09-25 23:00:24,270  INFO        OK  V-vta24.csv               rows=  1,171 dur=  117.1s dist=  0.69km  driver=E split=test
+2026-09-25 23:00:24,274  INFO        OK  S-Vta25.csv               rows=    646 dur=   64.6s dist=  0.13km  driver=E split=test
+2026-09-25 23:00:24,279  INFO        OK  V-vta25.csv               rows=    646 dur=   64.6s dist=  0.16km  driver=E split=test
+2026-09-25 23:00:24,286  INFO        OK  S-Vta26.csv               rows=  1,935 dur=  193.5s dist=  0.99km  driver=E split=test
+2026-09-25 23:00:24,293  INFO        OK  V-vta26.csv               rows=  1,935 dur=  193.5s dist=  1.00km  driver=E split=test
+2026-09-25 23:00:24,300  INFO        OK  S-Vta27.csv               rows=  2,540 dur=  254.0s dist=  2.73km  driver=E split=test
+2026-09-25 23:00:24,308  INFO        OK  V-vta27.csv               rows=  2,540 dur=  254.0s dist=  3.15km  driver=E split=test
+2026-09-25 23:00:24,318  INFO        OK  S-Vta28.csv               rows=  4,210 dur=  421.0s dist=  3.87km  driver=E split=test
+2026-09-25 23:00:24,327  INFO        OK  V-vta28.csv               rows=  4,210 dur=  421.0s dist=  3.93km  driver=E split=test
+2026-09-25 23:00:24,368  INFO        OK  S-Vta29.csv               rows= 23,705 dur= 2370.5s dist= 25.49km  driver=E split=test
+2026-09-25 23:00:24,405  INFO        OK  V-vta29.csv               rows= 23,705 dur= 2370.5s dist= 26.07km  driver=E split=test
+2026-09-25 23:00:24,436  INFO        OK  S-Vta30.csv               rows= 17,136 dur= 1713.6s dist= 11.86km  driver=E split=test
+2026-09-25 23:00:24,461  INFO        OK  V-vta30.csv               rows= 17,136 dur= 1713.6s dist= 11.75km  driver=E split=test
+2026-09-25 23:00:24,516  INFO        OK  S-Vtb1.csv                rows= 32,459 dur= 3245.9s dist= 40.17km  driver=E split=test
+2026-09-25 23:00:24,566  INFO        OK  V-vtb1.csv                rows= 32,459 dur= 3245.9s dist= 41.85km  driver=E split=test
+2026-09-25 23:00:24,578  INFO        OK  S-Vtb2.csv                rows=  5,712 dur=  571.2s dist=  4.26km  driver=E split=test
+2026-09-25 23:00:24,590  INFO        OK  V-vtb2.csv                rows=  5,712 dur=  571.2s dist=  4.34km  driver=E split=test
+2026-09-25 23:00:24,607  INFO        OK  S-Vtb3.csv                rows=  8,240 dur=  824.0s dist=  1.55km  driver=E split=test
+2026-09-25 23:00:24,623  INFO        OK  V-vtb3.csv                rows=  8,240 dur=  824.0s dist=  0.69km  driver=E split=test
+2026-09-25 23:00:24,627  INFO        OK  S-Vtb4.csv                rows=    556 dur=   55.6s dist=  0.22km  driver=E split=test
+2026-09-25 23:00:24,632  INFO        OK  V-vtb4.csv                rows=    556 dur=   55.6s dist=  0.24km  driver=E split=test
+2026-09-25 23:00:24,744  INFO        OK  S-Vtb5.csv                rows= 64,388 dur= 6438.8s dist=110.64km  driver=E split=test
+2026-09-25 23:00:24,845  INFO        OK  V-vtb5.csv                rows= 64,388 dur= 6438.8s dist=111.44km  driver=E split=test
+2026-09-25 23:00:24,850  INFO        OK  S-Vtb6.csv                rows=    498 dur=   49.8s dist=  0.79km  driver=E split=test
+2026-09-25 23:00:24,854  INFO        OK  V-vtb6.csv                rows=    498 dur=   49.8s dist=  0.87km  driver=E split=test
+2026-09-25 23:00:24,859  INFO        OK  S-Vtb7.csv                rows=    461 dur=   46.1s dist=  0.70km  driver=E split=test
+2026-09-25 23:00:24,864  INFO        OK  V-vtb7.csv                rows=    461 dur=   46.1s dist=  0.72km  driver=E split=test
+2026-09-25 23:00:24,869  INFO        OK  S-Vtb8.csv                rows=    668 dur=   66.8s dist=  1.22km  driver=E split=test
+2026-09-25 23:00:24,874  INFO        OK  V-vtb8.csv                rows=    668 dur=   66.8s dist=  1.29km  driver=E split=test
+2026-09-25 23:00:24,878  INFO        OK  S-Vtb9.csv                rows=    452 dur=   45.2s dist=  0.96km  driver=E split=test
+2026-09-25 23:00:24,882  INFO        OK  V-vtb9.csv                rows=    452 dur=   45.2s dist=  0.96km  driver=E split=test
+2026-09-25 23:00:24,886  INFO        OK  S-Vtb10.csv               rows=    196 dur=   19.6s dist=  0.21km  driver=E split=test
+2026-09-25 23:00:24,890  INFO        OK  V-vtb10.csv               rows=    195 dur=   19.5s dist=  0.22km  driver=E split=test
+2026-09-25 23:00:24,894  INFO        OK  S-Vtb11.csv               rows=    361 dur=   36.1s dist=  0.70km  driver=E split=test
+2026-09-25 23:00:24,898  INFO        OK  V-vtb11.csv               rows=    361 dur=   36.1s dist=  0.70km  driver=E split=test
+2026-09-25 23:00:24,902  INFO        OK  S-Vtb12.csv               rows=    447 dur=   44.7s dist=  0.40km  driver=E split=test
+2026-09-25 23:00:24,907  INFO        OK  V-vtb12.csv               rows=    447 dur=   44.7s dist=  0.53km  driver=E split=test
+2026-09-25 23:00:24,941  INFO        OK  S-Vw1.csv                 rows= 20,476 dur= 2047.6s dist=  0.00km  driver=E split=test
+2026-09-25 23:00:24,970  INFO        OK  V-Vw1.csv                 rows= 20,475 dur= 2047.5s dist=  0.05km  driver=E split=test
+2026-09-25 23:00:25,061  INFO        OK  S-Vw2.csv                 rows= 52,713 dur= 5271.3s dist= 98.07km  driver=E split=test
+2026-09-25 23:00:25,145  INFO        OK  V-Vw2.csv                 rows= 52,712 dur= 5271.2s dist= 98.43km  driver=E split=test
+2026-09-25 23:00:25,156  INFO        OK  S-Vw3.csv                 rows=  3,861 dur=  386.1s dist=  4.82km  driver=E split=test
+2026-09-25 23:00:25,165  INFO        OK  V-Vw3.csv                 rows=  3,861 dur=  386.1s dist=  4.94km  driver=E split=test
+2026-09-25 23:00:25,394  INFO        OK  S-Vw4.csv                 rows=126,526 dur=12652.6s dist=212.59km  driver=E split=test
+2026-09-25 23:00:25,618  INFO        OK  V-Vw4.csv                 rows=126,527 dur=12652.7s dist=214.19km  driver=E split=test
+2026-09-25 23:00:25,623  INFO        OK  S-Vw5.csv                 rows=  1,012 dur=  101.2s dist=  0.64km  driver=E split=test
+2026-09-25 23:00:25,629  INFO        OK  V-Vw5.csv                 rows=  1,012 dur=  101.2s dist=  0.66km  driver=E split=test
+2026-09-25 23:00:25,634  INFO        OK  S-Vw6.csv                 rows=  1,281 dur=  128.1s dist=  1.05km  driver=E split=test
+2026-09-25 23:00:25,641  INFO        OK  V-Vw6.csv                 rows=  1,281 dur=  128.1s dist=  1.08km  driver=E split=test
+2026-09-25 23:00:25,647  INFO        OK  S-Vw7.csv                 rows=  1,602 dur=  160.2s dist=  1.02km  driver=E split=test
+2026-09-25 23:00:25,654  INFO        OK  V-Vw7.csv                 rows=  1,602 dur=  160.2s dist=  1.16km  driver=E split=test
+2026-09-25 23:00:25,659  INFO        OK  S-Vw8.csv                 rows=  1,529 dur=  152.9s dist=  0.96km  driver=E split=test
+2026-09-25 23:00:25,666  INFO        OK  V-Vw8.csv                 rows=  1,529 dur=  152.9s dist=  1.06km  driver=E split=test
+2026-09-25 23:00:25,670  INFO        OK  S-Vw9.csv                 rows=    552 dur=   55.2s dist=  0.42km  driver=E split=test
+2026-09-25 23:00:25,674  INFO        OK  V-Vw9.csv                 rows=    553 dur=   55.3s dist=  0.42km  driver=E split=test
+2026-09-25 23:00:25,679  INFO        OK  S-Vw10.csv                rows=    652 dur=   65.2s dist=  0.70km  driver=E split=test
+2026-09-25 23:00:25,683  INFO        OK  V-Vw10.csv                rows=    652 dur=   65.2s dist=  0.73km  driver=E split=test
+2026-09-25 23:00:25,694  INFO        OK  S-Vw11.csv                rows=  4,909 dur=  490.9s dist=  5.61km  driver=E split=test
+2026-09-25 23:00:25,705  INFO        OK  V-Vw11.csv                rows=  4,909 dur=  490.9s dist=  5.83km  driver=E split=test
+2026-09-25 23:00:25,710  INFO        OK  S-Vw12.csv                rows=    918 dur=   91.8s dist=  2.25km  driver=E split=test
+2026-09-25 23:00:25,715  INFO        OK  V-Vw12.csv                rows=    918 dur=   91.8s dist=  2.30km  driver=E split=test
+2026-09-25 23:00:25,718  INFO        OK  S-Vw13.csv                rows=    284 dur=   28.4s dist=  0.74km  driver=E split=test
+2026-09-25 23:00:25,723  INFO        OK  V-Vw13.csv                rows=    284 dur=   28.4s dist=  0.77km  driver=E split=test
+2026-09-25 23:00:25,732  INFO        OK  S-Vw14a.csv               rows=  3,138 dur=  313.8s dist=  7.93km  driver=E split=test
+2026-09-25 23:00:25,740  INFO        OK  V-Vw14a.csv               rows=  3,138 dur=  313.8s dist=  7.91km  driver=E split=test
+2026-09-25 23:00:25,773  INFO        OK  S-Vw14b.csv               rows= 19,588 dur= 1958.8s dist= 41.14km  driver=E split=test
+2026-09-25 23:00:25,805  INFO        OK  V-Vw14b.csv               rows= 19,588 dur= 1958.8s dist= 41.09km  driver=E split=test
+2026-09-25 23:00:25,834  INFO        OK  S-Vw14c.csv               rows= 15,826 dur= 1582.6s dist= 16.98km  driver=E split=test
+2026-09-25 23:00:25,859  INFO        OK  V-Vw14c.csv               rows= 15,826 dur= 1582.6s dist= 17.06km  driver=E split=test
+2026-09-25 23:00:25,865  INFO        OK  S-Vw15.csv                rows=  1,380 dur=  138.0s dist=  0.00km  driver=E split=test
+2026-09-25 23:00:25,871  INFO        OK  V-Vw15.csv                rows=  1,391 dur=  139.1s dist=  0.01km  driver=E split=test
+2026-09-25 23:00:25,883  INFO        OK  S-Vw16a.csv               rows=  5,879 dur=  587.9s dist=  8.18km  driver=E split=test
+2026-09-25 23:00:25,894  INFO        OK  V-Vw16a.csv               rows=  5,879 dur=  587.9s dist=  8.46km  driver=E split=test
+2026-09-25 23:00:25,900  INFO        OK  S-Vw16b.csv               rows=  1,126 dur=  112.6s dist=  1.81km  driver=E split=test
+2026-09-25 23:00:25,906  INFO        OK  V-Vw16b.csv               rows=  1,126 dur=  112.6s dist=  1.88km  driver=E split=test
+2026-09-25 23:00:25,909  INFO        OK  S-Vw17.csv                rows=    329 dur=   32.9s dist=  0.46km  driver=E split=test
+2026-09-25 23:00:25,914  INFO        OK  V-Vw17.csv                rows=    329 dur=   32.9s dist=  0.54km  driver=E split=test
+2026-09-25 23:00:26,032  INFO        OK  S-Y1.csv                  rows= 70,285 dur= 7028.5s dist= 58.19km  driver=D split=train
+2026-09-25 23:00:26,142  INFO        OK  V-Y1.csv                  rows= 70,285 dur= 7028.5s dist= 60.74km  driver=D split=train
+2026-09-25 23:00:26,325  INFO        OK  S-M.csv                   rows=105,974 dur=10597.4s dist=101.86km  driver=B split=train
+2026-09-25 23:00:26,417  INFO        OK  S-S1.csv                  rows= 51,746 dur= 5174.6s dist= 37.16km  driver=A split=train
+2026-09-25 23:00:26,576  INFO        OK  S-S2.csv                  rows= 93,876 dur= 9387.6s dist= 73.67km  driver=A split=train
+2026-09-25 23:00:26,622  INFO        OK  S-S3a.csv                 rows= 24,621 dur= 2462.1s dist= 25.34km  driver=A split=train
+2026-09-25 23:00:26,638  INFO        OK  S-S3b.csv                 rows=  6,813 dur=  681.3s dist=  3.63km  driver=A split=train
+2026-09-25 23:00:26,703  INFO        OK  S-S3c.csv                 rows= 37,183 dur= 3718.3s dist= 43.23km  driver=A split=train
+2026-09-25 23:00:26,860  INFO        OK  S-S4.csv                  rows= 94,600 dur= 9460.0s dist= 91.35km  driver=A split=train
+2026-09-25 23:00:26,884  INFO        OK  S-Vfa01.csv               rows= 11,486 dur= 1148.6s dist= 18.56km  driver=E split=test
+2026-09-25 23:00:27,000  INFO        OK  S-Vfa02.csv               rows= 67,523 dur= 6752.3s dist=162.60km  driver=E split=test
+2026-09-25 23:00:27,007  INFO        OK  S-Vta10.csv               rows=  1,502 dur=  150.2s dist=  3.58km  driver=E split=test
+2026-09-25 23:00:27,011  INFO        OK  S-Vta11.csv               rows=    510 dur=   51.0s dist=  0.57km  driver=E split=test
+2026-09-25 23:00:27,015  INFO        OK  S-Vta12.csv               rows=    610 dur=   61.0s dist=  0.97km  driver=E split=test
+2026-09-25 23:00:27,019  INFO        OK  S-Vta13.csv               rows=    404 dur=   40.4s dist=  1.07km  driver=E split=test
+2026-09-25 23:00:27,027  INFO        OK  S-Vta14.csv               rows=  2,885 dur=  288.5s dist=  5.41km  driver=E split=test
+2026-09-25 23:00:27,032  INFO        OK  S-Vta15.csv               rows=    833 dur=   83.3s dist=  1.61km  driver=E split=test
+2026-09-25 23:00:27,055  INFO        OK  S-Vta16.csv               rows= 11,335 dur= 1133.5s dist= 13.47km  driver=E split=test
+2026-09-25 23:00:27,066  INFO        OK  S-Vta17.csv               rows=  4,519 dur=  451.9s dist=  4.00km  driver=E split=test
+2026-09-25 23:00:27,070  INFO        OK  S-Vta19.csv               rows=    292 dur=   29.2s dist=  0.23km  driver=E split=test
+2026-09-25 23:00:27,116  INFO        OK  S-Vta1a.csv               rows= 25,676 dur= 2567.6s dist= 40.42km  driver=E split=calibration
+2026-09-25 23:00:27,121  INFO        OK  S-Vta1b.csv               rows=    954 dur=   95.4s dist=  1.25km  driver=E split=test
+2026-09-25 23:00:27,143  INFO        OK  S-Vta2.csv                rows= 10,991 dur= 1099.1s dist= 11.05km  driver=E split=test
+2026-09-25 23:00:27,152  INFO        OK  S-Vta20.csv               rows=  3,223 dur=  322.3s dist=  0.65km  driver=E split=test
+2026-09-25 23:00:27,160  INFO        OK  S-Vta21.csv               rows=  2,079 dur=  207.9s dist=  3.08km  driver=E split=test
+2026-09-25 23:00:27,166  INFO        OK  S-Vta22.csv               rows=  1,564 dur=  156.4s dist=  1.61km  driver=E split=test
+2026-09-25 23:00:27,171  INFO        OK  S-Vta23.csv               rows=  1,110 dur=  111.0s dist=  1.05km  driver=E split=test
+2026-09-25 23:00:27,176  INFO        OK  S-Vta24.csv               rows=  1,171 dur=  117.1s dist=  0.68km  driver=E split=test
+2026-09-25 23:00:27,181  INFO        OK  S-Vta25.csv               rows=    646 dur=   64.6s dist=  0.13km  driver=E split=test
+2026-09-25 23:00:27,187  INFO        OK  S-Vta26.csv               rows=  1,935 dur=  193.5s dist=  0.99km  driver=E split=test
+2026-09-25 23:00:27,195  INFO        OK  S-Vta27.csv               rows=  2,540 dur=  254.0s dist=  2.73km  driver=E split=test
+2026-09-25 23:00:27,205  INFO        OK  S-Vta28.csv               rows=  4,210 dur=  421.0s dist=  3.87km  driver=E split=test
+2026-09-25 23:00:27,245  INFO        OK  S-Vta29.csv               rows= 23,705 dur= 2370.5s dist= 25.49km  driver=E split=test
+2026-09-25 23:00:27,250  INFO        OK  S-Vta3.csv                rows=    645 dur=   64.5s dist=  0.15km  driver=E split=test
+2026-09-25 23:00:27,281  INFO        OK  S-Vta30.csv               rows= 17,136 dur= 1713.6s dist= 11.86km  driver=E split=test
+2026-09-25 23:00:27,288  INFO        OK  S-Vta4.csv                rows=  1,789 dur=  178.9s dist=  1.98km  driver=E split=test
+2026-09-25 23:00:27,292  INFO        OK  S-Vta5.csv                rows=    307 dur=   30.7s dist=  0.31km  driver=E split=test
+2026-09-25 23:00:27,298  INFO        OK  S-Vta6.csv                rows=  1,376 dur=  137.6s dist=  2.53km  driver=E split=test
+2026-09-25 23:00:27,303  INFO        OK  S-Vta7.csv                rows=    840 dur=   84.0s dist=  1.45km  driver=E split=test
+2026-09-25 23:00:27,312  INFO        OK  S-Vta8.csv                rows=  3,676 dur=  367.6s dist=  3.29km  driver=E split=test
+2026-09-25 23:00:27,316  INFO        OK  S-Vta9.csv                rows=    156 dur=   15.6s dist=  0.16km  driver=E split=test
+2026-09-25 23:00:27,372  INFO        OK  S-Vtb1.csv                rows= 32,459 dur= 3245.9s dist= 40.17km  driver=E split=test
+2026-09-25 23:00:27,376  INFO        OK  S-Vtb10.csv               rows=    196 dur=   19.6s dist=  0.21km  driver=E split=test
+2026-09-25 23:00:27,380  INFO        OK  S-Vtb11.csv               rows=    361 dur=   36.1s dist=  0.70km  driver=E split=test
+2026-09-25 23:00:27,383  INFO        OK  S-Vtb12.csv               rows=    447 dur=   44.7s dist=  0.40km  driver=E split=test
+2026-09-25 23:00:27,396  INFO        OK  S-Vtb2.csv                rows=  5,712 dur=  571.2s dist=  4.26km  driver=E split=test
+2026-09-25 23:00:27,414  INFO        OK  S-Vtb3.csv                rows=  8,240 dur=  824.0s dist=  1.55km  driver=E split=test
+2026-09-25 23:00:27,418  INFO        OK  S-Vtb4.csv                rows=    556 dur=   55.6s dist=  0.22km  driver=E split=test
+2026-09-25 23:00:27,531  INFO        OK  S-Vtb5.csv                rows= 64,388 dur= 6438.8s dist=110.64km  driver=E split=test
+2026-09-25 23:00:27,535  INFO        OK  S-Vtb6.csv                rows=    498 dur=   49.8s dist=  0.79km  driver=E split=test
+2026-09-25 23:00:27,539  INFO        OK  S-Vtb7.csv                rows=    461 dur=   46.1s dist=  0.70km  driver=E split=test
+2026-09-25 23:00:27,544  INFO        OK  S-Vtb8.csv                rows=    668 dur=   66.8s dist=  1.22km  driver=E split=test
+2026-09-25 23:00:27,548  INFO        OK  S-Vtb9.csv                rows=    452 dur=   45.2s dist=  0.96km  driver=E split=test
+2026-09-25 23:00:27,582  INFO        OK  S-Vw1.csv                 rows= 20,476 dur= 2047.6s dist=  0.00km  driver=E split=test
+2026-09-25 23:00:27,587  INFO        OK  S-Vw10.csv                rows=    652 dur=   65.2s dist=  0.70km  driver=E split=test
+2026-09-25 23:00:27,598  INFO        OK  S-Vw11.csv                rows=  4,909 dur=  490.9s dist=  5.61km  driver=E split=test
+2026-09-25 23:00:27,603  INFO        OK  S-Vw12.csv                rows=    918 dur=   91.8s dist=  2.25km  driver=E split=test
+2026-09-25 23:00:27,606  INFO        OK  S-Vw13.csv                rows=    284 dur=   28.4s dist=  0.74km  driver=E split=test
+2026-09-25 23:00:27,615  INFO        OK  S-Vw14a.csv               rows=  3,138 dur=  313.8s dist=  7.93km  driver=E split=test
+2026-09-25 23:00:27,651  INFO        OK  S-Vw14b.csv               rows= 19,588 dur= 1958.8s dist= 41.14km  driver=E split=test
+2026-09-25 23:00:27,681  INFO        OK  S-Vw14c.csv               rows= 15,826 dur= 1582.6s dist= 16.98km  driver=E split=test
+2026-09-25 23:00:27,687  INFO        OK  S-Vw15.csv                rows=  1,380 dur=  138.0s dist=  0.00km  driver=E split=test
+2026-09-25 23:00:27,700  INFO        OK  S-Vw16a.csv               rows=  5,879 dur=  587.9s dist=  8.18km  driver=E split=test
+2026-09-25 23:00:27,705  INFO        OK  S-Vw16b.csv               rows=  1,126 dur=  112.6s dist=  1.81km  driver=E split=test
+2026-09-25 23:00:27,708  INFO        OK  S-Vw17.csv                rows=    329 dur=   32.9s dist=  0.46km  driver=E split=test
+2026-09-25 23:00:27,800  INFO        OK  S-Vw2.csv                 rows= 52,713 dur= 5271.3s dist= 98.07km  driver=E split=test
+2026-09-25 23:00:27,811  INFO        OK  S-Vw3.csv                 rows=  3,861 dur=  386.1s dist=  4.82km  driver=E split=test
+2026-09-25 23:00:28,027  INFO        OK  S-Vw4.csv                 rows=126,526 dur=12652.6s dist=212.59km  driver=E split=test
+2026-09-25 23:00:28,033  INFO        OK  S-Vw5.csv                 rows=  1,012 dur=  101.2s dist=  0.64km  driver=E split=test
+2026-09-25 23:00:28,038  INFO        OK  S-Vw6.csv                 rows=  1,281 dur=  128.1s dist=  1.05km  driver=E split=test
+2026-09-25 23:00:28,045  INFO        OK  S-Vw7.csv                 rows=  1,602 dur=  160.2s dist=  1.02km  driver=E split=test
+2026-09-25 23:00:28,052  INFO        OK  S-Vw8.csv                 rows=  1,529 dur=  152.9s dist=  0.96km  driver=E split=test
+2026-09-25 23:00:28,056  INFO        OK  S-Vw9.csv                 rows=    552 dur=   55.2s dist=  0.42km  driver=E split=test
+2026-09-25 23:00:28,174  INFO        OK  S-Y1.csv                  rows= 70,285 dur= 7028.5s dist= 58.19km  driver=D split=train
+2026-09-25 23:00:28,354  INFO        OK  V-M.csv                   rows=105,974 dur=10597.4s dist=105.22km  driver=B split=train
+2026-09-25 23:00:28,433  INFO        OK  V-S1.csv                  rows= 51,746 dur= 5174.6s dist= 38.04km  driver=A split=train
+2026-09-25 23:00:28,591  INFO        OK  V-S2.csv                  rows= 93,876 dur= 9387.6s dist= 75.48km  driver=A split=train
+2026-09-25 23:00:28,630  INFO        OK  V-S3a.csv                 rows= 24,621 dur= 2462.1s dist= 25.92km  driver=A split=train
+2026-09-25 23:00:28,644  INFO        OK  V-S3b.csv                 rows=  6,813 dur=  681.3s dist=  3.77km  driver=A split=train
+2026-09-25 23:00:28,699  INFO        OK  V-S3c.csv                 rows= 37,183 dur= 3718.3s dist= 44.14km  driver=A split=train
+2026-09-25 23:00:28,858  INFO        OK  V-S4.csv                  rows= 94,600 dur= 9460.0s dist= 88.42km  driver=A split=train
+2026-09-25 23:00:28,879  INFO        OK  V-Vfa01.csv               rows= 11,535 dur= 1153.5s dist= 18.78km  driver=E split=test
+2026-09-25 23:00:28,980  INFO        OK  V-Vfa02.csv               rows= 67,755 dur= 6775.5s dist=163.11km  driver=E split=test
+2026-09-25 23:00:29,020  INFO        OK  V-Vta1a.csv               rows= 25,676 dur= 2567.6s dist= 40.67km  driver=E split=calibration
+2026-09-25 23:00:29,026  INFO        OK  V-Vta1b.csv               rows=    953 dur=   95.3s dist=  1.26km  driver=E split=test
+2026-09-25 23:00:29,056  INFO        OK  V-Vw1.csv                 rows= 20,475 dur= 2047.5s dist=  0.05km  driver=E split=test
+2026-09-25 23:00:29,061  INFO        OK  V-Vw10.csv                rows=    652 dur=   65.2s dist=  0.73km  driver=E split=test
+2026-09-25 23:00:29,071  INFO        OK  V-Vw11.csv                rows=  4,909 dur=  490.9s dist=  5.83km  driver=E split=test
+2026-09-25 23:00:29,076  INFO        OK  V-Vw12.csv                rows=    918 dur=   91.8s dist=  2.30km  driver=E split=test
+2026-09-25 23:00:29,081  INFO        OK  V-Vw13.csv                rows=    284 dur=   28.4s dist=  0.77km  driver=E split=test
+2026-09-25 23:00:29,089  INFO        OK  V-Vw14a.csv               rows=  3,138 dur=  313.8s dist=  7.91km  driver=E split=test
+2026-09-25 23:00:29,118  INFO        OK  V-Vw14b.csv               rows= 19,588 dur= 1958.8s dist= 41.09km  driver=E split=test
+2026-09-25 23:00:29,143  INFO        OK  V-Vw14c.csv               rows= 15,826 dur= 1582.6s dist= 17.06km  driver=E split=test
+2026-09-25 23:00:29,149  INFO        OK  V-Vw15.csv                rows=  1,391 dur=  139.1s dist=  0.01km  driver=E split=test
+2026-09-25 23:00:29,160  INFO        OK  V-Vw16a.csv               rows=  5,879 dur=  587.9s dist=  8.46km  driver=E split=test
+2026-09-25 23:00:29,166  INFO        OK  V-Vw16b.csv               rows=  1,126 dur=  112.6s dist=  1.88km  driver=E split=test
+2026-09-25 23:00:29,171  INFO        OK  V-Vw17.csv                rows=    329 dur=   32.9s dist=  0.54km  driver=E split=test
+2026-09-25 23:00:29,284  INFO        OK  V-Vw2.csv                 rows= 52,712 dur= 5271.2s dist= 98.43km  driver=E split=test
+2026-09-25 23:00:29,294  INFO        OK  V-Vw3.csv                 rows=  3,861 dur=  386.1s dist=  4.94km  driver=E split=test
+2026-09-25 23:00:29,520  INFO        OK  V-Vw4.csv                 rows=126,527 dur=12652.7s dist=214.19km  driver=E split=test
+2026-09-25 23:00:29,526  INFO        OK  V-Vw5.csv                 rows=  1,012 dur=  101.2s dist=  0.66km  driver=E split=test
+2026-09-25 23:00:29,533  INFO        OK  V-Vw6.csv                 rows=  1,281 dur=  128.1s dist=  1.08km  driver=E split=test
+2026-09-25 23:00:29,539  INFO        OK  V-Vw7.csv                 rows=  1,602 dur=  160.2s dist=  1.16km  driver=E split=test
+2026-09-25 23:00:29,545  INFO        OK  V-Vw8.csv                 rows=  1,529 dur=  152.9s dist=  1.06km  driver=E split=test
+2026-09-25 23:00:29,550  INFO        OK  V-Vw9.csv                 rows=    553 dur=   55.3s dist=  0.42km  driver=E split=test
+2026-09-25 23:00:29,663  INFO        OK  V-Y1.csv                  rows= 70,285 dur= 7028.5s dist= 60.74km  driver=D split=train
+2026-09-25 23:00:29,670  INFO        OK  V-vta10.csv               rows=  1,502 dur=  150.2s dist=  3.74km  driver=E split=test
+2026-09-25 23:00:29,675  INFO        OK  V-vta11.csv               rows=    510 dur=   51.0s dist=  0.71km  driver=E split=test
+2026-09-25 23:00:29,680  INFO        OK  V-vta12.csv               rows=    610 dur=   61.0s dist=  1.12km  driver=E split=test
+2026-09-25 23:00:29,685  INFO        OK  V-vta13.csv               rows=    404 dur=   40.4s dist=  0.98km  driver=E split=test
+2026-09-25 23:00:29,693  INFO        OK  V-vta14.csv               rows=  2,885 dur=  288.5s dist=  5.43km  driver=E split=test
+2026-09-25 23:00:29,698  INFO        OK  V-vta15.csv               rows=    833 dur=   83.3s dist=  1.65km  driver=E split=test
+2026-09-25 23:00:29,717  INFO        OK  V-vta16.csv               rows= 11,335 dur= 1133.5s dist= 13.66km  driver=E split=test
+2026-09-25 23:00:29,727  INFO        OK  V-vta17.csv               rows=  4,519 dur=  451.9s dist=  4.10km  driver=E split=test
+2026-09-25 23:00:29,732  INFO        OK  V-vta19.csv               rows=    292 dur=   29.2s dist=  0.23km  driver=E split=test
+2026-09-25 23:00:29,751  INFO        OK  V-vta2.csv                rows= 10,991 dur= 1099.1s dist= 11.05km  driver=E split=test
+2026-09-25 23:00:29,759  INFO        OK  V-vta20.csv               rows=  3,223 dur=  322.3s dist=  0.39km  driver=E split=test
+2026-09-25 23:00:29,766  INFO        OK  V-vta21.csv               rows=  2,079 dur=  207.9s dist=  2.75km  driver=E split=test
+2026-09-25 23:00:29,772  INFO        OK  V-vta22.csv               rows=  1,564 dur=  156.4s dist=  1.66km  driver=E split=test
+2026-09-25 23:00:29,778  INFO        OK  V-vta23.csv               rows=  1,110 dur=  111.0s dist=  1.09km  driver=E split=test
+2026-09-25 23:00:29,783  INFO        OK  V-vta24.csv               rows=  1,171 dur=  117.1s dist=  0.69km  driver=E split=test
+2026-09-25 23:00:29,788  INFO        OK  V-vta25.csv               rows=    646 dur=   64.6s dist=  0.16km  driver=E split=test
+2026-09-25 23:00:29,794  INFO        OK  V-vta26.csv               rows=  1,935 dur=  193.5s dist=  1.00km  driver=E split=test
+2026-09-25 23:00:29,802  INFO        OK  V-vta27.csv               rows=  2,540 dur=  254.0s dist=  3.15km  driver=E split=test
+2026-09-25 23:00:29,811  INFO        OK  V-vta28.csv               rows=  4,210 dur=  421.0s dist=  3.93km  driver=E split=test
+2026-09-25 23:00:29,849  INFO        OK  V-vta29.csv               rows= 23,705 dur= 2370.5s dist= 26.07km  driver=E split=test
+2026-09-25 23:00:29,854  INFO        OK  V-vta3.csv                rows=    645 dur=   64.5s dist=  0.37km  driver=E split=test
+2026-09-25 23:00:29,880  INFO        OK  V-vta30.csv               rows= 17,136 dur= 1713.6s dist= 11.75km  driver=E split=test
+2026-09-25 23:00:29,887  INFO        OK  V-vta4.csv                rows=  1,789 dur=  178.9s dist=  1.99km  driver=E split=test
+2026-09-25 23:00:29,891  INFO        OK  V-vta5.csv                rows=    307 dur=   30.7s dist=  0.36km  driver=E split=test
+2026-09-25 23:00:29,897  INFO        OK  V-vta6.csv                rows=  1,376 dur=  137.6s dist=  2.59km  driver=E split=test
+2026-09-25 23:00:29,902  INFO        OK  V-vta7.csv                rows=    840 dur=   84.0s dist=  1.51km  driver=E split=test
+2026-09-25 23:00:29,911  INFO        OK  V-vta8.csv                rows=  3,676 dur=  367.6s dist=  3.40km  driver=E split=test
+2026-09-25 23:00:29,915  INFO        OK  V-vta9.csv                rows=    156 dur=   15.6s dist=  0.31km  driver=E split=test
+2026-09-25 23:00:29,964  INFO        OK  V-vtb1.csv                rows= 32,459 dur= 3245.9s dist= 41.85km  driver=E split=test
+2026-09-25 23:00:29,969  INFO        OK  V-vtb10.csv               rows=    195 dur=   19.5s dist=  0.22km  driver=E split=test
+2026-09-25 23:00:29,973  INFO        OK  V-vtb11.csv               rows=    361 dur=   36.1s dist=  0.70km  driver=E split=test
+2026-09-25 23:00:29,978  INFO        OK  V-vtb12.csv               rows=    447 dur=   44.7s dist=  0.53km  driver=E split=test
+2026-09-25 23:00:29,988  INFO        OK  V-vtb2.csv                rows=  5,712 dur=  571.2s dist=  4.34km  driver=E split=test
+2026-09-25 23:00:30,003  INFO        OK  V-vtb3.csv                rows=  8,240 dur=  824.0s dist=  0.69km  driver=E split=test
+2026-09-25 23:00:30,008  INFO        OK  V-vtb4.csv                rows=    556 dur=   55.6s dist=  0.24km  driver=E split=test
+2026-09-25 23:00:30,105  INFO        OK  V-vtb5.csv                rows= 64,388 dur= 6438.8s dist=111.44km  driver=E split=test
+2026-09-25 23:00:30,110  INFO        OK  V-vtb6.csv                rows=    498 dur=   49.8s dist=  0.87km  driver=E split=test
+2026-09-25 23:00:30,115  INFO        OK  V-vtb7.csv                rows=    461 dur=   46.1s dist=  0.72km  driver=E split=test
+2026-09-25 23:00:30,120  INFO        OK  V-vtb8.csv                rows=    668 dur=   66.8s dist=  1.29km  driver=E split=test
+2026-09-25 23:00:30,135  INFO        OK  V-vtb9.csv                rows=    452 dur=   45.2s dist=  0.96km  driver=E split=test
+2026-09-25 23:00:30,306  INFO        OK  V-M.csv                   rows=105,995 dur=10599.5s dist=105.23km  driver=B split=train
+2026-09-25 23:00:30,383  INFO        OK  V-S1.csv                  rows= 51,790 dur= 5179.0s dist= 38.07km  driver=A split=train
+2026-09-25 23:00:30,530  INFO        OK  V-S2.csv                  rows= 93,900 dur= 9390.0s dist= 75.48km  driver=A split=train
+2026-09-25 23:00:30,569  INFO        OK  V-S3a.csv                 rows= 24,660 dur= 2466.0s dist= 25.93km  driver=A split=train
+2026-09-25 23:00:30,583  INFO        OK  V-S3b.csv                 rows=  6,840 dur=  684.0s dist=  3.80km  driver=A split=train
+2026-09-25 23:00:30,638  INFO        OK  V-S3c.csv                 rows= 37,220 dur= 3722.0s dist= 44.18km  driver=A split=train
+2026-09-25 23:00:30,794  INFO        OK  V-S4.csv                  rows= 97,824 dur= 9782.4s dist= 93.71km  driver=A split=train
+2026-09-25 23:00:30,878  INFO        OK  V-St1.csv                 rows= 57,213 dur= 5721.3s dist= 46.96km  driver=Unknown split=train
+2026-09-25 23:00:30,900  INFO        OK  V-St4.csv                 rows= 13,591 dur= 1359.1s dist= 28.43km  driver=Unknown split=train
+2026-09-25 23:00:30,976  INFO        OK  V-St6.csv                 rows= 51,360 dur= 5136.0s dist=113.42km  driver=Unknown split=train
+2026-09-25 23:00:31,041  INFO        OK  V-St7.csv                 rows= 44,427 dur= 4442.7s dist= 89.92km  driver=Unknown split=train
+2026-09-25 23:00:31,061  INFO        OK  V-Vfa01.csv               rows= 11,535 dur= 1153.5s dist= 18.78km  driver=E split=test
+2026-09-25 23:00:31,165  INFO        OK  V-Vfa02.csv               rows= 67,755 dur= 6775.5s dist=163.11km  driver=E split=test
+2026-09-25 23:00:31,191  INFO        OK  V-Vfb01a.csv              rows= 17,000 dur= 1700.0s dist=  6.80km  driver=E split=test
+2026-09-25 23:00:31,201  INFO        OK  V-Vfb01b.csv              rows=  3,880 dur=  388.0s dist=  4.07km  driver=E split=test
+2026-09-25 23:00:31,212  INFO        OK  V-Vfb01c.csv              rows=  6,320 dur=  632.0s dist= 10.63km  driver=E split=test
+2026-09-25 23:00:31,230  INFO        OK  V-Vfb01d.csv              rows= 10,713 dur= 1071.3s dist=  3.39km  driver=E split=test
+2026-09-25 23:00:31,284  INFO        OK  V-Vfb02a.csv              rows= 35,960 dur= 3596.0s dist= 96.36km  driver=E split=test
+2026-09-25 23:00:31,303  INFO        OK  V-Vfb02b.csv              rows= 11,000 dur= 1100.0s dist=  7.67km  driver=E split=test
+2026-09-25 23:00:31,308  INFO        OK  V-Vfb02c.csv              rows=    640 dur=   64.0s dist=  0.53km  driver=E split=test
+2026-09-25 23:00:31,313  INFO        OK  V-Vfb02d.csv              rows=    880 dur=   88.0s dist=  0.84km  driver=E split=test
+2026-09-25 23:00:31,318  INFO        OK  V-Vfb02e.csv              rows=    980 dur=   98.0s dist=  1.52km  driver=E split=test
+2026-09-25 23:00:31,323  INFO        OK  V-Vfb02f.csv              rows=    660 dur=   66.0s dist=  0.47km  driver=E split=test
+2026-09-25 23:00:31,366  INFO        OK  V-Vfb02g.csv              rows= 27,159 dur= 2715.9s dist= 63.46km  driver=E split=test
+2026-09-25 23:00:31,403  INFO        OK  V-Vta1a.csv               rows= 25,821 dur= 2582.1s dist= 40.67km  driver=E split=calibration
+2026-09-25 23:00:31,409  INFO        OK  V-Vta1b.csv               rows=    956 dur=   95.6s dist=  1.26km  driver=E split=test
+2026-09-25 23:00:31,427  INFO        OK  V-Vta2.csv                rows= 10,995 dur= 1099.5s dist= 11.05km  driver=E split=test
+2026-09-25 23:00:31,432  INFO        OK  V-Vta3.csv                rows=    875 dur=   87.5s dist=  0.38km  driver=E split=test
+2026-09-25 23:00:31,439  INFO        OK  V-Vta4.csv                rows=  1,809 dur=  180.9s dist=  2.01km  driver=E split=test
+2026-09-25 23:00:31,443  INFO        OK  V-Vta5.csv                rows=    357 dur=   35.7s dist=  0.42km  driver=E split=test
+2026-09-25 23:00:31,449  INFO        OK  V-Vta6.csv                rows=  1,393 dur=  139.3s dist=  2.61km  driver=E split=test
+2026-09-25 23:00:31,455  INFO        OK  V-Vta7.csv                rows=    857 dur=   85.7s dist=  1.54km  driver=E split=test
+2026-09-25 23:00:31,464  INFO        OK  V-Vta8.csv                rows=  3,697 dur=  369.7s dist=  3.42km  driver=E split=test
+2026-09-25 23:00:31,468  INFO        OK  V-Vta9.csv                rows=    226 dur=   22.6s dist=  0.43km  driver=E split=test
+2026-09-25 23:00:31,474  INFO        OK  V-Vta10.csv               rows=  1,570 dur=  157.0s dist=  3.94km  driver=E split=test
+2026-09-25 23:00:31,478  INFO        OK  V-Vta11.csv               rows=    589 dur=   58.9s dist=  0.92km  driver=E split=test
+2026-09-25 23:00:31,483  INFO        OK  V-Vta12.csv               rows=    690 dur=   69.0s dist=  1.26km  driver=E split=test
+2026-09-25 23:00:31,488  INFO        OK  V-Vta13.csv               rows=    473 dur=   47.3s dist=  1.14km  driver=E split=test
+2026-09-25 23:00:31,495  INFO        OK  V-Vta14.csv               rows=  2,893 dur=  289.3s dist=  5.44km  driver=E split=test
+2026-09-25 23:00:31,500  INFO        OK  V-Vta15.csv               rows=    869 dur=   86.9s dist=  1.72km  driver=E split=test
+2026-09-25 23:00:31,521  INFO        OK  V-Vta16.csv               rows= 11,361 dur= 1136.1s dist= 13.70km  driver=E split=test
+2026-09-25 23:00:31,531  INFO        OK  V-Vta17.csv               rows=  4,594 dur=  459.4s dist=  4.18km  driver=E split=test
+2026-09-25 23:00:31,535  INFO        OK  V-Vta19.csv               rows=    310 dur=   31.0s dist=  0.26km  driver=E split=test
+2026-09-25 23:00:31,543  INFO        OK  V-Vta20.csv               rows=  3,223 dur=  322.3s dist=  0.39km  driver=E split=test
+2026-09-25 23:00:31,549  INFO        OK  V-Vta21.csv               rows=  2,088 dur=  208.8s dist=  2.76km  driver=E split=test
+2026-09-25 23:00:31,555  INFO        OK  V-Vta22.csv               rows=  1,572 dur=  157.2s dist=  1.67km  driver=E split=test
+2026-09-25 23:00:31,560  INFO        OK  V-Vta23.csv               rows=  1,119 dur=  111.9s dist=  1.10km  driver=E split=test
+2026-09-25 23:00:31,566  INFO        OK  V-Vta24.csv               rows=  1,184 dur=  118.4s dist=  0.71km  driver=E split=test
+2026-09-25 23:00:31,570  INFO        OK  V-Vta25.csv               rows=    646 dur=   64.6s dist=  0.16km  driver=E split=test
+2026-09-25 23:00:31,577  INFO        OK  V-Vta26.csv               rows=  1,947 dur=  194.7s dist=  1.01km  driver=E split=test
+2026-09-25 23:00:31,584  INFO        OK  V-Vta27.csv               rows=  2,853 dur=  285.3s dist=  3.16km  driver=E split=test
+2026-09-25 23:00:31,593  INFO        OK  V-Vta28.csv               rows=  4,219 dur=  421.9s dist=  3.93km  driver=E split=test
+2026-09-25 23:00:31,629  INFO        OK  V-Vta29.csv               rows= 23,737 dur= 2373.7s dist= 26.07km  driver=E split=test
+2026-09-25 23:00:31,655  INFO        OK  V-Vta30.csv               rows= 17,179 dur= 1717.9s dist= 11.75km  driver=E split=test
+2026-09-25 23:00:31,702  INFO        OK  V-Vtb1.csv                rows= 32,459 dur= 3245.9s dist= 41.85km  driver=E split=test
+2026-09-25 23:00:31,713  INFO        OK  V-Vtb2.csv                rows=  5,712 dur=  571.2s dist=  4.34km  driver=E split=test
+2026-09-25 23:00:31,728  INFO        OK  V-Vtb3.csv                rows=  8,289 dur=  828.9s dist=  0.70km  driver=E split=test
+2026-09-25 23:00:31,733  INFO        OK  V-Vtb4.csv                rows=    625 dur=   62.5s dist=  0.27km  driver=E split=test
+2026-09-25 23:00:31,831  INFO        OK  V-Vtb5.csv                rows= 64,610 dur= 6461.0s dist=111.45km  driver=E split=test
+2026-09-25 23:00:31,836  INFO        OK  V-Vtb6.csv                rows=    508 dur=   50.8s dist=  0.89km  driver=E split=test
+2026-09-25 23:00:31,841  INFO        OK  V-Vtb7.csv                rows=    461 dur=   46.1s dist=  0.72km  driver=E split=test
+2026-09-25 23:00:31,846  INFO        OK  V-Vtb8.csv                rows=    699 dur=   69.9s dist=  1.35km  driver=E split=test
+2026-09-25 23:00:31,850  INFO        OK  V-Vtb9.csv                rows=    457 dur=   45.7s dist=  0.97km  driver=E split=test
+2026-09-25 23:00:31,854  INFO        OK  V-Vtb10.csv               rows=    195 dur=   19.5s dist=  0.22km  driver=E split=test
+2026-09-25 23:00:31,859  INFO        OK  V-Vtb11.csv               rows=    433 dur=   43.3s dist=  0.84km  driver=E split=test
+2026-09-25 23:00:31,863  INFO        OK  V-Vtb12.csv               rows=    490 dur=   49.0s dist=  0.61km  driver=E split=test
+2026-09-25 23:00:31,869  INFO        OK  V-Vtb13.csv               rows=  1,245 dur=  124.5s dist=  0.99km  driver=E split=test
+2026-09-25 23:00:31,900  INFO        OK  V-Vw1.csv                 rows= 20,475 dur= 2047.5s dist=  0.05km  driver=E split=test
+2026-09-25 23:00:31,982  INFO        OK  V-Vw2.csv                 rows= 52,712 dur= 5271.2s dist= 98.43km  driver=E split=test
+2026-09-25 23:00:31,992  INFO        OK  V-Vw3.csv                 rows=  3,941 dur=  394.1s dist=  5.04km  driver=E split=test
+2026-09-25 23:00:32,212  INFO        OK  V-Vw4.csv                 rows=126,573 dur=12657.3s dist=214.19km  driver=E split=test
+2026-09-25 23:00:32,218  INFO        OK  V-Vw5.csv                 rows=  1,050 dur=  105.0s dist=  0.70km  driver=E split=test
+2026-09-25 23:00:32,224  INFO        OK  V-Vw6.csv                 rows=  1,288 dur=  128.8s dist=  1.08km  driver=E split=test
+2026-09-25 23:00:32,230  INFO        OK  V-Vw7.csv                 rows=  1,689 dur=  168.9s dist=  1.23km  driver=E split=test
+2026-09-25 23:00:32,236  INFO        OK  V-Vw8.csv                 rows=  1,599 dur=  159.9s dist=  1.11km  driver=E split=test
+2026-09-25 23:00:32,241  INFO        OK  V-Vw9.csv                 rows=    601 dur=   60.1s dist=  0.45km  driver=E split=test
+2026-09-25 23:00:32,246  INFO        OK  V-Vw10.csv                rows=    670 dur=   67.0s dist=  0.74km  driver=E split=test
+2026-09-25 23:00:32,251  INFO        OK  V-Vw10.csv                rows=    670 dur=   67.0s dist=  0.74km  driver=E split=test
+2026-09-25 23:00:32,256  INFO        OK  V-Vw12.csv                rows=  1,069 dur=  106.9s dist=  2.68km  driver=E split=test
+2026-09-25 23:00:32,260  INFO        OK  V-Vw13.csv                rows=    297 dur=   29.7s dist=  0.82km  driver=E split=test
+2026-09-25 23:00:32,268  INFO        OK  V-Vw14a.csv               rows=  3,140 dur=  314.0s dist=  7.91km  driver=E split=test
+2026-09-25 23:00:32,298  INFO        OK  V-Vw14b.csv               rows= 19,600 dur= 1960.0s dist= 41.13km  driver=E split=test
+2026-09-25 23:00:32,322  INFO        OK  V-Vw14c.csv               rows= 15,857 dur= 1585.7s dist= 17.12km  driver=E split=test
+2026-09-25 23:00:32,327  INFO        OK  V-Vw15.csv                rows=  1,391 dur=  139.1s dist=  0.01km  driver=E split=test
+2026-09-25 23:00:32,339  INFO        OK  V-Vw16a.csv               rows=  6,000 dur=  600.0s dist=  8.47km  driver=E split=test
+2026-09-25 23:00:32,345  INFO        OK  V-Vw16b.csv               rows=  1,171 dur=  117.1s dist=  1.98km  driver=E split=test
+2026-09-25 23:00:32,349  INFO        OK  V-Vw17.csv                rows=    329 dur=   32.9s dist=  0.54km  driver=E split=test
+2026-09-25 23:00:32,458  INFO        OK  V-Y1.csv                  rows= 70,341 dur= 7034.1s dist= 60.75km  driver=D split=train
+2026-09-25 23:00:32,541  INFO        OK  V-Y2.csv                  rows= 57,213 dur= 5721.3s dist= 46.96km  driver=Unknown split=train
+2026-09-25 23:00:32,554  INFO        OK  S-A1.csv                  rows=  5,942 dur=  594.2s dist= 67.92km  driver=Unknown split=train
+2026-09-25 23:00:32,574  INFO        OK  S-A10.csv                 rows=  8,886 dur=  888.6s dist= 51.88km  driver=Unknown split=train
+2026-09-25 23:00:32,585  INFO        OK  S-A11.csv                 rows=  5,155 dur=  515.5s dist= 49.80km  driver=Unknown split=train
+2026-09-25 23:00:32,596  INFO        OK  S-A12.csv                 rows=  4,673 dur=  467.3s dist= 50.44km  driver=Unknown split=train
+2026-09-25 23:00:32,615  INFO        OK  S-A13.csv                 rows=  9,184 dur=  918.4s dist=324.81km  driver=Unknown split=train
+2026-09-25 23:00:32,638  INFO        OK  S-A2.csv                  rows= 11,630 dur= 1163.0s dist=166.63km  driver=Unknown split=train
+2026-09-25 23:00:32,660  INFO        OK  S-A3.csv                  rows= 11,132 dur= 1113.2s dist=128.15km  driver=Unknown split=train
+2026-09-25 23:00:32,730  INFO        OK  S-A4.csv                  rows= 32,829 dur= 3282.9s dist= 54.72km  driver=Unknown split=train
+2026-09-25 23:00:32,870  INFO        OK  S-A5.csv                  rows= 85,041 dur= 8504.1s dist=128.62km  driver=Unknown split=train
+2026-09-25 23:00:33,011  INFO        OK  S-A6.csv                  rows= 86,034 dur= 8603.4s dist=180.19km  driver=Unknown split=train
+2026-09-25 23:00:33,085  INFO        OK  S-A7.csv                  rows= 43,872 dur= 4387.2s dist=104.02km  driver=Unknown split=train
+2026-09-25 23:00:33,201  INFO        OK  S-A8.csv                  rows= 66,617 dur= 6661.7s dist=135.85km  driver=Unknown split=train
+2026-09-25 23:00:33,225  INFO        OK  S-A9.csv                  rows= 11,962 dur= 1196.2s dist= 66.09km  driver=Unknown split=train
+2026-09-25 23:00:33,237  INFO        OK  S-I.csv                   rows=  5,800 dur=  580.0s dist=  0.06km  driver=Unknown split=train
+2026-09-25 23:00:33,426  INFO        OK  S-M.csv                   rows=105,974 dur=10597.4s dist=101.86km  driver=B split=train
+2026-09-25 23:00:33,518  INFO        OK  S-S1.csv                  rows= 51,746 dur= 5174.6s dist= 37.16km  driver=A split=train
+2026-09-25 23:00:33,684  INFO        OK  S-S2.csv                  rows= 93,876 dur= 9387.6s dist= 73.67km  driver=A split=train
+2026-09-25 23:00:33,730  INFO        OK  S-S3a.csv                 rows= 24,621 dur= 2462.1s dist= 25.34km  driver=A split=train
+2026-09-25 23:00:33,744  INFO        OK  S-S3b.csv                 rows=  6,813 dur=  681.3s dist=  3.63km  driver=A split=train
+2026-09-25 23:00:33,807  INFO        OK  S-S3c.csv                 rows= 37,183 dur= 3718.3s dist= 43.23km  driver=A split=train
+2026-09-25 23:00:33,965  INFO        OK  S-S4.csv                  rows= 94,600 dur= 9460.0s dist= 91.35km  driver=A split=train
+2026-09-25 23:00:34,004  INFO        OK  S-T1.csv                  rows= 25,759 dur= 2575.9s dist= 76.20km  driver=Unknown split=train
+2026-09-25 23:00:34,018  INFO        OK  S-T10.csv                 rows=  6,699 dur=  669.9s dist=  6.56km  driver=Unknown split=train
+2026-09-25 23:00:34,030  INFO        OK  S-T11.csv                 rows=  5,690 dur=  569.0s dist=  2.28km  driver=Unknown split=train
+2026-09-25 23:00:34,142  INFO        OK  S-T2.csv                  rows= 75,555 dur= 7555.5s dist=201.23km  driver=Unknown split=train
+2026-09-25 23:00:34,243  INFO        OK  S-T3.csv                  rows= 65,859 dur= 6585.9s dist=151.00km  driver=Unknown split=train
+2026-09-25 23:00:34,346  INFO        OK  S-T4.csv                  rows= 73,482 dur= 7348.2s dist=151.67km  driver=Unknown split=train
+2026-09-25 23:00:34,414  INFO        OK  S-T5.csv                  rows= 46,387 dur= 4638.7s dist=136.82km  driver=Unknown split=train
+2026-09-25 23:00:34,533  INFO        OK  S-T6.csv                  rows= 86,440 dur= 8644.0s dist=212.57km  driver=Unknown split=train
+2026-09-25 23:00:34,687  INFO        OK  S-T7.csv                  rows=101,690 dur=10169.0s dist=246.86km  driver=Unknown split=train
+2026-09-25 23:00:34,786  INFO        OK  S-T8.csv                  rows= 48,344 dur= 4834.4s dist=124.87km  driver=Unknown split=train
+2026-09-25 23:00:34,903  INFO        OK  S-T9.csv                  rows= 79,909 dur= 7990.9s dist=205.23km  driver=Unknown split=train
+2026-09-25 23:00:34,926  INFO        OK  S-Vfa01.csv               rows= 11,486 dur= 1148.6s dist= 18.56km  driver=E split=test
+2026-09-25 23:00:35,045  INFO        OK  S-Vfa02.csv               rows= 67,523 dur= 6752.3s dist=162.60km  driver=E split=test
+2026-09-25 23:00:35,051  INFO        OK  S-Vta10.csv               rows=  1,502 dur=  150.2s dist=  3.58km  driver=E split=test
+2026-09-25 23:00:35,055  INFO        OK  S-Vta11.csv               rows=    510 dur=   51.0s dist=  0.57km  driver=E split=test
+2026-09-25 23:00:35,060  INFO        OK  S-Vta12.csv               rows=    610 dur=   61.0s dist=  0.97km  driver=E split=test
+2026-09-25 23:00:35,064  INFO        OK  S-Vta13.csv               rows=    404 dur=   40.4s dist=  1.07km  driver=E split=test
+2026-09-25 23:00:35,072  INFO        OK  S-Vta14.csv               rows=  2,885 dur=  288.5s dist=  5.41km  driver=E split=test
+2026-09-25 23:00:35,077  INFO        OK  S-Vta15.csv               rows=    833 dur=   83.3s dist=  1.61km  driver=E split=test
+2026-09-25 23:00:35,098  INFO        OK  S-Vta16.csv               rows= 11,335 dur= 1133.5s dist= 13.47km  driver=E split=test
+2026-09-25 23:00:35,109  INFO        OK  S-Vta17.csv               rows=  4,519 dur=  451.9s dist=  4.00km  driver=E split=test
+2026-09-25 23:00:35,113  INFO        OK  S-Vta19.csv               rows=    292 dur=   29.2s dist=  0.23km  driver=E split=test
+2026-09-25 23:00:35,162  INFO        OK  S-Vta1a.csv               rows= 25,676 dur= 2567.6s dist= 40.42km  driver=E split=calibration
+2026-09-25 23:00:35,167  INFO        OK  S-Vta1b.csv               rows=    954 dur=   95.4s dist=  1.25km  driver=E split=test
+2026-09-25 23:00:35,190  INFO        OK  S-Vta2.csv                rows= 10,991 dur= 1099.1s dist= 11.05km  driver=E split=test
+2026-09-25 23:00:35,198  INFO        OK  S-Vta20.csv               rows=  3,223 dur=  322.3s dist=  0.65km  driver=E split=test
+2026-09-25 23:00:35,205  INFO        OK  S-Vta21.csv               rows=  2,079 dur=  207.9s dist=  3.08km  driver=E split=test
+2026-09-25 23:00:35,211  INFO        OK  S-Vta22.csv               rows=  1,564 dur=  156.4s dist=  1.61km  driver=E split=test
+2026-09-25 23:00:35,216  INFO        OK  S-Vta23.csv               rows=  1,110 dur=  111.0s dist=  1.05km  driver=E split=test
+2026-09-25 23:00:35,221  INFO        OK  S-Vta24.csv               rows=  1,171 dur=  117.1s dist=  0.68km  driver=E split=test
+2026-09-25 23:00:35,226  INFO        OK  S-Vta25.csv               rows=    646 dur=   64.6s dist=  0.13km  driver=E split=test
+2026-09-25 23:00:35,232  INFO        OK  S-Vta26.csv               rows=  1,935 dur=  193.5s dist=  0.99km  driver=E split=test
+2026-09-25 23:00:35,240  INFO        OK  S-Vta27.csv               rows=  2,540 dur=  254.0s dist=  2.73km  driver=E split=test
+2026-09-25 23:00:35,251  INFO        OK  S-Vta28.csv               rows=  4,210 dur=  421.0s dist=  3.87km  driver=E split=test
+2026-09-25 23:00:35,292  INFO        OK  S-Vta29.csv               rows= 23,705 dur= 2370.5s dist= 25.49km  driver=E split=test
+2026-09-25 23:00:35,297  INFO        OK  S-Vta3.csv                rows=    645 dur=   64.5s dist=  0.15km  driver=E split=test
+2026-09-25 23:00:35,328  INFO        OK  S-Vta30.csv               rows= 17,136 dur= 1713.6s dist= 11.86km  driver=E split=test
+2026-09-25 23:00:35,335  INFO        OK  S-Vta4.csv                rows=  1,789 dur=  178.9s dist=  1.98km  driver=E split=test
+2026-09-25 23:00:35,339  INFO        OK  S-Vta5.csv                rows=    307 dur=   30.7s dist=  0.31km  driver=E split=test
+2026-09-25 23:00:35,344  INFO        OK  S-Vta6.csv                rows=  1,376 dur=  137.6s dist=  2.53km  driver=E split=test
+2026-09-25 23:00:35,349  INFO        OK  S-Vta7.csv                rows=    840 dur=   84.0s dist=  1.45km  driver=E split=test
+2026-09-25 23:00:35,358  INFO        OK  S-Vta8.csv                rows=  3,676 dur=  367.6s dist=  3.29km  driver=E split=test
+2026-09-25 23:00:35,362  INFO        OK  S-Vta9.csv                rows=    156 dur=   15.6s dist=  0.16km  driver=E split=test
+2026-09-25 23:00:35,425  INFO        OK  S-Vtb1.csv                rows= 32,459 dur= 3245.9s dist= 40.17km  driver=E split=test
+2026-09-25 23:00:35,429  INFO        OK  S-Vtb10.csv               rows=    196 dur=   19.6s dist=  0.21km  driver=E split=test
+2026-09-25 23:00:35,434  INFO        OK  S-Vtb11.csv               rows=    361 dur=   36.1s dist=  0.70km  driver=E split=test
+2026-09-25 23:00:35,438  INFO        OK  S-Vtb12.csv               rows=    447 dur=   44.7s dist=  0.40km  driver=E split=test
+2026-09-25 23:00:35,450  INFO        OK  S-Vtb2.csv                rows=  5,712 dur=  571.2s dist=  4.26km  driver=E split=test
+2026-09-25 23:00:35,468  INFO        OK  S-Vtb3.csv                rows=  8,240 dur=  824.0s dist=  1.55km  driver=E split=test
+2026-09-25 23:00:35,473  INFO        OK  S-Vtb4.csv                rows=    556 dur=   55.6s dist=  0.22km  driver=E split=test
+2026-09-25 23:00:35,589  INFO        OK  S-Vtb5.csv                rows= 64,388 dur= 6438.8s dist=110.64km  driver=E split=test
+2026-09-25 23:00:35,593  INFO        OK  S-Vtb6.csv                rows=    498 dur=   49.8s dist=  0.79km  driver=E split=test
+2026-09-25 23:00:35,598  INFO        OK  S-Vtb7.csv                rows=    461 dur=   46.1s dist=  0.70km  driver=E split=test
+2026-09-25 23:00:35,602  INFO        OK  S-Vtb8.csv                rows=    668 dur=   66.8s dist=  1.22km  driver=E split=test
+2026-09-25 23:00:35,606  INFO        OK  S-Vtb9.csv                rows=    452 dur=   45.2s dist=  0.96km  driver=E split=test
+2026-09-25 23:00:35,641  INFO        OK  S-Vw1.csv                 rows= 20,476 dur= 2047.6s dist=  0.00km  driver=E split=test
+2026-09-25 23:00:35,645  INFO        OK  S-Vw10.csv                rows=    652 dur=   65.2s dist=  0.70km  driver=E split=test
+2026-09-25 23:00:35,656  INFO        OK  S-Vw11.csv                rows=  4,909 dur=  490.9s dist=  5.61km  driver=E split=test
+2026-09-25 23:00:35,661  INFO        OK  S-Vw12.csv                rows=    918 dur=   91.8s dist=  2.25km  driver=E split=test
+2026-09-25 23:00:35,665  INFO        OK  S-Vw13.csv                rows=    284 dur=   28.4s dist=  0.74km  driver=E split=test
+2026-09-25 23:00:35,673  INFO        OK  S-Vw14a.csv               rows=  3,138 dur=  313.8s dist=  7.93km  driver=E split=test
+2026-09-25 23:00:35,707  INFO        OK  S-Vw14b.csv               rows= 19,588 dur= 1958.8s dist= 41.14km  driver=E split=test
+2026-09-25 23:00:35,737  INFO        OK  S-Vw14c.csv               rows= 15,826 dur= 1582.6s dist= 16.98km  driver=E split=test
+2026-09-25 23:00:35,743  INFO        OK  S-Vw15.csv                rows=  1,380 dur=  138.0s dist=  0.00km  driver=E split=test
+2026-09-25 23:00:35,755  INFO        OK  S-Vw16a.csv               rows=  5,879 dur=  587.9s dist=  8.18km  driver=E split=test
+2026-09-25 23:00:35,760  INFO        OK  S-Vw16b.csv               rows=  1,126 dur=  112.6s dist=  1.81km  driver=E split=test
+2026-09-25 23:00:35,764  INFO        OK  S-Vw17.csv                rows=    329 dur=   32.9s dist=  0.46km  driver=E split=test
+2026-09-25 23:00:35,857  INFO        OK  S-Vw2.csv                 rows= 52,713 dur= 5271.3s dist= 98.07km  driver=E split=test
+2026-09-25 23:00:35,868  INFO        OK  S-Vw3.csv                 rows=  3,861 dur=  386.1s dist=  4.82km  driver=E split=test
+2026-09-25 23:00:36,085  INFO        OK  S-Vw4.csv                 rows=126,526 dur=12652.6s dist=212.59km  driver=E split=test
+2026-09-25 23:00:36,091  INFO        OK  S-Vw5.csv                 rows=  1,012 dur=  101.2s dist=  0.64km  driver=E split=test
+2026-09-25 23:00:36,096  INFO        OK  S-Vw6.csv                 rows=  1,281 dur=  128.1s dist=  1.05km  driver=E split=test
+2026-09-25 23:00:36,102  INFO        OK  S-Vw7.csv                 rows=  1,602 dur=  160.2s dist=  1.02km  driver=E split=test
+2026-09-25 23:00:36,109  INFO        OK  S-Vw8.csv                 rows=  1,529 dur=  152.9s dist=  0.96km  driver=E split=test
+2026-09-25 23:00:36,113  INFO        OK  S-Vw9.csv                 rows=    552 dur=   55.2s dist=  0.42km  driver=E split=test
+2026-09-25 23:00:36,237  INFO        OK  S-Y1.csv                  rows= 70,285 dur= 7028.5s dist= 58.19km  driver=D split=train
+2026-09-25 23:00:36,425  INFO        OK  V-M.csv                   rows=105,995 dur=10599.5s dist=105.23km  driver=B split=train
+2026-09-25 23:00:36,508  INFO        OK  V-S1.csv                  rows= 51,790 dur= 5179.0s dist= 38.07km  driver=A split=train
+2026-09-25 23:00:36,668  INFO        OK  V-S2.csv                  rows= 93,900 dur= 9390.0s dist= 75.48km  driver=A split=train
+2026-09-25 23:00:36,706  INFO        OK  V-S3a.csv                 rows= 24,660 dur= 2466.0s dist= 25.93km  driver=A split=train
+2026-09-25 23:00:36,721  INFO        OK  V-S3b.csv                 rows=  6,840 dur=  684.0s dist=  3.80km  driver=A split=train
+2026-09-25 23:00:36,775  INFO        OK  V-S3c.csv                 rows= 37,220 dur= 3722.0s dist= 44.18km  driver=A split=train
+2026-09-25 23:00:36,932  INFO        OK  V-S4.csv                  rows= 97,824 dur= 9782.4s dist= 93.71km  driver=A split=train
+2026-09-25 23:00:37,015  INFO        OK  V-St1.csv                 rows= 57,213 dur= 5721.3s dist= 46.96km  driver=Unknown split=train
+2026-09-25 23:00:37,037  INFO        OK  V-St4.csv                 rows= 13,591 dur= 1359.1s dist= 28.43km  driver=Unknown split=train
+2026-09-25 23:00:37,115  INFO        OK  V-St6.csv                 rows= 51,360 dur= 5136.0s dist=113.42km  driver=Unknown split=train
+2026-09-25 23:00:37,189  INFO        OK  V-St7.csv                 rows= 44,427 dur= 4442.7s dist= 89.92km  driver=Unknown split=train
+2026-09-25 23:00:37,208  INFO        OK  V-Vfa01.csv               rows= 11,535 dur= 1153.5s dist= 18.78km  driver=E split=test
+2026-09-25 23:00:37,318  INFO        OK  V-Vfa02.csv               rows= 67,755 dur= 6775.5s dist=163.11km  driver=E split=test
+2026-09-25 23:00:37,344  INFO        OK  V-Vfb01a.csv              rows= 17,000 dur= 1700.0s dist=  6.80km  driver=E split=test
+2026-09-25 23:00:37,353  INFO        OK  V-Vfb01b.csv              rows=  3,880 dur=  388.0s dist=  4.07km  driver=E split=test
+2026-09-25 23:00:37,365  INFO        OK  V-Vfb01c.csv              rows=  6,320 dur=  632.0s dist= 10.63km  driver=E split=test
+2026-09-25 23:00:37,385  INFO        OK  V-Vfb01d.csv              rows= 10,713 dur= 1071.3s dist=  3.39km  driver=E split=test
+2026-09-25 23:00:37,437  INFO        OK  V-Vfb02a.csv              rows= 35,960 dur= 3596.0s dist= 96.36km  driver=E split=test
+2026-09-25 23:00:37,456  INFO        OK  V-Vfb02b.csv              rows= 11,000 dur= 1100.0s dist=  7.67km  driver=E split=test
+2026-09-25 23:00:37,461  INFO        OK  V-Vfb02c.csv              rows=    640 dur=   64.0s dist=  0.53km  driver=E split=test
+2026-09-25 23:00:37,467  INFO        OK  V-Vfb02d.csv              rows=    880 dur=   88.0s dist=  0.84km  driver=E split=test
+2026-09-25 23:00:37,472  INFO        OK  V-Vfb02e.csv              rows=    980 dur=   98.0s dist=  1.52km  driver=E split=test
+2026-09-25 23:00:37,477  INFO        OK  V-Vfb02f.csv              rows=    660 dur=   66.0s dist=  0.47km  driver=E split=test
+2026-09-25 23:00:37,519  INFO        OK  V-Vfb02g.csv              rows= 27,159 dur= 2715.9s dist= 63.46km  driver=E split=test
+2026-09-25 23:00:37,526  INFO        OK  V-Vta10.csv               rows=  1,570 dur=  157.0s dist=  3.94km  driver=E split=test
+2026-09-25 23:00:37,531  INFO        OK  V-Vta11.csv               rows=    589 dur=   58.9s dist=  0.92km  driver=E split=test
+2026-09-25 23:00:37,536  INFO        OK  V-Vta12.csv               rows=    690 dur=   69.0s dist=  1.26km  driver=E split=test
+2026-09-25 23:00:37,541  INFO        OK  V-Vta13.csv               rows=    473 dur=   47.3s dist=  1.14km  driver=E split=test
+2026-09-25 23:00:37,548  INFO        OK  V-Vta14.csv               rows=  2,893 dur=  289.3s dist=  5.44km  driver=E split=test
+2026-09-25 23:00:37,554  INFO        OK  V-Vta15.csv               rows=    869 dur=   86.9s dist=  1.72km  driver=E split=test
+2026-09-25 23:00:37,573  INFO        OK  V-Vta16.csv               rows= 11,361 dur= 1136.1s dist= 13.70km  driver=E split=test
+2026-09-25 23:00:37,582  INFO        OK  V-Vta17.csv               rows=  4,594 dur=  459.4s dist=  4.18km  driver=E split=test
+2026-09-25 23:00:37,587  INFO        OK  V-Vta18.csv               rows=    100 dur=   10.0s dist=  0.13km  driver=E split=test
+2026-09-25 23:00:37,592  INFO        OK  V-Vta19.csv               rows=    310 dur=   31.0s dist=  0.26km  driver=E split=test
+2026-09-25 23:00:37,629  INFO        OK  V-Vta1a.csv               rows= 25,821 dur= 2582.1s dist= 40.67km  driver=E split=calibration
+2026-09-25 23:00:37,635  INFO        OK  V-Vta1b.csv               rows=    956 dur=   95.6s dist=  1.26km  driver=E split=test
+2026-09-25 23:00:37,654  INFO        OK  V-Vta2.csv                rows= 10,995 dur= 1099.5s dist= 11.05km  driver=E split=test
+2026-09-25 23:00:37,662  INFO        OK  V-Vta20.csv               rows=  3,223 dur=  322.3s dist=  0.39km  driver=E split=test
+2026-09-25 23:00:37,669  INFO        OK  V-Vta21.csv               rows=  2,088 dur=  208.8s dist=  2.76km  driver=E split=test
+2026-09-25 23:00:37,675  INFO        OK  V-Vta22.csv               rows=  1,572 dur=  157.2s dist=  1.67km  driver=E split=test
+2026-09-25 23:00:37,681  INFO        OK  V-Vta23.csv               rows=  1,119 dur=  111.9s dist=  1.10km  driver=E split=test
+2026-09-25 23:00:37,686  INFO        OK  V-Vta24.csv               rows=  1,184 dur=  118.4s dist=  0.71km  driver=E split=test
+2026-09-25 23:00:37,691  INFO        OK  V-Vta25.csv               rows=    646 dur=   64.6s dist=  0.16km  driver=E split=test
+2026-09-25 23:00:37,697  INFO        OK  V-Vta26.csv               rows=  1,947 dur=  194.7s dist=  1.01km  driver=E split=test
+2026-09-25 23:00:37,705  INFO        OK  V-Vta27.csv               rows=  2,853 dur=  285.3s dist=  3.16km  driver=E split=test
+2026-09-25 23:00:37,717  INFO        OK  V-Vta28.csv               rows=  4,219 dur=  421.9s dist=  3.93km  driver=E split=test
+2026-09-25 23:00:37,752  INFO        OK  V-Vta29.csv               rows= 23,737 dur= 2373.7s dist= 26.07km  driver=E split=test
+2026-09-25 23:00:37,758  INFO        OK  V-Vta3.csv                rows=    875 dur=   87.5s dist=  0.38km  driver=E split=test
+2026-09-25 23:00:37,783  INFO        OK  V-Vta30.csv               rows= 17,179 dur= 1717.9s dist= 11.75km  driver=E split=test
+2026-09-25 23:00:37,789  INFO        OK  V-Vta4.csv                rows=  1,809 dur=  180.9s dist=  2.01km  driver=E split=test
+2026-09-25 23:00:37,821  INFO        OK  V-Vta5.csv                rows=    357 dur=   35.7s dist=  0.42km  driver=E split=test
+2026-09-25 23:00:37,827  INFO        OK  V-Vta6.csv                rows=  1,393 dur=  139.3s dist=  2.61km  driver=E split=test
+2026-09-25 23:00:37,833  INFO        OK  V-Vta7.csv                rows=    857 dur=   85.7s dist=  1.54km  driver=E split=test
+2026-09-25 23:00:37,870  INFO        OK  V-Vta8.csv                rows=  3,697 dur=  369.7s dist=  3.42km  driver=E split=test
+2026-09-25 23:00:37,880  INFO        OK  V-Vta9.csv                rows=    226 dur=   22.6s dist=  0.43km  driver=E split=test
+2026-09-25 23:00:37,927  INFO        OK  V-Vtb1.csv                rows= 32,459 dur= 3245.9s dist= 41.85km  driver=E split=test
+2026-09-25 23:00:37,932  INFO        OK  V-Vtb10.csv               rows=    195 dur=   19.5s dist=  0.22km  driver=E split=test
+2026-09-25 23:00:37,936  INFO        OK  V-Vtb11.csv               rows=    433 dur=   43.3s dist=  0.84km  driver=E split=test
+2026-09-25 23:00:37,941  INFO        OK  V-Vtb12.csv               rows=    490 dur=   49.0s dist=  0.61km  driver=E split=test
+2026-09-25 23:00:37,947  INFO        OK  V-Vtb13.csv               rows=  1,245 dur=  124.5s dist=  0.99km  driver=E split=test
+2026-09-25 23:00:37,957  INFO        OK  V-Vtb2.csv                rows=  5,712 dur=  571.2s dist=  4.34km  driver=E split=test
+2026-09-25 23:00:37,972  INFO        OK  V-Vtb3.csv                rows=  8,289 dur=  828.9s dist=  0.70km  driver=E split=test
+2026-09-25 23:00:37,977  INFO        OK  V-Vtb4.csv                rows=    625 dur=   62.5s dist=  0.27km  driver=E split=test
+2026-09-25 23:00:38,076  INFO        OK  V-Vtb5.csv                rows= 64,610 dur= 6461.0s dist=111.45km  driver=E split=test
+2026-09-25 23:00:38,082  INFO        OK  V-Vtb6.csv                rows=    508 dur=   50.8s dist=  0.89km  driver=E split=test
+2026-09-25 23:00:38,086  INFO        OK  V-Vtb7.csv                rows=    461 dur=   46.1s dist=  0.72km  driver=E split=test
+2026-09-25 23:00:38,091  INFO        OK  V-Vtb8.csv                rows=    699 dur=   69.9s dist=  1.35km  driver=E split=test
+2026-09-25 23:00:38,096  INFO        OK  V-Vtb9.csv                rows=    457 dur=   45.7s dist=  0.97km  driver=E split=test
+2026-09-25 23:00:38,125  INFO        OK  V-Vw1.csv                 rows= 20,475 dur= 2047.5s dist=  0.05km  driver=E split=test
+2026-09-25 23:00:38,130  INFO        OK  V-Vw10.csv                rows=    670 dur=   67.0s dist=  0.74km  driver=E split=test
+2026-09-25 23:00:38,140  INFO        OK  V-Vw11.csv                rows=  4,924 dur=  492.4s dist=  5.84km  driver=E split=test
+2026-09-25 23:00:38,145  INFO        OK  V-Vw12.csv                rows=  1,069 dur=  106.9s dist=  2.68km  driver=E split=test
+2026-09-25 23:00:38,150  INFO        OK  V-Vw13.csv                rows=    297 dur=   29.7s dist=  0.82km  driver=E split=test
+2026-09-25 23:00:38,158  INFO        OK  V-Vw14a.csv               rows=  3,140 dur=  314.0s dist=  7.91km  driver=E split=test
+2026-09-25 23:00:38,189  INFO        OK  V-Vw14b.csv               rows= 19,600 dur= 1960.0s dist= 41.13km  driver=E split=test
+2026-09-25 23:00:38,213  INFO        OK  V-Vw14c.csv               rows= 15,857 dur= 1585.7s dist= 17.12km  driver=E split=test
+2026-09-25 23:00:38,219  INFO        OK  V-Vw15.csv                rows=  1,391 dur=  139.1s dist=  0.01km  driver=E split=test
+2026-09-25 23:00:38,230  INFO        OK  V-Vw16a.csv               rows=  6,000 dur=  600.0s dist=  8.47km  driver=E split=test
+2026-09-25 23:00:38,235  INFO        OK  V-Vw16b.csv               rows=  1,171 dur=  117.1s dist=  1.98km  driver=E split=test
+2026-09-25 23:00:38,239  INFO        OK  V-Vw17.csv                rows=    329 dur=   32.9s dist=  0.54km  driver=E split=test
+2026-09-25 23:00:38,327  INFO        OK  V-Vw2.csv                 rows= 52,712 dur= 5271.2s dist= 98.43km  driver=E split=test
+2026-09-25 23:00:38,337  INFO        OK  V-Vw3.csv                 rows=  3,941 dur=  394.1s dist=  5.04km  driver=E split=test
+2026-09-25 23:00:38,577  INFO        OK  V-Vw4.csv                 rows=126,573 dur=12657.3s dist=214.19km  driver=E split=test
+2026-09-25 23:00:38,583  INFO        OK  V-Vw5.csv                 rows=  1,050 dur=  105.0s dist=  0.70km  driver=E split=test
+2026-09-25 23:00:38,589  INFO        OK  V-Vw6.csv                 rows=  1,288 dur=  128.8s dist=  1.08km  driver=E split=test
+2026-09-25 23:00:38,595  INFO        OK  V-Vw7.csv                 rows=  1,689 dur=  168.9s dist=  1.23km  driver=E split=test
+2026-09-25 23:00:38,601  INFO        OK  V-Vw8.csv                 rows=  1,599 dur=  159.9s dist=  1.11km  driver=E split=test
+2026-09-25 23:00:38,606  INFO        OK  V-Vw9.csv                 rows=    601 dur=   60.1s dist=  0.45km  driver=E split=test
+2026-09-25 23:00:38,713  INFO        OK  V-Y1.csv                  rows= 70,341 dur= 7034.1s dist= 60.75km  driver=D split=train
+2026-09-25 23:00:38,796  INFO        OK  V-Y2.csv                  rows= 57,213 dur= 5721.3s dist= 46.96km  driver=Unknown split=train
+2026-09-25 23:00:38,812  INFO        OK  S-M.csv                   rows=  8,000 dur=  800.0s dist=1241.07km  driver=B split=train
+2026-09-25 23:00:38,830  INFO        OK  S-S1.csv                  rows=  9,000 dur=  900.0s dist=2663.10km  driver=A split=train
+2026-09-25 23:00:38,845  INFO        OK  S-S2.csv                  rows=  7,200 dur=  720.0s dist=13764.25km  driver=A split=train
+2026-09-25 23:00:38,857  INFO        OK  S-S3a.csv                 rows=  6,000 dur=  600.0s dist=1449.37km  driver=A split=train
+2026-09-25 23:00:38,867  INFO        OK  S-S3b.csv                 rows=  5,000 dur=  500.0s dist=1235.37km  driver=A split=train
+2026-09-25 23:00:38,883  INFO        OK  S-Vfa01.csv               rows=  7,500 dur=  750.0s dist=14982.57km  driver=E split=test
+2026-09-25 23:00:38,899  INFO        OK  S-Vfa02.csv               rows=  8,200 dur=  820.0s dist=18040.41km  driver=E split=test
+2026-09-25 23:00:38,929  INFO        OK  S-Vta1a.csv               rows= 18,000 dur= 1800.0s dist= 13.65km  driver=E split=calibration
+2026-09-25 23:00:38,942  INFO        OK  S-Vtb1.csv                rows=  6,000 dur=  600.0s dist=726.59km  driver=E split=test
+2026-09-25 23:00:38,953  INFO        OK  S-Vtb2.csv                rows=  5,500 dur=  550.0s dist=611.80km  driver=E split=test
+2026-09-25 23:00:38,968  INFO        OK  S-Vw1.csv                 rows=  7,000 dur=  700.0s dist=1030.93km  driver=E split=test
+2026-09-25 23:00:38,982  INFO        OK  S-Y1.csv                  rows=  6,500 dur=  650.0s dist=1107.91km  driver=D split=train
+2026-09-25 23:00:39,001  INFO        OK  V-M.csv                   rows=  8,000 dur=  800.0s dist=  5.77km  driver=B split=train
+2026-09-25 23:00:39,023  INFO        OK  V-S1.csv                  rows=  9,000 dur=  900.0s dist=  7.03km  driver=A split=train
+2026-09-25 23:00:39,045  INFO        OK  V-S2.csv                  rows=  7,200 dur=  720.0s dist= 20.70km  driver=A split=train
+2026-09-25 23:00:39,062  INFO        OK  V-S3a.csv                 rows=  6,000 dur=  600.0s dist=  4.95km  driver=A split=train
+2026-09-25 23:00:39,075  INFO        OK  V-S3b.csv                 rows=  5,000 dur=  500.0s dist=  3.72km  driver=A split=train
+2026-09-25 23:00:39,100  INFO        OK  V-Vfa01.csv               rows=  7,500 dur=  750.0s dist= 21.59km  driver=E split=test
+2026-09-25 23:00:39,121  INFO        OK  V-Vfa02.csv               rows=  8,200 dur=  820.0s dist= 23.70km  driver=E split=test
+2026-09-25 23:00:39,161  INFO        OK  V-Vta1a.csv               rows= 18,000 dur= 1800.0s dist=  0.00km  driver=E split=calibration
+2026-09-25 23:00:39,178  INFO        OK  V-Vtb1.csv                rows=  6,000 dur=  600.0s dist=  4.34km  driver=E split=test
+2026-09-25 23:00:39,193  INFO        OK  V-Vtb2.csv                rows=  5,500 dur=  550.0s dist=  4.02km  driver=E split=test
+2026-09-25 23:00:39,212  INFO        OK  V-Vw1.csv                 rows=  7,000 dur=  700.0s dist=  5.01km  driver=E split=test
+2026-09-25 23:00:39,229  INFO        OK  V-Y1.csv                  rows=  6,500 dur=  650.0s dist=  4.70km  driver=D split=train
+2026-09-25 23:00:39,229  INFO      
+── MANIFEST SUMMARY ──
+2026-09-25 23:00:39,229  INFO        total_paths: 588
+2026-09-25 23:00:39,229  INFO        loaded_ok: 588
+2026-09-25 23:00:39,229  INFO        lfs_pointers: 0
+2026-09-25 23:00:39,229  INFO        parse_failures: 0
+2026-09-25 23:00:39,229  INFO        failure_paths: []
+2026-09-25 23:00:39,229  INFO        split_counts: {'train': 103, 'val': 0, 'test': 476, 'calibration': 9}
+2026-09-25 23:00:39,229  INFO        type_counts: {'V': 335, 'S': 253}
+2026-09-25 23:00:39,235  INFO      
+Manifest saved → /Users/vivekwarang/sih/phase1/outputs/dataset_manifest.json
+2026-09-25 23:00:39,235  INFO      Calibration candidates: ['Vta1a', 'Vta1a', 'Vta1a', 'Vta1a']
+2026-09-25 23:00:39,235  INFO        [Vta1a] Stationary fraction (V-file): 100.0%
+2026-09-25 23:00:39,237  INFO        [Vta1a] Calibrating from 18000 stationary samples (1800.0 s)
+2026-09-25 23:00:39,290  INFO        [Vta1a] Allan deviation computed for 4 signals
+2026-09-25 23:00:39,290  INFO        [Vta1a] Saved → /Users/vivekwarang/sih/phase1/outputs/calibration/calibration_Vta1a.json
+2026-09-25 23:00:39,291  INFO        [Vta1a] Stationary fraction (V-file): 100.0%
+2026-09-25 23:00:39,292  INFO        [Vta1a] Calibrating from 18000 stationary samples (1800.0 s)
+2026-09-25 23:00:39,333  INFO        [Vta1a] Allan deviation computed for 3 signals
+2026-09-25 23:00:39,333  INFO        [Vta1a] Saved → /Users/vivekwarang/sih/phase1/outputs/calibration/calibration_Vta1a.json
+2026-09-25 23:00:39,333  INFO        [Vta1a] Stationary fraction (V-file): 100.0%
+2026-09-25 23:00:39,334  INFO        [Vta1a] Calibrating from 18000 stationary samples (1800.0 s)
+2026-09-25 23:00:39,387  INFO        [Vta1a] Allan deviation computed for 4 signals
+2026-09-25 23:00:39,387  INFO        [Vta1a] Saved → /Users/vivekwarang/sih/phase1/outputs/calibration/calibration_Vta1a.json
+2026-09-25 23:00:39,387  INFO        [Vta1a] Stationary fraction (V-file): 100.0%
+2026-09-25 23:00:39,388  INFO        [Vta1a] Calibrating from 18000 stationary samples (1800.0 s)
+2026-09-25 23:00:39,389  INFO        [Vta1a] Allan deviation computed for 0 signals
+2026-09-25 23:00:39,390  INFO        [Vta1a] Saved → /Users/vivekwarang/sih/phase1/outputs/calibration/calibration_Vta1a.json
+2026-09-25 23:00:39,390  INFO      Calibration report → /Users/vivekwarang/sih/phase1/outputs/reports/calibration_report.md
+2026-09-25 23:00:39,390  INFO      [M] Estimating alignment…
+2026-09-25 23:00:39,391  INFO        [M] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:39,391  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,407  WARNING     [M] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:39,407  INFO        [M] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,407  INFO      [S1] Estimating alignment…
+2026-09-25 23:00:39,407  INFO        [S1] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:39,408  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,419  WARNING     [S1] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:39,419  INFO        [S1] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,419  INFO      [S2] Estimating alignment…
+2026-09-25 23:00:39,419  INFO        [S2] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:39,419  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,426  WARNING     [S2] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:39,427  INFO        [S2] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,427  INFO      [S3a] Estimating alignment…
+2026-09-25 23:00:39,427  INFO        [S3a] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:39,427  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,429  WARNING     [S3a] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:39,429  INFO        [S3a] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,429  INFO      [S3b] Estimating alignment…
+2026-09-25 23:00:39,429  INFO        [S3b] Pitch=-0.02°  Roll=-0.02°
+2026-09-25 23:00:39,430  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,431  WARNING     [S3b] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:39,431  INFO        [S3b] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,431  INFO      [S3c] Estimating alignment…
+2026-09-25 23:00:39,431  INFO        [S3c] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:39,437  INFO        Yaw offset estimated from 230 windows: 154.11°  (std=117.62°)
+2026-09-25 23:00:39,440  INFO        [S3c] Alignment validation: r_raw=-0.054 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,440  INFO      [S4] Estimating alignment…
+2026-09-25 23:00:39,440  INFO        [S4] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:39,459  INFO        Yaw offset estimated from 832 windows: 42.02°  (std=97.47°)
+2026-09-25 23:00:39,468  INFO        [S4] Alignment validation: r_raw=0.046 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,468  INFO      [Vfa01] Estimating alignment…
+2026-09-25 23:00:39,468  INFO        [Vfa01] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:39,468  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,470  WARNING     [Vfa01] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:39,471  INFO        [Vfa01] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,471  INFO      [Vfa02] Estimating alignment…
+2026-09-25 23:00:39,471  INFO        [Vfa02] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:39,471  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,481  WARNING     [Vfa02] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:39,481  INFO        [Vfa02] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,481  INFO      [Vta1b] Estimating alignment…
+2026-09-25 23:00:39,481  INFO        [Vta1b] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:39,482  INFO        Yaw offset estimated from 38 windows: 62.73°  (std=19.01°)
+2026-09-25 23:00:39,483  INFO        [Vta1b] Alignment validation: r_raw=0.236 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,483  INFO      [Vta2] Estimating alignment…
+2026-09-25 23:00:39,483  INFO        [Vta2] Pitch=-0.02°  Roll=-0.02°
+2026-09-25 23:00:39,516  INFO        Yaw offset estimated from 2014 windows: 116.20°  (std=90.94°)
+2026-09-25 23:00:39,518  INFO        [Vta2] Alignment validation: r_raw=0.272 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,518  INFO      [Vta3] Estimating alignment…
+2026-09-25 23:00:39,518  INFO        [Vta3] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:39,519  INFO        Yaw offset estimated from 15 windows: 63.15°  (std=0.42°)
+2026-09-25 23:00:39,520  INFO        [Vta3] Alignment validation: r_raw=-0.166 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,520  INFO      [Vta4] Estimating alignment…
+2026-09-25 23:00:39,520  INFO        [Vta4] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:39,525  INFO        Yaw offset estimated from 290 windows: 49.25°  (std=19.16°)
+2026-09-25 23:00:39,526  INFO        [Vta4] Alignment validation: r_raw=0.029 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,526  INFO      [Vta5] Estimating alignment…
+2026-09-25 23:00:39,526  INFO        [Vta5] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:39,526  INFO        Yaw offset estimated from 17 windows: 45.84°  (std=0.55°)
+2026-09-25 23:00:39,527  INFO        [Vta5] Alignment validation: r_raw=-0.216 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,527  INFO      [Vta6] Estimating alignment…
+2026-09-25 23:00:39,527  INFO        [Vta6] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:39,534  INFO        Yaw offset estimated from 438 windows: 40.65°  (std=10.66°)
+2026-09-25 23:00:39,535  INFO        [Vta6] Alignment validation: r_raw=0.135 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,535  INFO      [Vta7] Estimating alignment…
+2026-09-25 23:00:39,535  INFO        [Vta7] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:39,536  INFO        Yaw offset estimated from 16 windows: 14.46°  (std=7.65°)
+2026-09-25 23:00:39,537  INFO        [Vta7] Alignment validation: r_raw=0.012 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,537  INFO      [Vta8] Estimating alignment…
+2026-09-25 23:00:39,537  INFO        [Vta8] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:39,551  INFO        Yaw offset estimated from 838 windows: 156.08°  (std=135.17°)
+2026-09-25 23:00:39,552  INFO        [Vta8] Alignment validation: r_raw=0.121 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,552  INFO      [Vta9] Estimating alignment…
+2026-09-25 23:00:39,552  INFO        [Vta9] Pitch=0.02°  Roll=0.02°
+2026-09-25 23:00:39,552  WARNING   No valid straight windows – using 0° yaw offset
+2026-09-25 23:00:39,553  WARNING     [Vta9] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:39,553  INFO        [Vta9] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,553  INFO      [Vta10] Estimating alignment…
+2026-09-25 23:00:39,553  INFO        [Vta10] Pitch=-0.04°  Roll=-0.04°
+2026-09-25 23:00:39,557  INFO        Yaw offset estimated from 224 windows: 121.96°  (std=104.72°)
+2026-09-25 23:00:39,558  INFO        [Vta10] Alignment validation: r_raw=-0.193 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,558  INFO      [Vta11] Estimating alignment…
+2026-09-25 23:00:39,558  INFO        [Vta11] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:39,558  WARNING   No valid straight windows – using 0° yaw offset
+2026-09-25 23:00:39,559  INFO        [Vta11] Alignment validation: r_raw=-0.051 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,559  INFO      [Vta12] Estimating alignment…
+2026-09-25 23:00:39,559  INFO        [Vta12] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:39,559  INFO        Yaw offset estimated from 17 windows: 134.53°  (std=14.22°)
+2026-09-25 23:00:39,560  WARNING     [Vta12] Only 3 turning samples – validation has low confidence
+2026-09-25 23:00:39,560  INFO        [Vta12] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,560  INFO      [Vta13] Estimating alignment…
+2026-09-25 23:00:39,560  INFO        [Vta13] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:39,560  INFO        Yaw offset estimated from 1 windows: -87.61°  (std=0.00°)
+2026-09-25 23:00:39,561  INFO        [Vta13] Alignment validation: r_raw=-0.063 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,561  INFO      [Vta14] Estimating alignment…
+2026-09-25 23:00:39,561  INFO        [Vta14] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:39,567  INFO        Yaw offset estimated from 305 windows: 104.75°  (std=108.95°)
+2026-09-25 23:00:39,568  INFO        [Vta14] Alignment validation: r_raw=0.192 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,568  INFO      [Vta15] Estimating alignment…
+2026-09-25 23:00:39,568  INFO        [Vta15] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:39,570  INFO        Yaw offset estimated from 152 windows: -122.69°  (std=44.88°)
+2026-09-25 23:00:39,571  INFO        [Vta15] Alignment validation: r_raw=-0.253 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,571  INFO      [Vta16] Estimating alignment…
+2026-09-25 23:00:39,571  INFO        [Vta16] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:39,595  INFO        Yaw offset estimated from 1413 windows: -122.67°  (std=104.67°)
+2026-09-25 23:00:39,597  INFO        [Vta16] Alignment validation: r_raw=0.015 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,597  INFO      [Vta17] Estimating alignment…
+2026-09-25 23:00:39,597  INFO        [Vta17] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:39,603  INFO        Yaw offset estimated from 345 windows: -104.74°  (std=97.84°)
+2026-09-25 23:00:39,604  INFO        [Vta17] Alignment validation: r_raw=0.017 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,604  INFO      [Vta19] Estimating alignment…
+2026-09-25 23:00:39,604  INFO        [Vta19] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:39,605  INFO        Yaw offset estimated from 1 windows: 126.06°  (std=0.00°)
+2026-09-25 23:00:39,605  INFO        [Vta19] Alignment validation: r_raw=0.402 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,606  INFO      [Vta20] Estimating alignment…
+2026-09-25 23:00:39,606  INFO        [Vta20] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:39,607  INFO        Yaw offset estimated from 85 windows: -163.71°  (std=88.49°)
+2026-09-25 23:00:39,608  INFO        [Vta20] Alignment validation: r_raw=-0.144 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,608  INFO      [Vta21] Estimating alignment…
+2026-09-25 23:00:39,608  INFO        [Vta21] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:39,612  INFO        Yaw offset estimated from 181 windows: -102.00°  (std=100.27°)
+2026-09-25 23:00:39,613  INFO        [Vta21] Alignment validation: r_raw=-0.071 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,613  INFO      [Vta22] Estimating alignment…
+2026-09-25 23:00:39,613  INFO        [Vta22] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:39,614  INFO        Yaw offset estimated from 81 windows: 32.84°  (std=62.30°)
+2026-09-25 23:00:39,616  INFO        [Vta22] Alignment validation: r_raw=-0.002 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,616  INFO      [Vta23] Estimating alignment…
+2026-09-25 23:00:39,616  INFO        [Vta23] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:39,617  INFO        Yaw offset estimated from 26 windows: 73.70°  (std=36.65°)
+2026-09-25 23:00:39,618  INFO        [Vta23] Alignment validation: r_raw=0.003 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,618  INFO      [Vta24] Estimating alignment…
+2026-09-25 23:00:39,618  INFO        [Vta24] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:39,619  INFO        Yaw offset estimated from 49 windows: 134.31°  (std=45.80°)
+2026-09-25 23:00:39,620  INFO        [Vta24] Alignment validation: r_raw=-0.287 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,620  INFO      [Vta25] Estimating alignment…
+2026-09-25 23:00:39,620  INFO        [Vta25] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:39,620  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,621  INFO        [Vta25] Alignment validation: r_raw=0.630 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,621  INFO      [Vta26] Estimating alignment…
+2026-09-25 23:00:39,621  INFO        [Vta26] Pitch=0.03°  Roll=0.03°
+2026-09-25 23:00:39,622  INFO        Yaw offset estimated from 51 windows: 109.78°  (std=101.52°)
+2026-09-25 23:00:39,623  INFO        [Vta26] Alignment validation: r_raw=-0.202 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,623  INFO      [Vta27] Estimating alignment…
+2026-09-25 23:00:39,623  INFO        [Vta27] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:39,627  INFO        Yaw offset estimated from 188 windows: -71.01°  (std=83.25°)
+2026-09-25 23:00:39,628  INFO        [Vta27] Alignment validation: r_raw=0.002 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,628  INFO      [Vta28] Estimating alignment…
+2026-09-25 23:00:39,628  INFO        [Vta28] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:39,632  INFO        Yaw offset estimated from 213 windows: 118.12°  (std=102.93°)
+2026-09-25 23:00:39,633  INFO        [Vta28] Alignment validation: r_raw=-0.251 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,633  INFO      [Vta29] Estimating alignment…
+2026-09-25 23:00:39,634  INFO        [Vta29] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:39,634  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,637  INFO        [Vta29] Alignment validation: r_raw=0.250 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,637  INFO      [Vta30] Estimating alignment…
+2026-09-25 23:00:39,637  INFO        [Vta30] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:39,637  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,639  INFO        [Vta30] Alignment validation: r_raw=0.126 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,639  INFO      [Vtb1] Estimating alignment…
+2026-09-25 23:00:39,639  INFO        [Vtb1] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:39,639  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,641  WARNING     [Vtb1] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:39,641  INFO        [Vtb1] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,641  INFO      [Vtb2] Estimating alignment…
+2026-09-25 23:00:39,642  INFO        [Vtb2] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:39,642  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,643  WARNING     [Vtb2] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:39,643  INFO        [Vtb2] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,643  INFO      [Vtb3] Estimating alignment…
+2026-09-25 23:00:39,643  INFO        [Vtb3] Pitch=0.02°  Roll=0.02°
+2026-09-25 23:00:39,644  INFO        Yaw offset estimated from 26 windows: -118.79°  (std=28.23°)
+2026-09-25 23:00:39,645  INFO        [Vtb3] Alignment validation: r_raw=-0.205 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,645  INFO      [Vtb4] Estimating alignment…
+2026-09-25 23:00:39,645  INFO        [Vtb4] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:39,646  INFO        Yaw offset estimated from 35 windows: 26.77°  (std=4.79°)
+2026-09-25 23:00:39,647  INFO        [Vtb4] Alignment validation: r_raw=0.045 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,647  INFO      [Vtb5] Estimating alignment…
+2026-09-25 23:00:39,647  INFO        [Vtb5] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:39,905  INFO        Yaw offset estimated from 15803 windows: -110.50°  (std=107.14°)
+2026-09-25 23:00:39,913  INFO        [Vtb5] Alignment validation: r_raw=0.026 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,913  INFO      [Vtb6] Estimating alignment…
+2026-09-25 23:00:39,913  INFO        [Vtb6] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:39,916  INFO        Yaw offset estimated from 129 windows: 9.81°  (std=36.83°)
+2026-09-25 23:00:39,916  WARNING     [Vtb6] Only 4 turning samples – validation has low confidence
+2026-09-25 23:00:39,917  INFO        [Vtb6] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,917  INFO      [Vtb7] Estimating alignment…
+2026-09-25 23:00:39,917  INFO        [Vtb7] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:39,917  INFO        Yaw offset estimated from 17 windows: 102.72°  (std=2.99°)
+2026-09-25 23:00:39,918  INFO        [Vtb7] Alignment validation: r_raw=0.500 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,918  INFO      [Vtb8] Estimating alignment…
+2026-09-25 23:00:39,918  INFO        [Vtb8] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:39,925  INFO        Yaw offset estimated from 429 windows: -42.23°  (std=31.90°)
+2026-09-25 23:00:39,926  WARNING     [Vtb8] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:39,926  INFO        [Vtb8] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,926  INFO      [Vtb9] Estimating alignment…
+2026-09-25 23:00:39,926  INFO        [Vtb9] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:39,930  INFO        Yaw offset estimated from 185 windows: -9.38°  (std=92.64°)
+2026-09-25 23:00:39,931  WARNING     [Vtb9] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:39,931  INFO        [Vtb9] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,931  INFO      [Vtb10] Estimating alignment…
+2026-09-25 23:00:39,931  INFO        [Vtb10] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:39,931  WARNING   No valid straight windows – using 0° yaw offset
+2026-09-25 23:00:39,932  INFO        [Vtb10] Alignment validation: r_raw=-0.284 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,932  INFO      [Vtb11] Estimating alignment…
+2026-09-25 23:00:39,932  INFO        [Vtb11] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:39,934  INFO        Yaw offset estimated from 153 windows: -41.04°  (std=5.22°)
+2026-09-25 23:00:39,935  WARNING     [Vtb11] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:39,935  INFO        [Vtb11] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,935  INFO      [Vtb12] Estimating alignment…
+2026-09-25 23:00:39,935  INFO        [Vtb12] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:39,935  INFO        Yaw offset estimated from 6 windows: 13.77°  (std=9.75°)
+2026-09-25 23:00:39,936  INFO        [Vtb12] Alignment validation: r_raw=-0.252 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,936  INFO      [Vw1] Estimating alignment…
+2026-09-25 23:00:39,936  INFO        [Vw1] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:39,936  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,938  WARNING     [Vw1] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:39,938  INFO        [Vw1] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,938  INFO      [Vw2] Estimating alignment…
+2026-09-25 23:00:39,938  INFO        [Vw2] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:39,941  INFO        Yaw offset estimated from 22 windows: -30.77°  (std=27.06°)
+2026-09-25 23:00:39,945  INFO        [Vw2] Alignment validation: r_raw=0.122 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,945  INFO      [Vw3] Estimating alignment…
+2026-09-25 23:00:39,945  INFO        [Vw3] Pitch=-0.03°  Roll=-0.03°
+2026-09-25 23:00:39,945  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,947  INFO        [Vw3] Alignment validation: r_raw=-0.124 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,947  INFO      [Vw4] Estimating alignment…
+2026-09-25 23:00:39,947  INFO        [Vw4] Pitch=-0.02°  Roll=-0.02°
+2026-09-25 23:00:39,964  INFO        Yaw offset estimated from 700 windows: 96.55°  (std=101.77°)
+2026-09-25 23:00:39,979  INFO        [Vw4] Alignment validation: r_raw=0.047 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,979  INFO      [Vw5] Estimating alignment…
+2026-09-25 23:00:39,979  INFO        [Vw5] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:39,979  WARNING   No valid straight windows – using 0° yaw offset
+2026-09-25 23:00:39,980  INFO        [Vw5] Alignment validation: r_raw=-0.064 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,980  INFO      [Vw6] Estimating alignment…
+2026-09-25 23:00:39,980  INFO        [Vw6] Pitch=-0.03°  Roll=-0.03°
+2026-09-25 23:00:39,981  INFO        Yaw offset estimated from 32 windows: 5.76°  (std=67.40°)
+2026-09-25 23:00:39,982  INFO        [Vw6] Alignment validation: r_raw=-0.345 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,982  INFO      [Vw7] Estimating alignment…
+2026-09-25 23:00:39,982  INFO        [Vw7] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:39,982  INFO        Yaw offset estimated from 7 windows: -44.06°  (std=64.83°)
+2026-09-25 23:00:39,983  INFO        [Vw7] Alignment validation: r_raw=0.128 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,983  INFO      [Vw8] Estimating alignment…
+2026-09-25 23:00:39,984  INFO        [Vw8] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:39,984  INFO        Yaw offset estimated from 2 windows: 65.69°  (std=0.13°)
+2026-09-25 23:00:39,985  INFO        [Vw8] Alignment validation: r_raw=-0.150 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,985  INFO      [Vw9] Estimating alignment…
+2026-09-25 23:00:39,985  INFO        [Vw9] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:39,985  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,986  INFO        [Vw9] Alignment validation: r_raw=-0.048 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,986  INFO      [Vw10] Estimating alignment…
+2026-09-25 23:00:39,986  INFO        [Vw10] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:39,986  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,987  INFO        [Vw10] Alignment validation: r_raw=0.193 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,987  INFO      [Vw11] Estimating alignment…
+2026-09-25 23:00:39,987  INFO        [Vw11] Pitch=-0.02°  Roll=-0.02°
+2026-09-25 23:00:39,987  INFO        Yaw offset estimated from 13 windows: 80.47°  (std=60.42°)
+2026-09-25 23:00:39,988  INFO        [Vw11] Alignment validation: r_raw=0.200 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,988  INFO      [Vw12] Estimating alignment…
+2026-09-25 23:00:39,988  INFO        [Vw12] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:39,989  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,989  WARNING     [Vw12] Only 3 turning samples – validation has low confidence
+2026-09-25 23:00:39,989  INFO        [Vw12] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,989  INFO      [Vw13] Estimating alignment…
+2026-09-25 23:00:39,989  INFO        [Vw13] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:39,990  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,990  WARNING     [Vw13] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:39,990  INFO        [Vw13] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,990  INFO      [Vw14a] Estimating alignment…
+2026-09-25 23:00:39,990  INFO        [Vw14a] Pitch=0.03°  Roll=0.03°
+2026-09-25 23:00:39,990  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:39,992  INFO        [Vw14a] Alignment validation: r_raw=0.079 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,992  INFO      [Vw14b] Estimating alignment…
+2026-09-25 23:00:39,992  INFO        [Vw14b] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:39,994  INFO        Yaw offset estimated from 89 windows: -59.41°  (std=41.01°)
+2026-09-25 23:00:39,996  INFO        [Vw14b] Alignment validation: r_raw=-0.020 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:39,996  INFO      [Vw14c] Estimating alignment…
+2026-09-25 23:00:39,996  INFO        [Vw14c] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:39,998  INFO        Yaw offset estimated from 69 windows: 110.92°  (std=85.11°)
+2026-09-25 23:00:40,000  INFO        [Vw14c] Alignment validation: r_raw=0.200 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,000  INFO      [Vw15] Estimating alignment…
+2026-09-25 23:00:40,000  INFO        [Vw15] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,000  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,001  WARNING     [Vw15] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,001  INFO        [Vw15] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,001  INFO      [Vw16a] Estimating alignment…
+2026-09-25 23:00:40,001  INFO        [Vw16a] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,046  INFO        Yaw offset estimated from 2677 windows: -26.95°  (std=93.42°)
+2026-09-25 23:00:40,047  INFO        [Vw16a] Alignment validation: r_raw=0.336 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,047  INFO      [Vw16b] Estimating alignment…
+2026-09-25 23:00:40,047  INFO        [Vw16b] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,056  INFO        Yaw offset estimated from 557 windows: -2.09°  (std=50.37°)
+2026-09-25 23:00:40,058  INFO        [Vw16b] Alignment validation: r_raw=0.196 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,058  INFO      [Vw17] Estimating alignment…
+2026-09-25 23:00:40,058  INFO        [Vw17] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,060  INFO        Yaw offset estimated from 123 windows: -60.77°  (std=30.85°)
+2026-09-25 23:00:40,061  WARNING     [Vw17] Only 3 turning samples – validation has low confidence
+2026-09-25 23:00:40,061  INFO        [Vw17] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,061  INFO      [Y1] Estimating alignment…
+2026-09-25 23:00:40,061  INFO        [Y1] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,061  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,068  WARNING     [Y1] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,068  INFO        [Y1] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,068  INFO      [M] Estimating alignment…
+2026-09-25 23:00:40,068  INFO        [M] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,068  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,084  WARNING     [M] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,084  INFO        [M] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,085  INFO      [S1] Estimating alignment…
+2026-09-25 23:00:40,085  INFO        [S1] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,085  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,090  WARNING     [S1] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,090  INFO        [S1] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,091  INFO      [S2] Estimating alignment…
+2026-09-25 23:00:40,091  INFO        [S2] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,091  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,103  WARNING     [S2] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,103  INFO        [S2] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,104  INFO      [S3a] Estimating alignment…
+2026-09-25 23:00:40,104  INFO        [S3a] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,104  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,107  WARNING     [S3a] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,107  INFO        [S3a] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,107  INFO      [S3b] Estimating alignment…
+2026-09-25 23:00:40,107  INFO        [S3b] Pitch=-0.02°  Roll=-0.02°
+2026-09-25 23:00:40,107  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,108  WARNING     [S3b] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,108  INFO        [S3b] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,108  INFO      [S3c] Estimating alignment…
+2026-09-25 23:00:40,109  INFO        [S3c] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,115  INFO        Yaw offset estimated from 230 windows: 154.11°  (std=117.62°)
+2026-09-25 23:00:40,119  INFO        [S3c] Alignment validation: r_raw=-0.054 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,119  INFO      [S4] Estimating alignment…
+2026-09-25 23:00:40,120  INFO        [S4] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,138  INFO        Yaw offset estimated from 832 windows: 42.02°  (std=97.47°)
+2026-09-25 23:00:40,145  INFO        [S4] Alignment validation: r_raw=0.046 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,146  INFO      [Vfa01] Estimating alignment…
+2026-09-25 23:00:40,146  INFO        [Vfa01] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,146  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,148  WARNING     [Vfa01] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,148  INFO        [Vfa01] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,148  INFO      [Vfa02] Estimating alignment…
+2026-09-25 23:00:40,148  INFO        [Vfa02] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,148  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,153  WARNING     [Vfa02] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,153  INFO        [Vfa02] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,153  INFO      [Vta10] Estimating alignment…
+2026-09-25 23:00:40,153  INFO        [Vta10] Pitch=-0.04°  Roll=-0.04°
+2026-09-25 23:00:40,157  INFO        Yaw offset estimated from 224 windows: 121.96°  (std=104.72°)
+2026-09-25 23:00:40,158  INFO        [Vta10] Alignment validation: r_raw=-0.193 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,158  INFO      [Vta11] Estimating alignment…
+2026-09-25 23:00:40,158  INFO        [Vta11] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,158  WARNING   No valid straight windows – using 0° yaw offset
+2026-09-25 23:00:40,159  INFO        [Vta11] Alignment validation: r_raw=-0.051 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,159  INFO      [Vta12] Estimating alignment…
+2026-09-25 23:00:40,159  INFO        [Vta12] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,160  INFO        Yaw offset estimated from 17 windows: 134.53°  (std=14.22°)
+2026-09-25 23:00:40,161  WARNING     [Vta12] Only 3 turning samples – validation has low confidence
+2026-09-25 23:00:40,161  INFO        [Vta12] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,161  INFO      [Vta13] Estimating alignment…
+2026-09-25 23:00:40,161  INFO        [Vta13] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,161  INFO        Yaw offset estimated from 1 windows: -87.61°  (std=0.00°)
+2026-09-25 23:00:40,162  INFO        [Vta13] Alignment validation: r_raw=-0.063 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,162  INFO      [Vta14] Estimating alignment…
+2026-09-25 23:00:40,162  INFO        [Vta14] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,168  INFO        Yaw offset estimated from 305 windows: 104.75°  (std=108.95°)
+2026-09-25 23:00:40,169  INFO        [Vta14] Alignment validation: r_raw=0.192 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,169  INFO      [Vta15] Estimating alignment…
+2026-09-25 23:00:40,169  INFO        [Vta15] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,171  INFO        Yaw offset estimated from 152 windows: -122.69°  (std=44.88°)
+2026-09-25 23:00:40,172  INFO        [Vta15] Alignment validation: r_raw=-0.253 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,172  INFO      [Vta16] Estimating alignment…
+2026-09-25 23:00:40,172  INFO        [Vta16] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,197  INFO        Yaw offset estimated from 1413 windows: -122.67°  (std=104.67°)
+2026-09-25 23:00:40,198  INFO        [Vta16] Alignment validation: r_raw=0.015 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,198  INFO      [Vta17] Estimating alignment…
+2026-09-25 23:00:40,198  INFO        [Vta17] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,205  INFO        Yaw offset estimated from 345 windows: -104.74°  (std=97.84°)
+2026-09-25 23:00:40,206  INFO        [Vta17] Alignment validation: r_raw=0.017 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,206  INFO      [Vta19] Estimating alignment…
+2026-09-25 23:00:40,206  INFO        [Vta19] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,206  INFO        Yaw offset estimated from 1 windows: 126.06°  (std=0.00°)
+2026-09-25 23:00:40,207  INFO        [Vta19] Alignment validation: r_raw=0.402 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,207  INFO      [Vta1b] Estimating alignment…
+2026-09-25 23:00:40,207  INFO        [Vta1b] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,208  INFO        Yaw offset estimated from 38 windows: 62.73°  (std=19.01°)
+2026-09-25 23:00:40,209  INFO        [Vta1b] Alignment validation: r_raw=0.236 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,209  INFO      [Vta2] Estimating alignment…
+2026-09-25 23:00:40,209  INFO        [Vta2] Pitch=-0.02°  Roll=-0.02°
+2026-09-25 23:00:40,243  INFO        Yaw offset estimated from 2014 windows: 116.20°  (std=90.94°)
+2026-09-25 23:00:40,244  INFO        [Vta2] Alignment validation: r_raw=0.272 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,244  INFO      [Vta20] Estimating alignment…
+2026-09-25 23:00:40,245  INFO        [Vta20] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,246  INFO        Yaw offset estimated from 85 windows: -163.71°  (std=88.49°)
+2026-09-25 23:00:40,248  INFO        [Vta20] Alignment validation: r_raw=-0.144 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,248  INFO      [Vta21] Estimating alignment…
+2026-09-25 23:00:40,248  INFO        [Vta21] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,251  INFO        Yaw offset estimated from 181 windows: -102.00°  (std=100.27°)
+2026-09-25 23:00:40,252  INFO        [Vta21] Alignment validation: r_raw=-0.071 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,252  INFO      [Vta22] Estimating alignment…
+2026-09-25 23:00:40,252  INFO        [Vta22] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,254  INFO        Yaw offset estimated from 81 windows: 32.84°  (std=62.30°)
+2026-09-25 23:00:40,255  INFO        [Vta22] Alignment validation: r_raw=-0.002 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,255  INFO      [Vta23] Estimating alignment…
+2026-09-25 23:00:40,255  INFO        [Vta23] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,255  INFO        Yaw offset estimated from 26 windows: 73.70°  (std=36.65°)
+2026-09-25 23:00:40,256  INFO        [Vta23] Alignment validation: r_raw=0.003 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,256  INFO      [Vta24] Estimating alignment…
+2026-09-25 23:00:40,256  INFO        [Vta24] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,257  INFO        Yaw offset estimated from 49 windows: 134.31°  (std=45.80°)
+2026-09-25 23:00:40,258  INFO        [Vta24] Alignment validation: r_raw=-0.287 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,258  INFO      [Vta25] Estimating alignment…
+2026-09-25 23:00:40,258  INFO        [Vta25] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,258  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,259  INFO        [Vta25] Alignment validation: r_raw=0.630 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,259  INFO      [Vta26] Estimating alignment…
+2026-09-25 23:00:40,259  INFO        [Vta26] Pitch=0.03°  Roll=0.03°
+2026-09-25 23:00:40,261  INFO        Yaw offset estimated from 51 windows: 109.78°  (std=101.52°)
+2026-09-25 23:00:40,261  INFO        [Vta26] Alignment validation: r_raw=-0.202 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,261  INFO      [Vta27] Estimating alignment…
+2026-09-25 23:00:40,262  INFO        [Vta27] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,265  INFO        Yaw offset estimated from 188 windows: -71.01°  (std=83.25°)
+2026-09-25 23:00:40,266  INFO        [Vta27] Alignment validation: r_raw=0.002 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,266  INFO      [Vta28] Estimating alignment…
+2026-09-25 23:00:40,266  INFO        [Vta28] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,270  INFO        Yaw offset estimated from 213 windows: 118.12°  (std=102.93°)
+2026-09-25 23:00:40,271  INFO        [Vta28] Alignment validation: r_raw=-0.251 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,271  INFO      [Vta29] Estimating alignment…
+2026-09-25 23:00:40,272  INFO        [Vta29] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,272  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,274  INFO        [Vta29] Alignment validation: r_raw=0.250 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,274  INFO      [Vta3] Estimating alignment…
+2026-09-25 23:00:40,274  INFO        [Vta3] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,275  INFO        Yaw offset estimated from 15 windows: 63.15°  (std=0.42°)
+2026-09-25 23:00:40,276  INFO        [Vta3] Alignment validation: r_raw=-0.166 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,276  INFO      [Vta30] Estimating alignment…
+2026-09-25 23:00:40,276  INFO        [Vta30] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,276  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,278  INFO        [Vta30] Alignment validation: r_raw=0.126 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,278  INFO      [Vta4] Estimating alignment…
+2026-09-25 23:00:40,278  INFO        [Vta4] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,283  INFO        Yaw offset estimated from 290 windows: 49.25°  (std=19.16°)
+2026-09-25 23:00:40,284  INFO        [Vta4] Alignment validation: r_raw=0.029 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,284  INFO      [Vta5] Estimating alignment…
+2026-09-25 23:00:40,284  INFO        [Vta5] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,284  INFO        Yaw offset estimated from 17 windows: 45.84°  (std=0.55°)
+2026-09-25 23:00:40,285  INFO        [Vta5] Alignment validation: r_raw=-0.216 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,285  INFO      [Vta6] Estimating alignment…
+2026-09-25 23:00:40,285  INFO        [Vta6] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,292  INFO        Yaw offset estimated from 438 windows: 40.65°  (std=10.66°)
+2026-09-25 23:00:40,293  INFO        [Vta6] Alignment validation: r_raw=0.135 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,293  INFO      [Vta7] Estimating alignment…
+2026-09-25 23:00:40,293  INFO        [Vta7] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,294  INFO        Yaw offset estimated from 16 windows: 14.46°  (std=7.65°)
+2026-09-25 23:00:40,294  INFO        [Vta7] Alignment validation: r_raw=0.012 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,294  INFO      [Vta8] Estimating alignment…
+2026-09-25 23:00:40,295  INFO        [Vta8] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,308  INFO        Yaw offset estimated from 838 windows: 156.08°  (std=135.17°)
+2026-09-25 23:00:40,309  INFO        [Vta8] Alignment validation: r_raw=0.121 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,309  INFO      [Vta9] Estimating alignment…
+2026-09-25 23:00:40,310  INFO        [Vta9] Pitch=0.02°  Roll=0.02°
+2026-09-25 23:00:40,310  WARNING   No valid straight windows – using 0° yaw offset
+2026-09-25 23:00:40,310  WARNING     [Vta9] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,310  INFO        [Vta9] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,310  INFO      [Vtb1] Estimating alignment…
+2026-09-25 23:00:40,310  INFO        [Vtb1] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,311  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,313  WARNING     [Vtb1] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,313  INFO        [Vtb1] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,313  INFO      [Vtb10] Estimating alignment…
+2026-09-25 23:00:40,313  INFO        [Vtb10] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,313  WARNING   No valid straight windows – using 0° yaw offset
+2026-09-25 23:00:40,314  INFO        [Vtb10] Alignment validation: r_raw=-0.284 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,314  INFO      [Vtb11] Estimating alignment…
+2026-09-25 23:00:40,314  INFO        [Vtb11] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,317  INFO        Yaw offset estimated from 153 windows: -41.04°  (std=5.22°)
+2026-09-25 23:00:40,317  WARNING     [Vtb11] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,317  INFO        [Vtb11] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,317  INFO      [Vtb12] Estimating alignment…
+2026-09-25 23:00:40,317  INFO        [Vtb12] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,318  INFO        Yaw offset estimated from 6 windows: 13.77°  (std=9.75°)
+2026-09-25 23:00:40,318  INFO        [Vtb12] Alignment validation: r_raw=-0.252 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,318  INFO      [Vtb2] Estimating alignment…
+2026-09-25 23:00:40,319  INFO        [Vtb2] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,319  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,320  WARNING     [Vtb2] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,320  INFO        [Vtb2] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,320  INFO      [Vtb3] Estimating alignment…
+2026-09-25 23:00:40,320  INFO        [Vtb3] Pitch=0.02°  Roll=0.02°
+2026-09-25 23:00:40,321  INFO        Yaw offset estimated from 26 windows: -118.79°  (std=28.23°)
+2026-09-25 23:00:40,322  INFO        [Vtb3] Alignment validation: r_raw=-0.205 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,322  INFO      [Vtb4] Estimating alignment…
+2026-09-25 23:00:40,322  INFO        [Vtb4] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,323  INFO        Yaw offset estimated from 35 windows: 26.77°  (std=4.79°)
+2026-09-25 23:00:40,324  INFO        [Vtb4] Alignment validation: r_raw=0.045 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,324  INFO      [Vtb5] Estimating alignment…
+2026-09-25 23:00:40,324  INFO        [Vtb5] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,612  INFO        Yaw offset estimated from 15803 windows: -110.50°  (std=107.14°)
+2026-09-25 23:00:40,618  INFO        [Vtb5] Alignment validation: r_raw=0.026 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,618  INFO      [Vtb6] Estimating alignment…
+2026-09-25 23:00:40,618  INFO        [Vtb6] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,621  INFO        Yaw offset estimated from 129 windows: 9.81°  (std=36.83°)
+2026-09-25 23:00:40,622  WARNING     [Vtb6] Only 4 turning samples – validation has low confidence
+2026-09-25 23:00:40,622  INFO        [Vtb6] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,622  INFO      [Vtb7] Estimating alignment…
+2026-09-25 23:00:40,622  INFO        [Vtb7] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,622  INFO        Yaw offset estimated from 17 windows: 102.72°  (std=2.99°)
+2026-09-25 23:00:40,623  INFO        [Vtb7] Alignment validation: r_raw=0.500 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,623  INFO      [Vtb8] Estimating alignment…
+2026-09-25 23:00:40,623  INFO        [Vtb8] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,631  INFO        Yaw offset estimated from 429 windows: -42.23°  (std=31.90°)
+2026-09-25 23:00:40,632  WARNING     [Vtb8] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,632  INFO        [Vtb8] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,632  INFO      [Vtb9] Estimating alignment…
+2026-09-25 23:00:40,632  INFO        [Vtb9] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,636  INFO        Yaw offset estimated from 185 windows: -9.38°  (std=92.64°)
+2026-09-25 23:00:40,636  WARNING     [Vtb9] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,637  INFO        [Vtb9] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,637  INFO      [Vw1] Estimating alignment…
+2026-09-25 23:00:40,637  INFO        [Vw1] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,637  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,639  WARNING     [Vw1] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,639  INFO        [Vw1] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,639  INFO      [Vw10] Estimating alignment…
+2026-09-25 23:00:40,639  INFO        [Vw10] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,639  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,640  INFO        [Vw10] Alignment validation: r_raw=0.193 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,640  INFO      [Vw11] Estimating alignment…
+2026-09-25 23:00:40,640  INFO        [Vw11] Pitch=-0.02°  Roll=-0.02°
+2026-09-25 23:00:40,640  INFO        Yaw offset estimated from 13 windows: 80.47°  (std=60.42°)
+2026-09-25 23:00:40,641  INFO        [Vw11] Alignment validation: r_raw=0.200 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,642  INFO      [Vw12] Estimating alignment…
+2026-09-25 23:00:40,642  INFO        [Vw12] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,642  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,642  WARNING     [Vw12] Only 3 turning samples – validation has low confidence
+2026-09-25 23:00:40,642  INFO        [Vw12] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,642  INFO      [Vw13] Estimating alignment…
+2026-09-25 23:00:40,643  INFO        [Vw13] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,643  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,643  WARNING     [Vw13] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,643  INFO        [Vw13] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,643  INFO      [Vw14a] Estimating alignment…
+2026-09-25 23:00:40,644  INFO        [Vw14a] Pitch=0.03°  Roll=0.03°
+2026-09-25 23:00:40,644  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,645  INFO        [Vw14a] Alignment validation: r_raw=0.079 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,645  INFO      [Vw14b] Estimating alignment…
+2026-09-25 23:00:40,645  INFO        [Vw14b] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,647  INFO        Yaw offset estimated from 89 windows: -59.41°  (std=41.01°)
+2026-09-25 23:00:40,649  INFO        [Vw14b] Alignment validation: r_raw=-0.020 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,649  INFO      [Vw14c] Estimating alignment…
+2026-09-25 23:00:40,649  INFO        [Vw14c] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,651  INFO        Yaw offset estimated from 69 windows: 110.92°  (std=85.11°)
+2026-09-25 23:00:40,653  INFO        [Vw14c] Alignment validation: r_raw=0.200 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,653  INFO      [Vw15] Estimating alignment…
+2026-09-25 23:00:40,653  INFO        [Vw15] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,653  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,654  WARNING     [Vw15] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,654  INFO        [Vw15] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,654  INFO      [Vw16a] Estimating alignment…
+2026-09-25 23:00:40,654  INFO        [Vw16a] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,698  INFO        Yaw offset estimated from 2677 windows: -26.95°  (std=93.42°)
+2026-09-25 23:00:40,700  INFO        [Vw16a] Alignment validation: r_raw=0.336 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,700  INFO      [Vw16b] Estimating alignment…
+2026-09-25 23:00:40,700  INFO        [Vw16b] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,709  INFO        Yaw offset estimated from 557 windows: -2.09°  (std=50.37°)
+2026-09-25 23:00:40,711  INFO        [Vw16b] Alignment validation: r_raw=0.196 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,711  INFO      [Vw17] Estimating alignment…
+2026-09-25 23:00:40,711  INFO        [Vw17] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,713  INFO        Yaw offset estimated from 123 windows: -60.77°  (std=30.85°)
+2026-09-25 23:00:40,714  WARNING     [Vw17] Only 3 turning samples – validation has low confidence
+2026-09-25 23:00:40,714  INFO        [Vw17] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,714  INFO      [Vw2] Estimating alignment…
+2026-09-25 23:00:40,714  INFO        [Vw2] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,716  INFO        Yaw offset estimated from 22 windows: -30.77°  (std=27.06°)
+2026-09-25 23:00:40,720  INFO        [Vw2] Alignment validation: r_raw=0.122 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,721  INFO      [Vw3] Estimating alignment…
+2026-09-25 23:00:40,721  INFO        [Vw3] Pitch=-0.03°  Roll=-0.03°
+2026-09-25 23:00:40,721  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,722  INFO        [Vw3] Alignment validation: r_raw=-0.124 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,722  INFO      [Vw4] Estimating alignment…
+2026-09-25 23:00:40,723  INFO        [Vw4] Pitch=-0.02°  Roll=-0.02°
+2026-09-25 23:00:40,740  INFO        Yaw offset estimated from 700 windows: 96.55°  (std=101.77°)
+2026-09-25 23:00:40,752  INFO        [Vw4] Alignment validation: r_raw=0.047 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,753  INFO      [Vw5] Estimating alignment…
+2026-09-25 23:00:40,753  INFO        [Vw5] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,753  WARNING   No valid straight windows – using 0° yaw offset
+2026-09-25 23:00:40,754  INFO        [Vw5] Alignment validation: r_raw=-0.064 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,754  INFO      [Vw6] Estimating alignment…
+2026-09-25 23:00:40,754  INFO        [Vw6] Pitch=-0.03°  Roll=-0.03°
+2026-09-25 23:00:40,755  INFO        Yaw offset estimated from 32 windows: 5.76°  (std=67.40°)
+2026-09-25 23:00:40,756  INFO        [Vw6] Alignment validation: r_raw=-0.345 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,756  INFO      [Vw7] Estimating alignment…
+2026-09-25 23:00:40,756  INFO        [Vw7] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,756  INFO        Yaw offset estimated from 7 windows: -44.06°  (std=64.83°)
+2026-09-25 23:00:40,757  INFO        [Vw7] Alignment validation: r_raw=0.128 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,757  INFO      [Vw8] Estimating alignment…
+2026-09-25 23:00:40,757  INFO        [Vw8] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,757  INFO        Yaw offset estimated from 2 windows: 65.69°  (std=0.13°)
+2026-09-25 23:00:40,758  INFO        [Vw8] Alignment validation: r_raw=-0.150 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,758  INFO      [Vw9] Estimating alignment…
+2026-09-25 23:00:40,758  INFO        [Vw9] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,758  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,759  INFO        [Vw9] Alignment validation: r_raw=-0.048 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,759  INFO      [Y1] Estimating alignment…
+2026-09-25 23:00:40,759  INFO        [Y1] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,760  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,765  WARNING     [Y1] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,765  INFO        [Y1] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,766  INFO      [M] Estimating alignment…
+2026-09-25 23:00:40,766  INFO        [M] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,766  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,775  WARNING     [M] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,775  INFO        [M] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,775  INFO      [S1] Estimating alignment…
+2026-09-25 23:00:40,775  INFO        [S1] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,775  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,780  WARNING     [S1] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,780  INFO        [S1] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,780  INFO      [S2] Estimating alignment…
+2026-09-25 23:00:40,780  INFO        [S2] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,780  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,786  WARNING     [S2] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,786  INFO        [S2] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,786  INFO      [S3a] Estimating alignment…
+2026-09-25 23:00:40,786  INFO        [S3a] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,787  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,789  WARNING     [S3a] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,789  INFO        [S3a] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,789  INFO      [S3b] Estimating alignment…
+2026-09-25 23:00:40,789  INFO        [S3b] Pitch=-0.02°  Roll=-0.02°
+2026-09-25 23:00:40,789  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,791  WARNING     [S3b] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,791  INFO        [S3b] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,791  INFO      [S3c] Estimating alignment…
+2026-09-25 23:00:40,791  INFO        [S3c] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,797  INFO        Yaw offset estimated from 230 windows: 154.11°  (std=117.62°)
+2026-09-25 23:00:40,800  INFO        [S3c] Alignment validation: r_raw=-0.054 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,800  INFO      [S4] Estimating alignment…
+2026-09-25 23:00:40,800  INFO        [S4] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,820  INFO        Yaw offset estimated from 832 windows: 42.02°  (std=97.47°)
+2026-09-25 23:00:40,829  INFO        [S4] Alignment validation: r_raw=0.046 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,830  INFO      [Vfa01] Estimating alignment…
+2026-09-25 23:00:40,830  INFO        [Vfa01] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,830  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,832  WARNING     [Vfa01] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,832  INFO        [Vfa01] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,832  INFO      [Vfa02] Estimating alignment…
+2026-09-25 23:00:40,832  INFO        [Vfa02] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,832  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,836  WARNING     [Vfa02] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,837  INFO        [Vfa02] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,837  INFO      [Vta10] Estimating alignment…
+2026-09-25 23:00:40,837  INFO        [Vta10] Pitch=-0.04°  Roll=-0.04°
+2026-09-25 23:00:40,841  INFO        Yaw offset estimated from 224 windows: 121.96°  (std=104.72°)
+2026-09-25 23:00:40,842  INFO        [Vta10] Alignment validation: r_raw=-0.193 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,842  INFO      [Vta11] Estimating alignment…
+2026-09-25 23:00:40,842  INFO        [Vta11] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,842  WARNING   No valid straight windows – using 0° yaw offset
+2026-09-25 23:00:40,843  INFO        [Vta11] Alignment validation: r_raw=-0.051 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,843  INFO      [Vta12] Estimating alignment…
+2026-09-25 23:00:40,843  INFO        [Vta12] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,843  INFO        Yaw offset estimated from 17 windows: 134.53°  (std=14.22°)
+2026-09-25 23:00:40,844  WARNING     [Vta12] Only 3 turning samples – validation has low confidence
+2026-09-25 23:00:40,844  INFO        [Vta12] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,844  INFO      [Vta13] Estimating alignment…
+2026-09-25 23:00:40,844  INFO        [Vta13] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,844  INFO        Yaw offset estimated from 1 windows: -87.61°  (std=0.00°)
+2026-09-25 23:00:40,845  INFO        [Vta13] Alignment validation: r_raw=-0.063 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,845  INFO      [Vta14] Estimating alignment…
+2026-09-25 23:00:40,845  INFO        [Vta14] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,851  INFO        Yaw offset estimated from 305 windows: 104.75°  (std=108.95°)
+2026-09-25 23:00:40,852  INFO        [Vta14] Alignment validation: r_raw=0.192 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,852  INFO      [Vta15] Estimating alignment…
+2026-09-25 23:00:40,852  INFO        [Vta15] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,855  INFO        Yaw offset estimated from 152 windows: -122.69°  (std=44.88°)
+2026-09-25 23:00:40,855  INFO        [Vta15] Alignment validation: r_raw=-0.253 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,856  INFO      [Vta16] Estimating alignment…
+2026-09-25 23:00:40,856  INFO        [Vta16] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,880  INFO        Yaw offset estimated from 1413 windows: -122.67°  (std=104.67°)
+2026-09-25 23:00:40,881  INFO        [Vta16] Alignment validation: r_raw=0.015 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,881  INFO      [Vta17] Estimating alignment…
+2026-09-25 23:00:40,881  INFO        [Vta17] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,887  INFO        Yaw offset estimated from 345 windows: -104.74°  (std=97.84°)
+2026-09-25 23:00:40,889  INFO        [Vta17] Alignment validation: r_raw=0.017 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,889  INFO      [Vta19] Estimating alignment…
+2026-09-25 23:00:40,889  INFO        [Vta19] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,889  INFO        Yaw offset estimated from 1 windows: 126.06°  (std=0.00°)
+2026-09-25 23:00:40,890  INFO        [Vta19] Alignment validation: r_raw=0.402 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,890  INFO      [Vta1b] Estimating alignment…
+2026-09-25 23:00:40,890  INFO        [Vta1b] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,891  INFO        Yaw offset estimated from 38 windows: 62.73°  (std=19.01°)
+2026-09-25 23:00:40,891  INFO        [Vta1b] Alignment validation: r_raw=0.236 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,891  INFO      [Vta2] Estimating alignment…
+2026-09-25 23:00:40,892  INFO        [Vta2] Pitch=-0.02°  Roll=-0.02°
+2026-09-25 23:00:40,925  INFO        Yaw offset estimated from 2014 windows: 116.20°  (std=90.94°)
+2026-09-25 23:00:40,927  INFO        [Vta2] Alignment validation: r_raw=0.272 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,927  INFO      [Vta20] Estimating alignment…
+2026-09-25 23:00:40,927  INFO        [Vta20] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,929  INFO        Yaw offset estimated from 85 windows: -163.71°  (std=88.49°)
+2026-09-25 23:00:40,930  INFO        [Vta20] Alignment validation: r_raw=-0.144 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,931  INFO      [Vta21] Estimating alignment…
+2026-09-25 23:00:40,931  INFO        [Vta21] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,934  INFO        Yaw offset estimated from 181 windows: -102.00°  (std=100.27°)
+2026-09-25 23:00:40,935  INFO        [Vta21] Alignment validation: r_raw=-0.071 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,935  INFO      [Vta22] Estimating alignment…
+2026-09-25 23:00:40,935  INFO        [Vta22] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,937  INFO        Yaw offset estimated from 81 windows: 32.84°  (std=62.30°)
+2026-09-25 23:00:40,938  INFO        [Vta22] Alignment validation: r_raw=-0.002 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,938  INFO      [Vta23] Estimating alignment…
+2026-09-25 23:00:40,938  INFO        [Vta23] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,938  INFO        Yaw offset estimated from 26 windows: 73.70°  (std=36.65°)
+2026-09-25 23:00:40,940  INFO        [Vta23] Alignment validation: r_raw=0.003 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,940  INFO      [Vta24] Estimating alignment…
+2026-09-25 23:00:40,941  INFO        [Vta24] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,942  INFO        Yaw offset estimated from 49 windows: 134.31°  (std=45.80°)
+2026-09-25 23:00:40,943  INFO        [Vta24] Alignment validation: r_raw=-0.287 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,943  INFO      [Vta25] Estimating alignment…
+2026-09-25 23:00:40,943  INFO        [Vta25] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,943  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,944  INFO        [Vta25] Alignment validation: r_raw=0.630 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,944  INFO      [Vta26] Estimating alignment…
+2026-09-25 23:00:40,944  INFO        [Vta26] Pitch=0.03°  Roll=0.03°
+2026-09-25 23:00:40,945  INFO        Yaw offset estimated from 51 windows: 109.78°  (std=101.52°)
+2026-09-25 23:00:40,946  INFO        [Vta26] Alignment validation: r_raw=-0.202 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,946  INFO      [Vta27] Estimating alignment…
+2026-09-25 23:00:40,946  INFO        [Vta27] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,950  INFO        Yaw offset estimated from 188 windows: -71.01°  (std=83.25°)
+2026-09-25 23:00:40,951  INFO        [Vta27] Alignment validation: r_raw=0.002 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,951  INFO      [Vta28] Estimating alignment…
+2026-09-25 23:00:40,951  INFO        [Vta28] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,955  INFO        Yaw offset estimated from 213 windows: 118.12°  (std=102.93°)
+2026-09-25 23:00:40,956  INFO        [Vta28] Alignment validation: r_raw=-0.251 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,956  INFO      [Vta29] Estimating alignment…
+2026-09-25 23:00:40,956  INFO        [Vta29] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,956  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,958  INFO        [Vta29] Alignment validation: r_raw=0.250 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,958  INFO      [Vta3] Estimating alignment…
+2026-09-25 23:00:40,958  INFO        [Vta3] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,959  INFO        Yaw offset estimated from 15 windows: 63.15°  (std=0.42°)
+2026-09-25 23:00:40,960  INFO        [Vta3] Alignment validation: r_raw=-0.166 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,960  INFO      [Vta30] Estimating alignment…
+2026-09-25 23:00:40,960  INFO        [Vta30] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,960  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:40,965  INFO        [Vta30] Alignment validation: r_raw=0.126 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,965  INFO      [Vta4] Estimating alignment…
+2026-09-25 23:00:40,965  INFO        [Vta4] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,970  INFO        Yaw offset estimated from 290 windows: 49.25°  (std=19.16°)
+2026-09-25 23:00:40,971  INFO        [Vta4] Alignment validation: r_raw=0.029 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,971  INFO      [Vta5] Estimating alignment…
+2026-09-25 23:00:40,971  INFO        [Vta5] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:40,971  INFO        Yaw offset estimated from 17 windows: 45.84°  (std=0.55°)
+2026-09-25 23:00:40,972  INFO        [Vta5] Alignment validation: r_raw=-0.216 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,972  INFO      [Vta6] Estimating alignment…
+2026-09-25 23:00:40,972  INFO        [Vta6] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:40,979  INFO        Yaw offset estimated from 438 windows: 40.65°  (std=10.66°)
+2026-09-25 23:00:40,980  INFO        [Vta6] Alignment validation: r_raw=0.135 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,980  INFO      [Vta7] Estimating alignment…
+2026-09-25 23:00:40,980  INFO        [Vta7] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,981  INFO        Yaw offset estimated from 16 windows: 14.46°  (std=7.65°)
+2026-09-25 23:00:40,982  INFO        [Vta7] Alignment validation: r_raw=0.012 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,982  INFO      [Vta8] Estimating alignment…
+2026-09-25 23:00:40,982  INFO        [Vta8] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:40,997  INFO        Yaw offset estimated from 838 windows: 156.08°  (std=135.17°)
+2026-09-25 23:00:40,998  INFO        [Vta8] Alignment validation: r_raw=0.121 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,998  INFO      [Vta9] Estimating alignment…
+2026-09-25 23:00:40,998  INFO        [Vta9] Pitch=0.02°  Roll=0.02°
+2026-09-25 23:00:40,998  WARNING   No valid straight windows – using 0° yaw offset
+2026-09-25 23:00:40,999  WARNING     [Vta9] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:40,999  INFO        [Vta9] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:40,999  INFO      [Vtb1] Estimating alignment…
+2026-09-25 23:00:40,999  INFO        [Vtb1] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:40,999  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,002  WARNING     [Vtb1] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,002  INFO        [Vtb1] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,002  INFO      [Vtb10] Estimating alignment…
+2026-09-25 23:00:41,002  INFO        [Vtb10] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:41,002  WARNING   No valid straight windows – using 0° yaw offset
+2026-09-25 23:00:41,003  INFO        [Vtb10] Alignment validation: r_raw=-0.284 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,003  INFO      [Vtb11] Estimating alignment…
+2026-09-25 23:00:41,003  INFO        [Vtb11] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:41,005  INFO        Yaw offset estimated from 153 windows: -41.04°  (std=5.22°)
+2026-09-25 23:00:41,006  WARNING     [Vtb11] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,006  INFO        [Vtb11] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,006  INFO      [Vtb12] Estimating alignment…
+2026-09-25 23:00:41,006  INFO        [Vtb12] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:41,007  INFO        Yaw offset estimated from 6 windows: 13.77°  (std=9.75°)
+2026-09-25 23:00:41,007  INFO        [Vtb12] Alignment validation: r_raw=-0.252 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,007  INFO      [Vtb2] Estimating alignment…
+2026-09-25 23:00:41,008  INFO        [Vtb2] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:41,008  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,009  WARNING     [Vtb2] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,009  INFO        [Vtb2] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,009  INFO      [Vtb3] Estimating alignment…
+2026-09-25 23:00:41,009  INFO        [Vtb3] Pitch=0.02°  Roll=0.02°
+2026-09-25 23:00:41,010  INFO        Yaw offset estimated from 26 windows: -118.79°  (std=28.23°)
+2026-09-25 23:00:41,011  INFO        [Vtb3] Alignment validation: r_raw=-0.205 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,011  INFO      [Vtb4] Estimating alignment…
+2026-09-25 23:00:41,011  INFO        [Vtb4] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:41,012  INFO        Yaw offset estimated from 35 windows: 26.77°  (std=4.79°)
+2026-09-25 23:00:41,013  INFO        [Vtb4] Alignment validation: r_raw=0.045 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,013  INFO      [Vtb5] Estimating alignment…
+2026-09-25 23:00:41,013  INFO        [Vtb5] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:41,272  INFO        Yaw offset estimated from 15803 windows: -110.50°  (std=107.14°)
+2026-09-25 23:00:41,281  INFO        [Vtb5] Alignment validation: r_raw=0.026 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,281  INFO      [Vtb6] Estimating alignment…
+2026-09-25 23:00:41,281  INFO        [Vtb6] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:41,284  INFO        Yaw offset estimated from 129 windows: 9.81°  (std=36.83°)
+2026-09-25 23:00:41,285  WARNING     [Vtb6] Only 4 turning samples – validation has low confidence
+2026-09-25 23:00:41,285  INFO        [Vtb6] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,285  INFO      [Vtb7] Estimating alignment…
+2026-09-25 23:00:41,285  INFO        [Vtb7] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:41,285  INFO        Yaw offset estimated from 17 windows: 102.72°  (std=2.99°)
+2026-09-25 23:00:41,286  INFO        [Vtb7] Alignment validation: r_raw=0.500 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,286  INFO      [Vtb8] Estimating alignment…
+2026-09-25 23:00:41,286  INFO        [Vtb8] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:41,293  INFO        Yaw offset estimated from 429 windows: -42.23°  (std=31.90°)
+2026-09-25 23:00:41,294  WARNING     [Vtb8] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,294  INFO        [Vtb8] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,294  INFO      [Vtb9] Estimating alignment…
+2026-09-25 23:00:41,294  INFO        [Vtb9] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:41,298  INFO        Yaw offset estimated from 185 windows: -9.38°  (std=92.64°)
+2026-09-25 23:00:41,299  WARNING     [Vtb9] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,299  INFO        [Vtb9] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,299  INFO      [Vw1] Estimating alignment…
+2026-09-25 23:00:41,299  INFO        [Vw1] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:41,299  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,301  WARNING     [Vw1] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,301  INFO        [Vw1] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,301  INFO      [Vw10] Estimating alignment…
+2026-09-25 23:00:41,301  INFO        [Vw10] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:41,301  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,302  INFO        [Vw10] Alignment validation: r_raw=0.193 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,302  INFO      [Vw11] Estimating alignment…
+2026-09-25 23:00:41,302  INFO        [Vw11] Pitch=-0.02°  Roll=-0.02°
+2026-09-25 23:00:41,303  INFO        Yaw offset estimated from 13 windows: 80.47°  (std=60.42°)
+2026-09-25 23:00:41,304  INFO        [Vw11] Alignment validation: r_raw=0.200 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,304  INFO      [Vw12] Estimating alignment…
+2026-09-25 23:00:41,304  INFO        [Vw12] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:41,304  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,305  WARNING     [Vw12] Only 3 turning samples – validation has low confidence
+2026-09-25 23:00:41,305  INFO        [Vw12] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,305  INFO      [Vw13] Estimating alignment…
+2026-09-25 23:00:41,305  INFO        [Vw13] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:41,305  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,306  WARNING     [Vw13] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,306  INFO        [Vw13] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,306  INFO      [Vw14a] Estimating alignment…
+2026-09-25 23:00:41,306  INFO        [Vw14a] Pitch=0.03°  Roll=0.03°
+2026-09-25 23:00:41,306  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,307  INFO        [Vw14a] Alignment validation: r_raw=0.079 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,307  INFO      [Vw14b] Estimating alignment…
+2026-09-25 23:00:41,307  INFO        [Vw14b] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:41,310  INFO        Yaw offset estimated from 89 windows: -59.41°  (std=41.01°)
+2026-09-25 23:00:41,311  INFO        [Vw14b] Alignment validation: r_raw=-0.020 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,311  INFO      [Vw14c] Estimating alignment…
+2026-09-25 23:00:41,311  INFO        [Vw14c] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:41,313  INFO        Yaw offset estimated from 69 windows: 110.92°  (std=85.11°)
+2026-09-25 23:00:41,315  INFO        [Vw14c] Alignment validation: r_raw=0.200 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,315  INFO      [Vw15] Estimating alignment…
+2026-09-25 23:00:41,315  INFO        [Vw15] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:41,315  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,316  WARNING     [Vw15] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,316  INFO        [Vw15] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,316  INFO      [Vw16a] Estimating alignment…
+2026-09-25 23:00:41,316  INFO        [Vw16a] Pitch=-0.00°  Roll=-0.00°
+2026-09-25 23:00:41,360  INFO        Yaw offset estimated from 2677 windows: -26.95°  (std=93.42°)
+2026-09-25 23:00:41,362  INFO        [Vw16a] Alignment validation: r_raw=0.336 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,362  INFO      [Vw16b] Estimating alignment…
+2026-09-25 23:00:41,362  INFO        [Vw16b] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:41,372  INFO        Yaw offset estimated from 557 windows: -2.09°  (std=50.37°)
+2026-09-25 23:00:41,373  INFO        [Vw16b] Alignment validation: r_raw=0.196 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,373  INFO      [Vw17] Estimating alignment…
+2026-09-25 23:00:41,373  INFO        [Vw17] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:41,375  INFO        Yaw offset estimated from 123 windows: -60.77°  (std=30.85°)
+2026-09-25 23:00:41,376  WARNING     [Vw17] Only 3 turning samples – validation has low confidence
+2026-09-25 23:00:41,376  INFO        [Vw17] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,376  INFO      [Vw2] Estimating alignment…
+2026-09-25 23:00:41,376  INFO        [Vw2] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:41,379  INFO        Yaw offset estimated from 22 windows: -30.77°  (std=27.06°)
+2026-09-25 23:00:41,382  INFO        [Vw2] Alignment validation: r_raw=0.122 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,383  INFO      [Vw3] Estimating alignment…
+2026-09-25 23:00:41,383  INFO        [Vw3] Pitch=-0.03°  Roll=-0.03°
+2026-09-25 23:00:41,383  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,384  INFO        [Vw3] Alignment validation: r_raw=-0.124 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,384  INFO      [Vw4] Estimating alignment…
+2026-09-25 23:00:41,384  INFO        [Vw4] Pitch=-0.02°  Roll=-0.02°
+2026-09-25 23:00:41,402  INFO        Yaw offset estimated from 700 windows: 96.55°  (std=101.77°)
+2026-09-25 23:00:41,413  INFO        [Vw4] Alignment validation: r_raw=0.047 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,414  INFO      [Vw5] Estimating alignment…
+2026-09-25 23:00:41,414  INFO        [Vw5] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:41,414  WARNING   No valid straight windows – using 0° yaw offset
+2026-09-25 23:00:41,415  INFO        [Vw5] Alignment validation: r_raw=-0.064 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,415  INFO      [Vw6] Estimating alignment…
+2026-09-25 23:00:41,415  INFO        [Vw6] Pitch=-0.03°  Roll=-0.03°
+2026-09-25 23:00:41,416  INFO        Yaw offset estimated from 32 windows: 5.76°  (std=67.40°)
+2026-09-25 23:00:41,417  INFO        [Vw6] Alignment validation: r_raw=-0.345 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,417  INFO      [Vw7] Estimating alignment…
+2026-09-25 23:00:41,417  INFO        [Vw7] Pitch=0.01°  Roll=0.01°
+2026-09-25 23:00:41,417  INFO        Yaw offset estimated from 7 windows: -44.06°  (std=64.83°)
+2026-09-25 23:00:41,418  INFO        [Vw7] Alignment validation: r_raw=0.128 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,418  INFO      [Vw8] Estimating alignment…
+2026-09-25 23:00:41,418  INFO        [Vw8] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:41,418  INFO        Yaw offset estimated from 2 windows: 65.69°  (std=0.13°)
+2026-09-25 23:00:41,419  INFO        [Vw8] Alignment validation: r_raw=-0.150 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,420  INFO      [Vw9] Estimating alignment…
+2026-09-25 23:00:41,420  INFO        [Vw9] Pitch=-0.01°  Roll=-0.01°
+2026-09-25 23:00:41,420  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,420  INFO        [Vw9] Alignment validation: r_raw=-0.048 → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,420  INFO      [Y1] Estimating alignment…
+2026-09-25 23:00:41,421  INFO        [Y1] Pitch=0.00°  Roll=0.00°
+2026-09-25 23:00:41,421  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,426  WARNING     [Y1] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,426  INFO        [Y1] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,428  INFO      [M] Estimating alignment…
+2026-09-25 23:00:41,428  INFO        [M] Pitch=-4.98°  Roll=-5.00°
+2026-09-25 23:00:41,428  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,429  WARNING     [M] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,429  INFO        [M] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,431  INFO      [S1] Estimating alignment…
+2026-09-25 23:00:41,431  INFO        [S1] Pitch=-4.98°  Roll=-5.00°
+2026-09-25 23:00:41,431  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,432  WARNING     [S1] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,432  INFO        [S1] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,433  INFO      [S2] Estimating alignment…
+2026-09-25 23:00:41,433  INFO        [S2] Pitch=-4.98°  Roll=-5.00°
+2026-09-25 23:00:41,433  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,434  WARNING     [S2] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,434  INFO        [S2] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,434  INFO      [S3a] Estimating alignment…
+2026-09-25 23:00:41,434  INFO        [S3a] Pitch=-4.98°  Roll=-5.00°
+2026-09-25 23:00:41,434  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,435  WARNING     [S3a] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,435  INFO        [S3a] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,435  INFO      [S3b] Estimating alignment…
+2026-09-25 23:00:41,436  INFO        [S3b] Pitch=-4.98°  Roll=-5.00°
+2026-09-25 23:00:41,436  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,436  WARNING     [S3b] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,436  INFO        [S3b] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,437  INFO      [Vfa01] Estimating alignment…
+2026-09-25 23:00:41,437  INFO        [Vfa01] Pitch=-4.98°  Roll=-5.00°
+2026-09-25 23:00:41,437  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,438  WARNING     [Vfa01] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,438  INFO        [Vfa01] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,438  INFO      [Vfa02] Estimating alignment…
+2026-09-25 23:00:41,438  INFO        [Vfa02] Pitch=-4.98°  Roll=-5.00°
+2026-09-25 23:00:41,438  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,439  WARNING     [Vfa02] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,439  INFO        [Vfa02] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,439  INFO      [Vtb1] Estimating alignment…
+2026-09-25 23:00:41,439  INFO        [Vtb1] Pitch=-4.98°  Roll=-5.00°
+2026-09-25 23:00:41,439  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,440  WARNING     [Vtb1] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,440  INFO        [Vtb1] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,440  INFO      [Vtb2] Estimating alignment…
+2026-09-25 23:00:41,440  INFO        [Vtb2] Pitch=-4.98°  Roll=-5.00°
+2026-09-25 23:00:41,441  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,441  WARNING     [Vtb2] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,441  INFO        [Vtb2] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,441  INFO      [Vw1] Estimating alignment…
+2026-09-25 23:00:41,442  INFO        [Vw1] Pitch=-4.98°  Roll=-5.00°
+2026-09-25 23:00:41,442  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,443  WARNING     [Vw1] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,443  INFO        [Vw1] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,443  INFO      [Y1] Estimating alignment…
+2026-09-25 23:00:41,443  INFO        [Y1] Pitch=-4.98°  Roll=-5.00°
+2026-09-25 23:00:41,443  WARNING   Insufficient straight driving segments for yaw alignment – using 0°
+2026-09-25 23:00:41,444  WARNING     [Y1] Only 0 turning samples – validation has low confidence
+2026-09-25 23:00:41,444  INFO        [Y1] Alignment validation: r_raw=nan → r_aligned=nan  (improvement=+nan)  ✗ FAIL
+2026-09-25 23:00:41,446  INFO      Alignment params saved → /Users/vivekwarang/sih/phase1/outputs/calibration/alignment_params.json
+2026-09-25 23:00:41,446  INFO      
+Alignment validation: 0/224 runs passed (|r_aligned| > 0.6)
+2026-09-25 23:00:41,446  INFO        ✗ [M]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,446  INFO        ✗ [S1]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,446  INFO        ✗ [S2]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,446  INFO        ✗ [S3a]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,446  INFO        ✗ [S3b]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,446  INFO        ✗ [S3c]  r_raw=-0.054 → r_aligned=nan  n_turns=6327
+2026-09-25 23:00:41,446  INFO        ✗ [S4]  r_raw=0.046 → r_aligned=nan  n_turns=10210
+2026-09-25 23:00:41,446  INFO        ✗ [Vfa01]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,446  INFO        ✗ [Vfa02]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,446  INFO        ✗ [Vta1b]  r_raw=0.236 → r_aligned=nan  n_turns=143
+2026-09-25 23:00:41,447  INFO        ✗ [Vta2]  r_raw=0.272 → r_aligned=nan  n_turns=1091
+2026-09-25 23:00:41,447  INFO        ✗ [Vta3]  r_raw=-0.166 → r_aligned=nan  n_turns=56
+2026-09-25 23:00:41,447  INFO        ✗ [Vta4]  r_raw=0.029 → r_aligned=nan  n_turns=158
+2026-09-25 23:00:41,447  INFO        ✗ [Vta5]  r_raw=-0.216 → r_aligned=nan  n_turns=91
+2026-09-25 23:00:41,447  INFO        ✗ [Vta6]  r_raw=0.136 → r_aligned=nan  n_turns=52
+2026-09-25 23:00:41,447  INFO        ✗ [Vta7]  r_raw=0.012 → r_aligned=nan  n_turns=290
+2026-09-25 23:00:41,447  INFO        ✗ [Vta8]  r_raw=0.121 → r_aligned=nan  n_turns=220
+2026-09-25 23:00:41,447  INFO        ✗ [Vta9]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,447  INFO        ✗ [Vta10]  r_raw=-0.193 → r_aligned=nan  n_turns=121
+2026-09-25 23:00:41,447  INFO        ✗ [Vta11]  r_raw=-0.051 → r_aligned=nan  n_turns=265
+2026-09-25 23:00:41,447  INFO        ✗ [Vta12]  r_raw=nan → r_aligned=nan  n_turns=3
+2026-09-25 23:00:41,447  INFO        ✗ [Vta13]  r_raw=-0.063 → r_aligned=nan  n_turns=173
+2026-09-25 23:00:41,447  INFO        ✗ [Vta14]  r_raw=0.193 → r_aligned=nan  n_turns=152
+2026-09-25 23:00:41,447  INFO        ✗ [Vta15]  r_raw=-0.253 → r_aligned=nan  n_turns=48
+2026-09-25 23:00:41,447  INFO        ✗ [Vta16]  r_raw=0.015 → r_aligned=nan  n_turns=1137
+2026-09-25 23:00:41,447  INFO        ✗ [Vta17]  r_raw=0.017 → r_aligned=nan  n_turns=685
+2026-09-25 23:00:41,447  INFO        ✗ [Vta19]  r_raw=0.402 → r_aligned=nan  n_turns=18
+2026-09-25 23:00:41,447  INFO        ✗ [Vta20]  r_raw=-0.144 → r_aligned=nan  n_turns=24
+2026-09-25 23:00:41,447  INFO        ✗ [Vta21]  r_raw=-0.071 → r_aligned=nan  n_turns=351
+2026-09-25 23:00:41,447  INFO        ✗ [Vta22]  r_raw=-0.002 → r_aligned=nan  n_turns=351
+2026-09-25 23:00:41,447  INFO        ✗ [Vta23]  r_raw=0.003 → r_aligned=nan  n_turns=250
+2026-09-25 23:00:41,447  INFO        ✗ [Vta24]  r_raw=-0.287 → r_aligned=nan  n_turns=72
+2026-09-25 23:00:41,447  INFO        ✗ [Vta25]  r_raw=0.630 → r_aligned=nan  n_turns=54
+2026-09-25 23:00:41,447  INFO        ✗ [Vta26]  r_raw=-0.202 → r_aligned=nan  n_turns=92
+2026-09-25 23:00:41,447  INFO        ✗ [Vta27]  r_raw=0.002 → r_aligned=nan  n_turns=320
+2026-09-25 23:00:41,447  INFO        ✗ [Vta28]  r_raw=-0.251 → r_aligned=nan  n_turns=724
+2026-09-25 23:00:41,447  INFO        ✗ [Vta29]  r_raw=0.250 → r_aligned=nan  n_turns=4441
+2026-09-25 23:00:41,447  INFO        ✗ [Vta30]  r_raw=0.126 → r_aligned=nan  n_turns=737
+2026-09-25 23:00:41,447  INFO        ✗ [Vtb1]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,447  INFO        ✗ [Vtb2]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,447  INFO        ✗ [Vtb3]  r_raw=-0.205 → r_aligned=nan  n_turns=32
+2026-09-25 23:00:41,447  INFO        ✗ [Vtb4]  r_raw=0.045 → r_aligned=nan  n_turns=97
+2026-09-25 23:00:41,447  INFO        ✗ [Vtb5]  r_raw=0.025 → r_aligned=nan  n_turns=3026
+2026-09-25 23:00:41,447  INFO        ✗ [Vtb6]  r_raw=nan → r_aligned=nan  n_turns=4
+2026-09-25 23:00:41,447  INFO        ✗ [Vtb7]  r_raw=0.500 → r_aligned=nan  n_turns=43
+2026-09-25 23:00:41,447  INFO        ✗ [Vtb8]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,447  INFO        ✗ [Vtb9]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,447  INFO        ✗ [Vtb10]  r_raw=-0.284 → r_aligned=nan  n_turns=49
+2026-09-25 23:00:41,447  INFO        ✗ [Vtb11]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,447  INFO        ✗ [Vtb12]  r_raw=-0.252 → r_aligned=nan  n_turns=107
+2026-09-25 23:00:41,447  INFO        ✗ [Vw1]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,448  INFO        ✗ [Vw2]  r_raw=0.122 → r_aligned=nan  n_turns=3163
+2026-09-25 23:00:41,448  INFO        ✗ [Vw3]  r_raw=-0.124 → r_aligned=nan  n_turns=760
+2026-09-25 23:00:41,448  INFO        ✗ [Vw4]  r_raw=0.047 → r_aligned=nan  n_turns=13297
+2026-09-25 23:00:41,448  INFO        ✗ [Vw5]  r_raw=-0.064 → r_aligned=nan  n_turns=267
+2026-09-25 23:00:41,448  INFO        ✗ [Vw6]  r_raw=-0.345 → r_aligned=nan  n_turns=254
+2026-09-25 23:00:41,448  INFO        ✗ [Vw7]  r_raw=0.128 → r_aligned=nan  n_turns=478
+2026-09-25 23:00:41,448  INFO        ✗ [Vw8]  r_raw=-0.150 → r_aligned=nan  n_turns=309
+2026-09-25 23:00:41,448  INFO        ✗ [Vw9]  r_raw=-0.048 → r_aligned=nan  n_turns=304
+2026-09-25 23:00:41,448  INFO        ✗ [Vw10]  r_raw=0.193 → r_aligned=nan  n_turns=165
+2026-09-25 23:00:41,448  INFO        ✗ [Vw11]  r_raw=0.200 → r_aligned=nan  n_turns=573
+2026-09-25 23:00:41,448  INFO        ✗ [Vw12]  r_raw=nan → r_aligned=nan  n_turns=3
+2026-09-25 23:00:41,448  INFO        ✗ [Vw13]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,448  INFO        ✗ [Vw14a]  r_raw=0.079 → r_aligned=nan  n_turns=59
+2026-09-25 23:00:41,448  INFO        ✗ [Vw14b]  r_raw=-0.021 → r_aligned=nan  n_turns=61
+2026-09-25 23:00:41,448  INFO        ✗ [Vw14c]  r_raw=0.200 → r_aligned=nan  n_turns=770
+2026-09-25 23:00:41,448  INFO        ✗ [Vw15]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,448  INFO        ✗ [Vw16a]  r_raw=0.336 → r_aligned=nan  n_turns=191
+2026-09-25 23:00:41,448  INFO        ✗ [Vw16b]  r_raw=0.196 → r_aligned=nan  n_turns=36
+2026-09-25 23:00:41,448  INFO        ✗ [Vw17]  r_raw=nan → r_aligned=nan  n_turns=3
+2026-09-25 23:00:41,448  INFO        ✗ [Y1]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,448  INFO        ✗ [M]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,448  INFO        ✗ [S1]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,448  INFO        ✗ [S2]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,448  INFO        ✗ [S3a]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,448  INFO        ✗ [S3b]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,448  INFO        ✗ [S3c]  r_raw=-0.054 → r_aligned=nan  n_turns=6327
+2026-09-25 23:00:41,448  INFO        ✗ [S4]  r_raw=0.046 → r_aligned=nan  n_turns=10210
+2026-09-25 23:00:41,448  INFO        ✗ [Vfa01]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,448  INFO        ✗ [Vfa02]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,448  INFO        ✗ [Vta10]  r_raw=-0.193 → r_aligned=nan  n_turns=121
+2026-09-25 23:00:41,448  INFO        ✗ [Vta11]  r_raw=-0.051 → r_aligned=nan  n_turns=265
+2026-09-25 23:00:41,448  INFO        ✗ [Vta12]  r_raw=nan → r_aligned=nan  n_turns=3
+2026-09-25 23:00:41,448  INFO        ✗ [Vta13]  r_raw=-0.063 → r_aligned=nan  n_turns=173
+2026-09-25 23:00:41,448  INFO        ✗ [Vta14]  r_raw=0.193 → r_aligned=nan  n_turns=152
+2026-09-25 23:00:41,448  INFO        ✗ [Vta15]  r_raw=-0.253 → r_aligned=nan  n_turns=48
+2026-09-25 23:00:41,448  INFO        ✗ [Vta16]  r_raw=0.015 → r_aligned=nan  n_turns=1137
+2026-09-25 23:00:41,448  INFO        ✗ [Vta17]  r_raw=0.017 → r_aligned=nan  n_turns=685
+2026-09-25 23:00:41,448  INFO        ✗ [Vta19]  r_raw=0.402 → r_aligned=nan  n_turns=18
+2026-09-25 23:00:41,448  INFO        ✗ [Vta1b]  r_raw=0.236 → r_aligned=nan  n_turns=143
+2026-09-25 23:00:41,448  INFO        ✗ [Vta2]  r_raw=0.272 → r_aligned=nan  n_turns=1091
+2026-09-25 23:00:41,449  INFO        ✗ [Vta20]  r_raw=-0.144 → r_aligned=nan  n_turns=24
+2026-09-25 23:00:41,449  INFO        ✗ [Vta21]  r_raw=-0.071 → r_aligned=nan  n_turns=351
+2026-09-25 23:00:41,449  INFO        ✗ [Vta22]  r_raw=-0.002 → r_aligned=nan  n_turns=351
+2026-09-25 23:00:41,449  INFO        ✗ [Vta23]  r_raw=0.003 → r_aligned=nan  n_turns=250
+2026-09-25 23:00:41,449  INFO        ✗ [Vta24]  r_raw=-0.287 → r_aligned=nan  n_turns=72
+2026-09-25 23:00:41,449  INFO        ✗ [Vta25]  r_raw=0.630 → r_aligned=nan  n_turns=54
+2026-09-25 23:00:41,449  INFO        ✗ [Vta26]  r_raw=-0.202 → r_aligned=nan  n_turns=92
+2026-09-25 23:00:41,449  INFO        ✗ [Vta27]  r_raw=0.002 → r_aligned=nan  n_turns=320
+2026-09-25 23:00:41,449  INFO        ✗ [Vta28]  r_raw=-0.251 → r_aligned=nan  n_turns=724
+2026-09-25 23:00:41,449  INFO        ✗ [Vta29]  r_raw=0.250 → r_aligned=nan  n_turns=4441
+2026-09-25 23:00:41,449  INFO        ✗ [Vta3]  r_raw=-0.166 → r_aligned=nan  n_turns=56
+2026-09-25 23:00:41,449  INFO        ✗ [Vta30]  r_raw=0.126 → r_aligned=nan  n_turns=737
+2026-09-25 23:00:41,449  INFO        ✗ [Vta4]  r_raw=0.029 → r_aligned=nan  n_turns=158
+2026-09-25 23:00:41,449  INFO        ✗ [Vta5]  r_raw=-0.216 → r_aligned=nan  n_turns=91
+2026-09-25 23:00:41,449  INFO        ✗ [Vta6]  r_raw=0.136 → r_aligned=nan  n_turns=52
+2026-09-25 23:00:41,449  INFO        ✗ [Vta7]  r_raw=0.012 → r_aligned=nan  n_turns=290
+2026-09-25 23:00:41,449  INFO        ✗ [Vta8]  r_raw=0.121 → r_aligned=nan  n_turns=220
+2026-09-25 23:00:41,449  INFO        ✗ [Vta9]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,449  INFO        ✗ [Vtb1]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,449  INFO        ✗ [Vtb10]  r_raw=-0.284 → r_aligned=nan  n_turns=49
+2026-09-25 23:00:41,449  INFO        ✗ [Vtb11]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,449  INFO        ✗ [Vtb12]  r_raw=-0.252 → r_aligned=nan  n_turns=107
+2026-09-25 23:00:41,449  INFO        ✗ [Vtb2]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,449  INFO        ✗ [Vtb3]  r_raw=-0.205 → r_aligned=nan  n_turns=32
+2026-09-25 23:00:41,449  INFO        ✗ [Vtb4]  r_raw=0.045 → r_aligned=nan  n_turns=97
+2026-09-25 23:00:41,449  INFO        ✗ [Vtb5]  r_raw=0.025 → r_aligned=nan  n_turns=3026
+2026-09-25 23:00:41,449  INFO        ✗ [Vtb6]  r_raw=nan → r_aligned=nan  n_turns=4
+2026-09-25 23:00:41,449  INFO        ✗ [Vtb7]  r_raw=0.500 → r_aligned=nan  n_turns=43
+2026-09-25 23:00:41,449  INFO        ✗ [Vtb8]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,449  INFO        ✗ [Vtb9]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,449  INFO        ✗ [Vw1]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,449  INFO        ✗ [Vw10]  r_raw=0.193 → r_aligned=nan  n_turns=165
+2026-09-25 23:00:41,449  INFO        ✗ [Vw11]  r_raw=0.200 → r_aligned=nan  n_turns=573
+2026-09-25 23:00:41,449  INFO        ✗ [Vw12]  r_raw=nan → r_aligned=nan  n_turns=3
+2026-09-25 23:00:41,449  INFO        ✗ [Vw13]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,449  INFO        ✗ [Vw14a]  r_raw=0.079 → r_aligned=nan  n_turns=59
+2026-09-25 23:00:41,449  INFO        ✗ [Vw14b]  r_raw=-0.021 → r_aligned=nan  n_turns=61
+2026-09-25 23:00:41,449  INFO        ✗ [Vw14c]  r_raw=0.200 → r_aligned=nan  n_turns=770
+2026-09-25 23:00:41,449  INFO        ✗ [Vw15]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,449  INFO        ✗ [Vw16a]  r_raw=0.336 → r_aligned=nan  n_turns=191
+2026-09-25 23:00:41,449  INFO        ✗ [Vw16b]  r_raw=0.196 → r_aligned=nan  n_turns=36
+2026-09-25 23:00:41,449  INFO        ✗ [Vw17]  r_raw=nan → r_aligned=nan  n_turns=3
+2026-09-25 23:00:41,450  INFO        ✗ [Vw2]  r_raw=0.122 → r_aligned=nan  n_turns=3163
+2026-09-25 23:00:41,450  INFO        ✗ [Vw3]  r_raw=-0.124 → r_aligned=nan  n_turns=760
+2026-09-25 23:00:41,450  INFO        ✗ [Vw4]  r_raw=0.047 → r_aligned=nan  n_turns=13297
+2026-09-25 23:00:41,450  INFO        ✗ [Vw5]  r_raw=-0.064 → r_aligned=nan  n_turns=267
+2026-09-25 23:00:41,450  INFO        ✗ [Vw6]  r_raw=-0.345 → r_aligned=nan  n_turns=254
+2026-09-25 23:00:41,450  INFO        ✗ [Vw7]  r_raw=0.128 → r_aligned=nan  n_turns=478
+2026-09-25 23:00:41,450  INFO        ✗ [Vw8]  r_raw=-0.150 → r_aligned=nan  n_turns=309
+2026-09-25 23:00:41,450  INFO        ✗ [Vw9]  r_raw=-0.048 → r_aligned=nan  n_turns=304
+2026-09-25 23:00:41,450  INFO        ✗ [Y1]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,450  INFO        ✗ [M]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,450  INFO        ✗ [S1]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,450  INFO        ✗ [S2]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,450  INFO        ✗ [S3a]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,450  INFO        ✗ [S3b]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,450  INFO        ✗ [S3c]  r_raw=-0.054 → r_aligned=nan  n_turns=6327
+2026-09-25 23:00:41,450  INFO        ✗ [S4]  r_raw=0.046 → r_aligned=nan  n_turns=10210
+2026-09-25 23:00:41,450  INFO        ✗ [Vfa01]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,450  INFO        ✗ [Vfa02]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,450  INFO        ✗ [Vta10]  r_raw=-0.193 → r_aligned=nan  n_turns=121
+2026-09-25 23:00:41,450  INFO        ✗ [Vta11]  r_raw=-0.051 → r_aligned=nan  n_turns=265
+2026-09-25 23:00:41,450  INFO        ✗ [Vta12]  r_raw=nan → r_aligned=nan  n_turns=3
+2026-09-25 23:00:41,450  INFO        ✗ [Vta13]  r_raw=-0.063 → r_aligned=nan  n_turns=173
+2026-09-25 23:00:41,450  INFO        ✗ [Vta14]  r_raw=0.193 → r_aligned=nan  n_turns=152
+2026-09-25 23:00:41,450  INFO        ✗ [Vta15]  r_raw=-0.253 → r_aligned=nan  n_turns=48
+2026-09-25 23:00:41,450  INFO        ✗ [Vta16]  r_raw=0.015 → r_aligned=nan  n_turns=1137
+2026-09-25 23:00:41,450  INFO        ✗ [Vta17]  r_raw=0.017 → r_aligned=nan  n_turns=685
+2026-09-25 23:00:41,450  INFO        ✗ [Vta19]  r_raw=0.402 → r_aligned=nan  n_turns=18
+2026-09-25 23:00:41,450  INFO        ✗ [Vta1b]  r_raw=0.236 → r_aligned=nan  n_turns=143
+2026-09-25 23:00:41,450  INFO        ✗ [Vta2]  r_raw=0.272 → r_aligned=nan  n_turns=1091
+2026-09-25 23:00:41,450  INFO        ✗ [Vta20]  r_raw=-0.144 → r_aligned=nan  n_turns=24
+2026-09-25 23:00:41,450  INFO        ✗ [Vta21]  r_raw=-0.071 → r_aligned=nan  n_turns=351
+2026-09-25 23:00:41,450  INFO        ✗ [Vta22]  r_raw=-0.002 → r_aligned=nan  n_turns=351
+2026-09-25 23:00:41,450  INFO        ✗ [Vta23]  r_raw=0.003 → r_aligned=nan  n_turns=250
+2026-09-25 23:00:41,450  INFO        ✗ [Vta24]  r_raw=-0.287 → r_aligned=nan  n_turns=72
+2026-09-25 23:00:41,450  INFO        ✗ [Vta25]  r_raw=0.630 → r_aligned=nan  n_turns=54
+2026-09-25 23:00:41,450  INFO        ✗ [Vta26]  r_raw=-0.202 → r_aligned=nan  n_turns=92
+2026-09-25 23:00:41,450  INFO        ✗ [Vta27]  r_raw=0.002 → r_aligned=nan  n_turns=320
+2026-09-25 23:00:41,450  INFO        ✗ [Vta28]  r_raw=-0.251 → r_aligned=nan  n_turns=724
+2026-09-25 23:00:41,450  INFO        ✗ [Vta29]  r_raw=0.250 → r_aligned=nan  n_turns=4441
+2026-09-25 23:00:41,450  INFO        ✗ [Vta3]  r_raw=-0.166 → r_aligned=nan  n_turns=56
+2026-09-25 23:00:41,450  INFO        ✗ [Vta30]  r_raw=0.126 → r_aligned=nan  n_turns=737
+2026-09-25 23:00:41,451  INFO        ✗ [Vta4]  r_raw=0.029 → r_aligned=nan  n_turns=158
+2026-09-25 23:00:41,451  INFO        ✗ [Vta5]  r_raw=-0.216 → r_aligned=nan  n_turns=91
+2026-09-25 23:00:41,451  INFO        ✗ [Vta6]  r_raw=0.136 → r_aligned=nan  n_turns=52
+2026-09-25 23:00:41,451  INFO        ✗ [Vta7]  r_raw=0.012 → r_aligned=nan  n_turns=290
+2026-09-25 23:00:41,451  INFO        ✗ [Vta8]  r_raw=0.121 → r_aligned=nan  n_turns=220
+2026-09-25 23:00:41,451  INFO        ✗ [Vta9]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,451  INFO        ✗ [Vtb1]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,451  INFO        ✗ [Vtb10]  r_raw=-0.284 → r_aligned=nan  n_turns=49
+2026-09-25 23:00:41,451  INFO        ✗ [Vtb11]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,451  INFO        ✗ [Vtb12]  r_raw=-0.252 → r_aligned=nan  n_turns=107
+2026-09-25 23:00:41,451  INFO        ✗ [Vtb2]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,451  INFO        ✗ [Vtb3]  r_raw=-0.205 → r_aligned=nan  n_turns=32
+2026-09-25 23:00:41,451  INFO        ✗ [Vtb4]  r_raw=0.045 → r_aligned=nan  n_turns=97
+2026-09-25 23:00:41,451  INFO        ✗ [Vtb5]  r_raw=0.025 → r_aligned=nan  n_turns=3026
+2026-09-25 23:00:41,451  INFO        ✗ [Vtb6]  r_raw=nan → r_aligned=nan  n_turns=4
+2026-09-25 23:00:41,451  INFO        ✗ [Vtb7]  r_raw=0.500 → r_aligned=nan  n_turns=43
+2026-09-25 23:00:41,451  INFO        ✗ [Vtb8]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,451  INFO        ✗ [Vtb9]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,451  INFO        ✗ [Vw1]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,451  INFO        ✗ [Vw10]  r_raw=0.193 → r_aligned=nan  n_turns=165
+2026-09-25 23:00:41,451  INFO        ✗ [Vw11]  r_raw=0.200 → r_aligned=nan  n_turns=573
+2026-09-25 23:00:41,451  INFO        ✗ [Vw12]  r_raw=nan → r_aligned=nan  n_turns=3
+2026-09-25 23:00:41,451  INFO        ✗ [Vw13]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,451  INFO        ✗ [Vw14a]  r_raw=0.079 → r_aligned=nan  n_turns=59
+2026-09-25 23:00:41,451  INFO        ✗ [Vw14b]  r_raw=-0.021 → r_aligned=nan  n_turns=61
+2026-09-25 23:00:41,451  INFO        ✗ [Vw14c]  r_raw=0.200 → r_aligned=nan  n_turns=770
+2026-09-25 23:00:41,451  INFO        ✗ [Vw15]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,451  INFO        ✗ [Vw16a]  r_raw=0.336 → r_aligned=nan  n_turns=191
+2026-09-25 23:00:41,451  INFO        ✗ [Vw16b]  r_raw=0.196 → r_aligned=nan  n_turns=36
+2026-09-25 23:00:41,451  INFO        ✗ [Vw17]  r_raw=nan → r_aligned=nan  n_turns=3
+2026-09-25 23:00:41,451  INFO        ✗ [Vw2]  r_raw=0.122 → r_aligned=nan  n_turns=3163
+2026-09-25 23:00:41,451  INFO        ✗ [Vw3]  r_raw=-0.124 → r_aligned=nan  n_turns=760
+2026-09-25 23:00:41,451  INFO        ✗ [Vw4]  r_raw=0.047 → r_aligned=nan  n_turns=13297
+2026-09-25 23:00:41,451  INFO        ✗ [Vw5]  r_raw=-0.064 → r_aligned=nan  n_turns=267
+2026-09-25 23:00:41,451  INFO        ✗ [Vw6]  r_raw=-0.345 → r_aligned=nan  n_turns=254
+2026-09-25 23:00:41,451  INFO        ✗ [Vw7]  r_raw=0.128 → r_aligned=nan  n_turns=478
+2026-09-25 23:00:41,452  INFO        ✗ [Vw8]  r_raw=-0.150 → r_aligned=nan  n_turns=309
+2026-09-25 23:00:41,452  INFO        ✗ [Vw9]  r_raw=-0.048 → r_aligned=nan  n_turns=304
+2026-09-25 23:00:41,452  INFO        ✗ [Y1]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,452  INFO        ✗ [M]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,452  INFO        ✗ [S1]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,452  INFO        ✗ [S2]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,452  INFO        ✗ [S3a]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,452  INFO        ✗ [S3b]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,452  INFO        ✗ [Vfa01]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,452  INFO        ✗ [Vfa02]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,452  INFO        ✗ [Vtb1]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,452  INFO        ✗ [Vtb2]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,452  INFO        ✗ [Vw1]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,452  INFO        ✗ [Y1]  r_raw=nan → r_aligned=nan  n_turns=0
+2026-09-25 23:00:41,461  INFO      VelocityNet: 16,961 parameters  (window=15)
+2026-09-25 23:00:41,492  INFO      Loaded VelocityPredictor (W=15) and ArtifactGate cleanly
+2026-09-25 23:00:41,503  INFO      
+── Step 2: Fresh Recomputation of 55 Outage Windows ──
+2026-09-25 23:00:41,504  INFO      Loaded cached 220 re-computed windows from /Users/vivekwarang/sih/phase4/outputs/phase4_results.json
+2026-09-25 23:00:41,509  INFO      Recomputed 55 windows: Phase 1 Mean=45.43% | Phase 2 Mean=106.49% | Phase 3 Mean=115.06%
+2026-09-25 23:00:41,509  INFO      
+── Step 3: Executing Failure-Mode Stress Tests ──
+2026-09-25 23:01:34,266  INFO      Stress Test 1 (2000m Outage): Drift=70.29% (1407.81m)
+2026-09-25 23:01:34,267  INFO      Stress Test 2 (Regimes): Motorway=35.77% vs Roundabout=68.3%
+2026-09-25 23:01:34,267  INFO      Stress Test 3 (Cross-Device): Drift=69.07%
+2026-09-25 23:01:34,267  INFO      Stress Test 4 (Sensor NaN Corruption): ✓ PASS: Forward-fill and covariance inflation handled corruption cleanly
+2026-09-25 23:01:34,267  INFO      
+── Step 5: Measuring End-to-End Real-Time Latency & Headroom ──
+2026-09-25 23:01:34,373  INFO      SIHEdgeEngine: Loaded ONNX model from /Users/vivekwarang/sih/phase2/outputs/models/velocity_net.onnx
+2026-09-25 23:01:35,021  INFO      Latency Benchmark: Mean=0.2979ms | P99=0.5144ms | Headroom=99.49%
+2026-09-25 23:01:35,021  INFO      
+── Generating Multi-Phase Audit Plots ──
+2026-09-25 23:01:35,165  INFO      
+================================================================================
+2026-09-25 23:01:35,165  INFO      PHASE 4 COMPLETE in 73.1s
+2026-09-25 23:01:35,165  INFO      FINAL_AUDIT_REPORT.md → /Users/vivekwarang/sih/phase4/FINAL_AUDIT_REPORT.md
+2026-09-25 23:01:35,165  INFO      DEMO_RUNBOOK.md       → /Users/vivekwarang/sih/phase4/DEMO_RUNBOOK.md
+2026-09-25 23:01:35,165  INFO      ================================================================================

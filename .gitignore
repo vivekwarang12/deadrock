@@ -1,0 +1,31 @@
+# Mac OS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Raw Datasets & Large Archives
+IO-VNBD-master/
+IO-VNBD-fresh/
+*.zip
+*.tar.gz
+
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Android Build & Cache
+.gradle/
+build/
+app/build/
+local.properties

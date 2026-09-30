@@ -1,0 +1,107 @@
+{
+  "source_runs": [
+    "Vta1a",
+    "Vta1a",
+    "Vta1a"
+  ],
+  "accel_bias_mean": {
+    "x_ms2": 0.099457,
+    "y_ms2": -0.252874,
+    "z_ms2": 0.035513
+  },
+  "accel_noise_std_mean": {
+    "x_ms2": 0.22438100000000002,
+    "y_ms2": 0.304735,
+    "z_ms2": 0.078819
+  },
+  "gyro_bias_mean": {
+    "roll_rads": NaN,
+    "pitch_rads": NaN,
+    "yaw_rads": NaN
+  },
+  "gyro_noise_std_mean": {
+    "roll_rads": NaN,
+    "pitch_rads": NaN,
+    "yaw_rads": NaN
+  },
+  "per_run": [
+    {
+      "run_id": "Vta1a",
+      "n_samples": 167,
+      "duration_s": 16.7,
+      "accel_bias": {
+        "x_ms2": 0.099457,
+        "y_ms2": -0.252874,
+        "z_ms2": 0.035513
+      },
+      "accel_noise_std": {
+        "x_ms2": 0.224381,
+        "y_ms2": 0.304735,
+        "z_ms2": 0.078819
+      },
+      "gyro_bias": {
+        "roll_rads": 0.0003485,
+        "pitch_rads": -0.0011988,
+        "yaw_rads": -0.0008491
+      },
+      "gyro_noise_std": {
+        "roll_rads": 0.01319338,
+        "pitch_rads": 0.01974742,
+        "yaw_rads": 0.01056067
+      },
+      "allan_deviation": {}
+    },
+    {
+      "run_id": "Vta1a",
+      "n_samples": 167,
+      "duration_s": 16.7,
+      "accel_bias": {
+        "x_ms2": 0.099457,
+        "y_ms2": -0.252874,
+        "z_ms2": 0.035513
+      },
+      "accel_noise_std": {
+        "x_ms2": 0.224381,
+        "y_ms2": 0.304735,
+        "z_ms2": 0.078819
+      },
+      "gyro_bias": {
+        "roll_rads": NaN,
+        "pitch_rads": NaN,
+        "yaw_rads": NaN
+      },
+      "gyro_noise_std": {
+        "roll_rads": NaN,
+        "pitch_rads": NaN,
+        "yaw_rads": NaN
+      },
+      "allan_deviation": {}
+    },
+    {
+      "run_id": "Vta1a",
+      "n_samples": 167,
+      "duration_s": 16.7,
+      "accel_bias": {
+        "x_ms2": 0.099457,
+        "y_ms2": -0.252874,
+        "z_ms2": 0.035513
+      },
+      "accel_noise_std": {
+        "x_ms2": 0.224381,
+        "y_ms2": 0.304735,
+        "z_ms2": 0.078819
+      },
+      "gyro_bias": {
+        "roll_rads": 0.0003485,
+        "pitch_rads": -0.0011988,
+        "yaw_rads": -0.0008491
+      },
+      "gyro_noise_std": {
+        "roll_rads": 0.01319338,
+        "pitch_rads": 0.01974742,
+        "yaw_rads": 0.01056067
+      },
+      "allan_deviation": {}
+    }
+  ]
+}

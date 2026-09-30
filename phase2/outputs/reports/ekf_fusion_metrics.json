@@ -1,0 +1,1514 @@
+[
+  {
+    "run_id": "Vfa01",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 11486,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vfa02",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 67523,
+    "gps_on_frac": 0.999
+  },
+  {
+    "run_id": "Vta1b",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 954,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta2",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 10991,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta3",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 645,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta4",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1789,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta5",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 307,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta6",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1376,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta7",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 840,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta8",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 3676,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta9",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 156,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta10",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1502,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta11",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 510,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta12",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 610,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta13",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 404,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta14",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 2885,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta15",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 833,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta16",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 11335,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta17",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 4519,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta19",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 292,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta20",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 3223,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta21",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 2079,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta22",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1564,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta23",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1110,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta24",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1171,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta25",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 646,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta26",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1935,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta27",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 2540,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta28",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 4210,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta29",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 23705,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta30",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 17136,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb1",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 32459,
+    "gps_on_frac": 0.994
+  },
+  {
+    "run_id": "Vtb2",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 5712,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb3",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 8240,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb4",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 556,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb5",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 64388,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb6",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 498,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb7",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 461,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb8",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 668,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb9",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 452,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb10",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 195,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb11",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 361,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb12",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 447,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw1",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 20475,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw2",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 52712,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw3",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 3861,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw4",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 126526,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw5",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1012,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw6",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1281,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw7",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1602,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw8",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1529,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw9",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 552,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw10",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 652,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw11",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 4909,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw12",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 918,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw13",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 284,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw14a",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 3138,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw14b",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 19588,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw14c",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 15826,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw15",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1380,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw16a",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 5879,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw16b",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1126,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw17",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 329,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vfa01",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 11486,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vfa02",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 67523,
+    "gps_on_frac": 0.999
+  },
+  {
+    "run_id": "Vta10",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1502,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta11",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 510,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta12",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 610,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta13",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 404,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta14",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 2885,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta15",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 833,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta16",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 11335,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta17",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 4519,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta19",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 292,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta1b",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 954,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta2",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 10991,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta20",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 3223,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta21",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 2079,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta22",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1564,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta23",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1110,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta24",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1171,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta25",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 646,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta26",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1935,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta27",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 2540,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta28",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 4210,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta29",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 23705,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta3",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 645,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta30",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 17136,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta4",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1789,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta5",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 307,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta6",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1376,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta7",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 840,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta8",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 3676,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta9",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 156,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb1",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 32459,
+    "gps_on_frac": 0.994
+  },
+  {
+    "run_id": "Vtb10",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 195,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb11",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 361,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb12",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 447,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb2",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 5712,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb3",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 8240,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb4",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 556,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb5",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 64388,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb6",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 498,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb7",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 461,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb8",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 668,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb9",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 452,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw1",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 20475,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw10",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 652,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw11",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 4909,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw12",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 918,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw13",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 284,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw14a",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 3138,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw14b",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 19588,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw14c",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 15826,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw15",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1380,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw16a",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 5879,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw16b",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1126,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw17",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 329,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw2",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 52712,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw3",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 3861,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw4",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 126526,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw5",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1012,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw6",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1281,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw7",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1602,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw8",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1529,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw9",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 552,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vfa01",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 11486,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vfa02",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 67523,
+    "gps_on_frac": 0.999
+  },
+  {
+    "run_id": "Vta10",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1502,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta11",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 510,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta12",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 610,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta13",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 404,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta14",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 2885,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta15",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 833,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta16",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 11335,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta17",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 4519,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta19",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 292,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta1b",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 954,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta2",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 10991,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta20",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 3223,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta21",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 2079,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta22",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1564,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta23",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1110,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta24",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1171,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta25",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 646,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta26",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1935,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta27",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 2540,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta28",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 4210,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta29",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 23705,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta3",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 645,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta30",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 17136,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta4",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1789,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta5",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 307,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta6",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1376,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta7",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 840,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta8",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 3676,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vta9",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 156,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb1",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 32459,
+    "gps_on_frac": 0.994
+  },
+  {
+    "run_id": "Vtb10",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 195,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb11",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 361,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb12",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 447,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb2",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 5712,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb3",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 8240,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb4",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 556,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb5",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 64388,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb6",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 498,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb7",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 461,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb8",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 668,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vtb9",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 452,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw1",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 20475,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw10",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 652,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw11",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 4909,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw12",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 918,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw13",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 284,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw14a",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 3138,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw14b",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 19588,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw14c",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 15826,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw15",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1380,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw16a",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 5879,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw16b",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1126,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw17",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 329,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw2",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 52712,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw3",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 3861,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw4",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 126526,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw5",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1012,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw6",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1281,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw7",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1602,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw8",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 1529,
+    "gps_on_frac": 1.0
+  },
+  {
+    "run_id": "Vw9",
+    "rmse_gps_on_m": NaN,
+    "rmse_all_m": NaN,
+    "max_err_m": NaN,
+    "n_samples": 552,
+    "gps_on_frac": 1.0
+  }
+]
