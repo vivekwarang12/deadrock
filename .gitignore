@@ -1,31 +1,27 @@
-# Mac OS
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Raw Datasets & Large Archives
-IO-VNBD-master/
-IO-VNBD-fresh/
-*.zip
-*.tar.gz
-
-# Python & Virtual Environments
+# Python byte-compiled / environment files
 __pycache__/
 *.py[cod]
 *$py.class
-.venv/
+*.so
+.Python
+env/
 venv/
 ENV/
-env/
 
-# IDE & Editor files
-.idea/
-.vscode/
-*.swp
-*.swo
+# OS metadata
+.DS_Store
+Thumbs.db
 
-# Android Build & Cache
-.gradle/
-build/
-app/build/
-local.properties
+# Large raw datasets (downloaded on demand via download_real_iovnbd.py)
+IO-VNBD-master/
+IO-VNBD-fresh/
+IO-VNBD-fresh.zip
+
+# Android build outputs & local config
+phase3/android/.gradle/
+phase3/android/build/
+phase3/android/app/build/
+phase3/android/local.properties
+
+# Logs
+*.log
